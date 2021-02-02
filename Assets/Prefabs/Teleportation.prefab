@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 120000014163304990}
   - component: {fileID: 1999375664115223953}
   m_Layer: 0
-  m_Name: NewTeleport
+  m_Name: Teleportation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a175ecf69aeafbf49810e6dd478b662c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  line: {fileID: 0}
 --- !u!1 &6539774936492587950
 GameObject:
   m_ObjectHideFlags: 0
