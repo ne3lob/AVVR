@@ -15,7 +15,7 @@ public class WitchHouseUIHook : WatchScript.IUIHook
     public override void GetHook(WatchScript watch)
     {
         watch.AddButton("Reset", () => { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); });
-        watch.AddButton("Unlock Teleporters", () => {MasterController.Instance.TeleporterParent.SetActive(true);});
+       // watch.AddButton("Unlock Teleporters", () => {MasterController.Instance.TeleporterParent.SetActive(true);});
         watch.AddToggle("Closed Caption", (state) => { CCManager.Instance.gameObject.SetActive(state); });
 
         LeftUILineRenderer.SetActive(false);
