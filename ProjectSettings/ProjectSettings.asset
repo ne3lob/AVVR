@@ -668,7 +668,20 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: EXTOSC
+    4: EXTOSC
+    7: EXTOSC
+    13: EXTOSC
+    19: EXTOSC
+    21: EXTOSC
+    25: EXTOSC
+    27: EXTOSC
+    28: EXTOSC
+    29: EXTOSC
+    30: EXTOSC
+    31: EXTOSC
+    32: EXTOSC
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
