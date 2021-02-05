@@ -1,16 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/Locomotion/TeleportDestination.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/Locomotion/TeleportDestination.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.meta" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Stol 1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Stol 1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Stol.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Stol.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/AmpBounce.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/AmpBounce.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/NewBehaviourScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/NewBehaviourScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/VisualEqualizer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/VisualEqualizer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SynthScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extOSC/logs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/C.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/C/Users.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/C/Users/Nutzer.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/C/Users/Nutzer/Desktop.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01/GameObject Profile.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01/GameObject Profile.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/EscapeRoom/System/TeleportReticle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/EscapeRoom/System/TeleportReticle.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/System/XR Rig.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/System/XR Rig.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/WitchHouseUIHook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/WitchHouseUIHook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/OutlineShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/OutlineShader.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TheMaterialOutline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TheMaterialOutline.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,23 +59,34 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Downloads/OSCTransmitterInformerIntToFloat.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SynthScript.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/WitchHouseUIHook.cs" />
         <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/Radio.cs" />
+        <option value="$PROJECT_DIR$/Assets/SynthScript.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -69,7 +118,9 @@
       <option name="presentableId" value="Default" />
       <updated>1612472208236</updated>
       <workItem from="1612472236000" duration="715000" />
-      <workItem from="1612473483238" duration="563000" />
+      <workItem from="1612473483238" duration="1282000" />
+      <workItem from="1612540181766" duration="13206000" />
+      <workItem from="1612562241610" duration="1747000" />
     </task>
     <servers />
   </component>
@@ -78,7 +129,50 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1612558618231">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612558618231" />
+    <state x="3021" y="402" key="SettingsEditor" timestamp="1612540609927">
+      <screen x="2560" y="232" width="1920" height="1050" />
+    </state>
+    <state x="3021" y="402" key="SettingsEditor/0.0.2560.1410/2560.232.1920.1050@2560.232.1920.1050" timestamp="1612540609927" />
+    <state x="42" y="0" width="1300" height="1417" key="dock-window-1" timestamp="1612550069167">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="42" y="0" width="1300" height="1417" key="dock-window-1/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612550069167" />
+    <state x="7" y="8" width="1279" height="1391" key="dock-window-2" timestamp="1612550069167">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="7" y="8" width="1279" height="1391" key="dock-window-2/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612550069167" />
+    <state x="87" y="0" width="1125" height="1391" key="dock-window-3" timestamp="1612559247505">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="87" y="0" width="1125" height="1391" key="dock-window-3/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612559247505" />
+    <state x="1218" y="7" width="1058" height="1391" key="dock-window-4" timestamp="1612562589941">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1218" y="7" width="1058" height="1391" key="dock-window-4/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612562589941" />
+    <state x="1433" y="356" width="670" height="58" key="search.everywhere.popup" timestamp="1612551773248">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1433" y="356" width="670" height="58" key="search.everywhere.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612551773248" />
   </component>
 </project>

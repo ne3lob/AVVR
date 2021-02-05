@@ -1065,6 +1065,14 @@
             </e>
           </e>
         </e>
+        <e p="Scripts" t="Include">
+          <e p="ScriptExample" t="Include">
+            <e p="AmpBounce.cs" t="Include" />
+            <e p="NewBehaviourScript.cs" t="Include" />
+            <e p="VisualEqualizer.cs" t="Include" />
+          </e>
+        </e>
+        <e p="SynthScript.cs" t="Include" />
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
             <e p="Editor" t="Include">
