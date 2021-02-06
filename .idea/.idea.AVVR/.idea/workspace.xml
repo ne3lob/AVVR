@@ -20,13 +20,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/1Tile.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/1Tile.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Fuse.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Fuse.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Fusebox.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Fusebox.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BestQuality.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/BestQuality.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CabelTargets.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/CabelTargets.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Lighting Settings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Lighting Settings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Cable_end.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Cable_end.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Cable_start.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Cable_start.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CableParticle.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/CableParticle.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SynthScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/EscapeRoom/System/TeleportReticle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/EscapeRoom/System/TeleportReticle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Tutorial/FuseBox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Tutorial/FuseBox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +63,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/Downloads/OSCTransmitterInformerIntToFloat.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/BestQuality.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/CabelTargets.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SynthScript.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -47,7 +73,10 @@
         <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/WitchHouseUIHook.cs" />
         <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" />
         <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/Radio.cs" />
+        <option value="$PROJECT_DIR$/Assets/BestQuality.cs" />
         <option value="$PROJECT_DIR$/Assets/SynthScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/CabelTargets.cs" />
+        <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Tutorial/FuseBox.cs" />
       </list>
     </option>
   </component>
@@ -100,7 +129,11 @@
       <workItem from="1612540181766" duration="13206000" />
       <workItem from="1612562241610" duration="2407000" />
       <workItem from="1612612552613" duration="3081000" />
-      <workItem from="1612618875707" duration="811000" />
+      <workItem from="1612618875707" duration="6461000" />
+      <workItem from="1612630851928" duration="3000" />
+      <workItem from="1612630922661" duration="1504000" />
+      <workItem from="1612638555185" duration="7875000" />
+      <workItem from="1612654353441" duration="113000" />
     </task>
     <servers />
   </component>
@@ -134,10 +167,10 @@
       <screen x="2560" y="232" width="1920" height="1050" />
     </state>
     <state x="3021" y="402" key="SettingsEditor/0.0.2560.1410/2560.232.1920.1050@2560.232.1920.1050" timestamp="1612540609927" />
-    <state x="42" y="0" width="1300" height="1417" key="dock-window-1" timestamp="1612550069167">
+    <state x="377" y="6" width="1144" height="1384" key="dock-window-1" timestamp="1612633846835">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="42" y="0" width="1300" height="1417" key="dock-window-1/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612550069167" />
+    <state x="377" y="6" width="1144" height="1384" key="dock-window-1/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612633846835" />
     <state x="7" y="8" width="1279" height="1391" key="dock-window-2" timestamp="1612550069167">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class FuseBox : MonoBehaviour
 {
-    public ParticleSystem[] SparkleFuseVFX;
-    public ParticleSystem[] SwitchedOnVFX;
-    public ParticleSystem[] SwitchedOffVFX;
+    //public ParticleSystem[] SparkleFuseVFX;
+    //public ParticleSystem[] SwitchedOnVFX;
+    //public ParticleSystem[] SwitchedOffVFX;
     
     bool m_FusePresent = false;
 
@@ -17,17 +17,11 @@ public class FuseBox : MonoBehaviour
 
         if (step == 0)
         {
-            foreach (var s in SwitchedOffVFX)
-            {
-                s.Play();
-            }
+            //
         }
         else
         {
-            foreach (var s in SwitchedOnVFX)
-            {
-                s.Play();
-            }
+            //
         }
     }
     
@@ -37,10 +31,7 @@ public class FuseBox : MonoBehaviour
 
         if (m_FusePresent)
         {
-            foreach (var s in SparkleFuseVFX)
-            {
-                s.Play();
-            }
+           //
         }
     }
 }

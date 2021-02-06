@@ -8,6 +8,8 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="BestQuality.cs" t="Include" />
+        <e p="CabelTargets.cs" t="Include" />
         <e p="extOSC" t="Include">
           <e p="Examples" t="Include">
             <e p="01) Getting Started" t="Include">
@@ -1066,6 +1068,8 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CableComponent.cs" t="Include" />
+          <e p="CableParticle.cs" t="Include" />
           <e p="ScriptExample" t="Include">
             <e p="AmpBounce.cs" t="Include" />
             <e p="NewBehaviourScript.cs" t="Include" />
