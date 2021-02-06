@@ -20,35 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Stol 1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Stol 1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Stol.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Stol.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/AmpBounce.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/AmpBounce.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/NewBehaviourScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/NewBehaviourScript.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/VisualEqualizer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptExample/VisualEqualizer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SynthScript.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extOSC/logs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/C.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/C/Users.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/C/Users/Nutzer.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/C/Users/Nutzer/Desktop.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/New Material.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/OutlineShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/OutlineShader.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TheMaterialOutline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TheMaterialOutline.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SynthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/EscapeRoom/System/TeleportReticle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/EscapeRoom/System/TeleportReticle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +98,9 @@
       <workItem from="1612472236000" duration="715000" />
       <workItem from="1612473483238" duration="1282000" />
       <workItem from="1612540181766" duration="13206000" />
-      <workItem from="1612562241610" duration="1747000" />
+      <workItem from="1612562241610" duration="2407000" />
+      <workItem from="1612612552613" duration="3081000" />
+      <workItem from="1612618875707" duration="811000" />
     </task>
     <servers />
   </component>
@@ -166,10 +146,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="87" y="0" width="1125" height="1391" key="dock-window-3/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612559247505" />
-    <state x="1218" y="7" width="1058" height="1391" key="dock-window-4" timestamp="1612562589941">
+    <state x="1122" y="36" width="1058" height="1391" key="dock-window-4" timestamp="1612619729095">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="1218" y="7" width="1058" height="1391" key="dock-window-4/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612562589941" />
+    <state x="1122" y="36" width="1058" height="1391" key="dock-window-4/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612619729095" />
     <state x="1433" y="356" width="670" height="58" key="search.everywhere.popup" timestamp="1612551773248">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
