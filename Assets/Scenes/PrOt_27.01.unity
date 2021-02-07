@@ -478,7 +478,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
         type: 3}
@@ -593,7 +593,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 90529574}
         m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
-        m_MethodName: SocketNoiseIn
+        m_MethodName: SocketNoise
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -605,19 +605,7 @@ MonoBehaviour:
         m_CallState: 2
   m_OnSelectExit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 90529574}
-        m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
-        m_MethodName: SocketNoiseOut
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_ShowInteractableHoverMeshes: 1
   m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e,
     type: 2}
@@ -650,6 +638,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  receiver: {fileID: 1819411097}
+  transmitter: {fileID: 1819411096}
   socketInteractor: {fileID: 90529572}
 --- !u!114 &102712763
 MonoBehaviour:
@@ -676,7 +666,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
         type: 3}
@@ -791,7 +781,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 104663828}
         m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
-        m_MethodName: SocketSinIn
+        m_MethodName: SocketSin
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -803,19 +793,7 @@ MonoBehaviour:
         m_CallState: 2
   m_OnSelectExit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 104663828}
-        m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
-        m_MethodName: SocketSinOut
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_ShowInteractableHoverMeshes: 1
   m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e,
     type: 2}
@@ -848,6 +826,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  receiver: {fileID: 1819411097}
+  transmitter: {fileID: 1819411096}
   socketInteractor: {fileID: 104663826}
 --- !u!1 &105065493
 GameObject:
@@ -940,7 +920,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: -28.22, y: -79.073, z: 48.401}
 --- !u!1 &153712929
 GameObject:
@@ -1278,7 +1258,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
         type: 3}
@@ -1387,7 +1367,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 277126741}
         m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
-        m_MethodName: SocketSawIn
+        m_MethodName: SocketSaw
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1399,19 +1379,7 @@ MonoBehaviour:
         m_CallState: 2
   m_OnSelectExit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 277126741}
-        m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
-        m_MethodName: SocketSawOut
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_ShowInteractableHoverMeshes: 1
   m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e,
     type: 2}
@@ -1450,6 +1418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  receiver: {fileID: 1819411097}
+  transmitter: {fileID: 1819411096}
   socketInteractor: {fileID: 277126738}
 --- !u!1001 &360668731
 PrefabInstance:
@@ -1461,7 +1431,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
         type: 3}
@@ -1576,7 +1546,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 360668736}
         m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
-        m_MethodName: SocketTriIn
+        m_MethodName: SocketTri
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1588,19 +1558,7 @@ MonoBehaviour:
         m_CallState: 2
   m_OnSelectExit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 360668736}
-        m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
-        m_MethodName: SocketTriOut
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_ShowInteractableHoverMeshes: 1
   m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e,
     type: 2}
@@ -1633,6 +1591,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  receiver: {fileID: 1819411097}
+  transmitter: {fileID: 1819411096}
   socketInteractor: {fileID: 360668734}
 --- !u!1 &379922292 stripped
 GameObject:
@@ -1710,7 +1670,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
         type: 3}
@@ -2907,7 +2867,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 828590650}
         m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
-        m_MethodName: SocketRectIn
+        m_MethodName: SocketRect
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2919,19 +2879,7 @@ MonoBehaviour:
         m_CallState: 2
   m_OnSelectExit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 828590650}
-        m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
-        m_MethodName: SocketRectOut
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_ShowInteractableHoverMeshes: 1
   m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e,
     type: 2}
@@ -2964,6 +2912,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  receiver: {fileID: 1819411097}
+  transmitter: {fileID: 1819411096}
   socketInteractor: {fileID: 828590648}
 --- !u!4 &828590652 stripped
 Transform:
@@ -3359,6 +3309,179 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c8a4af9b356cb7f44974ea01fffa3376, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba644263c31874a4e85c1c13e6d3e638, type: 3}
+--- !u!1001 &1005006241
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6979
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3912
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.9543
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9638761
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.015912527
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.25920728
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.059171576
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -30.104
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 7.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c30b3cb292923504e87d82ca6226a5c7,
+        type: 3}
+      propertyPath: m_Name
+      value: OffSlot
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c30b3cb292923504e87d82ca6226a5c7, type: 3}
+--- !u!1 &1005006242 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c30b3cb292923504e87d82ca6226a5c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1005006241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1005006243 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1005006241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1005006244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005006242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receiver: {fileID: 1819411097}
+  transmitter: {fileID: 1819411096}
+  socketInteractor: {fileID: 1005006245}
+--- !u!114 &1005006245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005006242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1919c94f113ba47a2a4bde09e12b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InteractionManager: {fileID: 891123681}
+  m_InteractionLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_AttachTransform: {fileID: 1782512129}
+  m_StartingSelectedInteractable: {fileID: 0}
+  m_OnHoverEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnHoverExit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelectEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1005006244}
+        m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
+        m_MethodName: SocketOFF
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_OnSelectExit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ShowInteractableHoverMeshes: 1
+  m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: 584662273d60a0f47bd7fecbb570e66e,
+    type: 2}
+  m_SocketActive: 1
+  m_InteractableHoverScale: 0.1
+  m_RecycleDelayTime: 1
+  AcceptedType: CableA
+--- !u!135 &1005006246
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005006242}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.55031806
+  m_Center: {x: -0.0021691322, y: 3.232259e-11, z: -6.464518e-11}
 --- !u!1001 &1007665844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3837,95 +3960,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 926753b6184ab3b4b85705f9b961131b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
---- !u!1001 &1119789235
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.6979
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.3912
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.9543
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9638761
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.015912527
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.25920728
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.059171576
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -30.104
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 7.026
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7b24afb3a7f96f94bbc6454c1a942591, type: 2}
-    - target: {fileID: 919132149155446097, guid: c30b3cb292923504e87d82ca6226a5c7,
-        type: 3}
-      propertyPath: m_Name
-      value: OFF
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c30b3cb292923504e87d82ca6226a5c7, type: 3}
 --- !u!1 &1137336389
 GameObject:
   m_ObjectHideFlags: 0
@@ -4529,7 +4563,7 @@ Transform:
   m_LocalScale: {x: 0.87514, y: 0.87514, z: 0.87514}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -10.293, y: 57.135, z: -64.816}
 --- !u!1001 &1239001467
 PrefabInstance:
@@ -5480,7 +5514,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1681919522 stripped
 Transform:
@@ -5709,6 +5743,36 @@ Transform:
   - {fileID: 1681919522}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1782512128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1782512129}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1782512129
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782512128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.048, y: -0.388, z: -0}
+  m_LocalScale: {x: 16, y: 16, z: 16}
+  m_Children: []
+  m_Father: {fileID: 1005006243}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1795868903
 PrefabInstance:
@@ -7641,7 +7705,7 @@ Transform:
   m_Children:
   - {fileID: 1076223823}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2684420823410108316
 MonoBehaviour:
