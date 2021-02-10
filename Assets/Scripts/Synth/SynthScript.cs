@@ -44,14 +44,7 @@ public class SynthScript : MonoBehaviour
             Debug.Log(s_PitchRatio);
           //  Debug.Log(messagePitch);
         }
-     public void SynthVSOWavesOOFF(AxisDragInteractable axis)
-     {
-         var messageVSO = new OSCMessage(oscAddressVSO);
-         //if 
-         messageVSO.AddValue(OSCValue.Int(1));
-         
-         
-     }
+     
      // Update is called once per frame
     void Update()
     {
