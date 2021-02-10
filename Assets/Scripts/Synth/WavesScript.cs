@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using extOSC;
+using extOSC.Core;
 
 
 public class WavesScript : MonoBehaviour
@@ -11,12 +12,12 @@ public class WavesScript : MonoBehaviour
     public OSCTransmitter transmitter;
     public XRExclusiveSocketInteractor socketInteractor;
     
-    private const string oscAddressSynthWaveVCO = "/vcoWave";
+    private const string oscAddressSynthWaveVCO = "/vcoWaveFirst";
+    private const string oscAddressSynthWaveVCOSub = "/vcoWaveSecond";
     
     // Start is called before the first frame update
     void Start()
     {
-  
     }
     // Update is called once per frame
     void Update()
@@ -39,15 +40,14 @@ public class WavesScript : MonoBehaviour
         var messageSaw= new OSCMessage(oscAddressSynthWaveVCO);
         messageSaw.AddValue(OSCValue.Int(1));
         transmitter.Send(messageSaw);
-        
+       
         Debug.Log(messageSaw);
-        
         //Debug.Log("SawIn");
     }
     //RECT
     public void SocketRect(XRBaseInteractable interactable)
     {
-        var messageRect= new OSCMessage(oscAddressSynthWaveVCO);
+       var messageRect= new OSCMessage(oscAddressSynthWaveVCO);
         messageRect.AddValue(OSCValue.Int(2));
         transmitter.Send(messageRect);
         
@@ -59,20 +59,19 @@ public class WavesScript : MonoBehaviour
         var messageTri= new OSCMessage(oscAddressSynthWaveVCO);
         messageTri.AddValue(OSCValue.Int(3));
         transmitter.Send(messageTri);
+       
         
         Debug.Log(messageTri);
-        
-        //Debug.Log("TriOut");
+       
     }
     //SIN
     public void SocketSin(XRBaseInteractable interactable)
     {
-        var messageSin= new OSCMessage(oscAddressSynthWaveVCO);
+       var messageSin= new OSCMessage(oscAddressSynthWaveVCO);
         messageSin.AddValue(OSCValue.Int(4));
         transmitter.Send(messageSin);
+       
         
-        Debug.Log(messageSin);
-        //Debug.Log("SinOut");
     }
     //NOISE
     public void SocketNoise(XRBaseInteractable interactable)
@@ -81,8 +80,44 @@ public class WavesScript : MonoBehaviour
         messageNoise.AddValue(OSCValue.Int(5));
         transmitter.Send(messageNoise);
         
-        Debug.Log(messageNoise);
-        //Debug.Log("NoiseOut");
+    }
+    public void SockeSubNoise(XRBaseInteractable interactabletwo)
+    {
+        var messageNoiseSub= new OSCMessage(oscAddressSynthWaveVCOSub);
+        messageNoiseSub.AddValue(OSCValue.Int(5));
+        transmitter.Send(messageNoiseSub);
+    }
+    public void SocketSubSin(XRBaseInteractable interactable)
+    {
+        var messageSinSub= new OSCMessage(oscAddressSynthWaveVCOSub);
+        messageSinSub.AddValue(OSCValue.Int(4));
+        transmitter.Send(messageSinSub);
+        
+    }
+    public void SocketSubTri(XRBaseInteractable interactable)
+    {
+        var messageTriSub= new OSCMessage(oscAddressSynthWaveVCOSub);
+        messageTriSub.AddValue(OSCValue.Int(3));
+        transmitter.Send(messageTriSub);
+        Debug.Log(messageTriSub);
+    }
+    public void SocketSubSaw(XRBaseInteractable interactable)
+    {
+        var messageSawSub= new OSCMessage(oscAddressSynthWaveVCOSub);
+        messageSawSub.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageSawSub);
+       
+        Debug.Log(messageSawSub);
+        //Debug.Log("SawIn");
+    }
+    //RECT
+    public void SocketSubRect(XRBaseInteractable interactable)
+    {
+        var messageRectSub= new OSCMessage(oscAddressSynthWaveVCOSub);
+        messageRectSub.AddValue(OSCValue.Int(2));
+        transmitter.Send(messageRectSub);
+        
+        //Debug.Log("RectOut");
     }
     
 }

@@ -1,7 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Remoting.Messaging;
 using UnityEngine;
 using extOSC;
+using extOSC.Core.Packers;
+using extOSC.Core;
+using UnityEngine.XR.Interaction.Toolkit;
+
 
 public class SynthScript : MonoBehaviour
 {
@@ -17,53 +22,71 @@ public class SynthScript : MonoBehaviour
     private float s_VolumeRatio = 0.0f;
     private float s_PitchRatio = 0.0f;
     
+    private const string oscAddressSubOnOff = "/vcoSecondOnOff";
+  
+
+    public AxisDragInteractable interactable;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
+      
        
     }
     public void SynthVolumeChanged(DialInteractable dial)
     {
-      //  var messageVol = new OSCMessage(oscAddressVolume);
-      //  messageVol.AddValue(OSCValue.Float(s_VolumeRatio));
+       
         float ratioVolume = dial.CurrentAngle / dial.RotationAngleMaximum;
         s_VolumeRatio = ratioVolume;
-       // transmitter.Send(messageVol);
-        
         Debug.Log(s_VolumeRatio);
-       // Debug.Log(messageVol);
+       
     }
      public void SynthPitchChanged(DialInteractable dial)
         {
-          //  var messagePitch = new OSCMessage(oscAddressPitch);
-           // messagePitch.AddValue(OSCValue.Float(s_PitchRatio));
+            
             float ratioPitch = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_PitchRatio = ratioPitch;
-            //transmitter.Send(messagePitch);
             
             Debug.Log(s_PitchRatio);
-          //  Debug.Log(messagePitch);
+          
         }
-     public void SynthVSOWavesOOFF(AxisDragInteractable axis)
+     public void OnOff(XRBaseInteractor onOvs)
      {
-         var messageVSO = new OSCMessage(oscAddressVSO);
-         //if 
-         messageVSO.AddValue(OSCValue.Int(1));
-         
-         
+        var len= interactable.AxisLength;
+         if (len>=0.5f )
+         {
+             var messageSubOnOff= new OSCMessage(oscAddressSubOnOff);
+             messageSubOnOff.AddValue(OSCValue.Int(1));
+             transmitter.Send(messageSubOnOff);
+             Debug.Log("0");
+             
+         }
+         else
+         {
+             var messageSubOnOff= new OSCMessage(oscAddressSubOnOff);
+             var countOne = 1;
+             messageSubOnOff.AddValue(OSCValue.Int(0));
+             transmitter.Send(messageSubOnOff);
+             Debug.Log("1");
+             
+         }
      }
+    
      // Update is called once per frame
     void Update()
     {
+        var messagePitch = new OSCMessage(oscAddressPitch);
+        messagePitch.AddValue(OSCValue.Float(s_PitchRatio));
+        transmitter.Send(messagePitch);
+        
+        
         var messageVol = new OSCMessage(oscAddressVolume);
         messageVol.AddValue(OSCValue.Float(s_VolumeRatio));
         transmitter.Send(messageVol);
         
-        var messagePitch = new OSCMessage(oscAddressPitch);
-        messagePitch.AddValue(OSCValue.Float(s_PitchRatio));
-        transmitter.Send(messagePitch);
+        
+        
     }
-    
-    
 
 }

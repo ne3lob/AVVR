@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 
 using extOSC.Core.Packers;
+using UnityEngine;
 
 namespace extOSC.Core
 {
@@ -11,7 +12,7 @@ namespace extOSC.Core
 	{
 		#region Static Public Vars
 
-		private static int _packetSize = 65507;
+		private static int _packetSize = 655070;
 
 		private static int _bufferIndex = 0;
 
@@ -29,6 +30,8 @@ namespace extOSC.Core
 			new byte[_packetSize],
 			new byte[_packetSize],
 			new byte[_packetSize],
+			
+			
 		};
 
 		private static readonly List<byte[]> _packetsBuffers = new List<byte[]>()
@@ -41,6 +44,7 @@ namespace extOSC.Core
 			new byte[_packetSize],
 			new byte[_packetSize],
 			new byte[_packetSize],
+			
 		};
 
 		private static readonly Dictionary<OSCValueType, OSCPacker> _packersDictionary = new Dictionary<OSCValueType, OSCPacker>()
@@ -82,6 +86,7 @@ namespace extOSC.Core
 				_buffers.Add(new byte[_packetSize]);
 				_packetsBuffers.Add(new byte[_packetSize]);
 			}
+			
 		}
 
 		/// <summary>
