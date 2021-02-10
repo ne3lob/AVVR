@@ -11,11 +11,12 @@ public class SynthScript : MonoBehaviour
     //ADRESS
     private const string oscAddressVolume = "/volume";
     private const string oscAddressPitch = "/pitch";
-    private const string oscAddressVSO = "/VSO";
+    private const string oscAddressDrumVolume = "/drumVolume";
     
     //STARTING FLOATS
     private float s_VolumeRatio = 0.0f;
     private float s_PitchRatio = 0.0f;
+    private float s_DrumVolume=0.0f;
     
     // Start is called before the first frame update
     void Start()
@@ -24,26 +25,23 @@ public class SynthScript : MonoBehaviour
     }
     public void SynthVolumeChanged(DialInteractable dial)
     {
-      //  var messageVol = new OSCMessage(oscAddressVolume);
-      //  messageVol.AddValue(OSCValue.Float(s_VolumeRatio));
         float ratioVolume = dial.CurrentAngle / dial.RotationAngleMaximum;
         s_VolumeRatio = ratioVolume;
-       // transmitter.Send(messageVol);
-        
         Debug.Log(s_VolumeRatio);
-       // Debug.Log(messageVol);
+      
     }
      public void SynthPitchChanged(DialInteractable dial)
         {
-          //  var messagePitch = new OSCMessage(oscAddressPitch);
-           // messagePitch.AddValue(OSCValue.Float(s_PitchRatio));
             float ratioPitch = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_PitchRatio = ratioPitch;
-            //transmitter.Send(messagePitch);
-            
             Debug.Log(s_PitchRatio);
-          //  Debug.Log(messagePitch);
         }
+     public void SynthDrumVolumeChanged(DialInteractable dial)
+     {
+         float ratioDrumVolume = dial.CurrentAngle / dial.RotationAngleMaximum;
+         s_DrumVolume = ratioDrumVolume;
+         Debug.Log(s_PitchRatio);
+     }
      
      // Update is called once per frame
     void Update()
@@ -54,6 +52,10 @@ public class SynthScript : MonoBehaviour
         
         var messagePitch = new OSCMessage(oscAddressPitch);
         messagePitch.AddValue(OSCValue.Float(s_PitchRatio));
+        transmitter.Send(messagePitch);
+        
+        var messageVolumeDrumVolume = new OSCMessage(oscAddressPitch);
+        messagePitch.AddValue(OSCValue.Float(s_DrumVolume));
         transmitter.Send(messagePitch);
     }
     

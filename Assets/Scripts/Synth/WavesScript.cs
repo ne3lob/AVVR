@@ -11,8 +11,9 @@ public class WavesScript : MonoBehaviour
     public OSCTransmitter transmitter;
     public XRExclusiveSocketInteractor socketInteractor;
     
-    private const string oscAddressSynthWaveVCO = "/vcoWavefirst";
+    private const string oscAddressSynthWaveVCO = "/vcoWaveFirst";
     private const string oscAddressSynthWaveVCOSub = "/vcoWaveSecond";
+    private const string oscAddressSynthWaveSubOnOff = "/vcoSecondOnOff";
     
     // Start is called before the first frame update
     void Start()
@@ -90,6 +91,11 @@ public class WavesScript : MonoBehaviour
         var messageNoiseSub= new OSCMessage(oscAddressSynthWaveVCOSub);
         messageNoiseSub.AddValue(OSCValue.Int(5));
         transmitter.Send(messageNoiseSub);
+        
+        var messageSubOnOff= new OSCMessage(oscAddressSynthWaveSubOnOff);
+        messageSubOnOff.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageSubOnOff);
+     
     }
     public void SocketSubSin(XRBaseInteractable interactable)
     {
@@ -97,13 +103,21 @@ public class WavesScript : MonoBehaviour
         messageSinSub.AddValue(OSCValue.Int(4));
         transmitter.Send(messageSinSub);
         
+        var messageSubOnOff= new OSCMessage(oscAddressSynthWaveSubOnOff);
+        messageSubOnOff.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageSubOnOff);
+        
     }
     public void SocketSubTri(XRBaseInteractable interactable)
     {
         var messageTriSub= new OSCMessage(oscAddressSynthWaveVCOSub);
         messageTriSub.AddValue(OSCValue.Int(3));
         transmitter.Send(messageTriSub);
-        Debug.Log(messageTriSub);
+     
+        var messageSubOnOff= new OSCMessage(oscAddressSynthWaveSubOnOff);
+        messageSubOnOff.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageSubOnOff);
+        
     }
     public void SocketSubSaw(XRBaseInteractable interactable)
     {
@@ -111,8 +125,9 @@ public class WavesScript : MonoBehaviour
         messageSawSub.AddValue(OSCValue.Int(1));
         transmitter.Send(messageSawSub);
        
-        Debug.Log(messageSawSub);
-        //Debug.Log("SawIn");
+        var messageSubOnOff= new OSCMessage(oscAddressSynthWaveSubOnOff);
+        messageSubOnOff.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageSubOnOff);
     }
     //RECT
     public void SocketSubRect(XRBaseInteractable interactable)
@@ -121,7 +136,24 @@ public class WavesScript : MonoBehaviour
         messageRectSub.AddValue(OSCValue.Int(2));
         transmitter.Send(messageRectSub);
         
+        var messageSubOnOff= new OSCMessage(oscAddressSynthWaveSubOnOff);
+        messageSubOnOff.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageSubOnOff);
+        
+        
         //Debug.Log("RectOut");
+    }
+    public void SocketSubOFF(XRBaseInteractable interactable)
+    {
+        var messageOff= new OSCMessage(oscAddressSynthWaveVCOSub);
+        messageOff.AddValue(OSCValue.Int(0));
+        transmitter.Send(messageOff);
+        
+        var messageSubOnOff= new OSCMessage(oscAddressSynthWaveSubOnOff);
+        messageSubOnOff.AddValue(OSCValue.Int(0));
+        transmitter.Send(messageSubOnOff);
+        
+        
     }
     
 }

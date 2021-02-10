@@ -20,50 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/ROUNDoscFirst 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/ROUNDoscFirst 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/NoiseSlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/NoiseSlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/OffSlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/OffSlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/RectSlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/RectSlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/SawSlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/SawSlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/SinSlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/SinSlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/TriSlot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/TriSlot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/sawnew.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/1OVS/sawnew.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/sawnew.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/sawnew.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/VCO.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/VCO.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/noise.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/noise.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/sawnew.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/sawnew.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/sin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/sin.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/square.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/square.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/triangle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/triangle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Hands.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Hands.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/ROUNDoscFirst.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/ROUNDoscFirst.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Data/UniversalRenderPipelineAssetDesktop.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Data/UniversalRenderPipelineAssetDesktop.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Data/UniversalRenderPipelineAssetMobile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Data/UniversalRenderPipelineAssetMobile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/Oculus Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/Oculus Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +110,7 @@
       <workItem from="1612654353441" duration="113000" />
       <workItem from="1612703479922" duration="3989000" />
       <workItem from="1612709465118" duration="1550000" />
+      <workItem from="1612993957443" duration="1225000" />
     </task>
     <servers />
   </component>
