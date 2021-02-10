@@ -11,7 +11,7 @@ public class WavesScript : MonoBehaviour
     public OSCTransmitter transmitter;
     public XRExclusiveSocketInteractor socketInteractor;
     
-    private const string oscAddressSynthWaveVCO = "/vcoWave";
+    private const string oscAddressSynthWaveVCO = "/vcoWavefirst";
     
     // Start is called before the first frame update
     void Start()
