@@ -303,84 +303,6 @@
           </e>
           <e p="versions.txt" t="Include" />
         </e>
-        <e p="Materials" t="Include">
-          <e p="VR Beginner" t="Include">
-            <e p="CreatorKitVR_Third-PartyNotice.txt" t="Include" />
-            <e p="Scripts" t="Include">
-              <e p="Editor" t="Include">
-                <e p="CCDatabaseEditor.cs" t="Include" />
-                <e p="SceneCreator.cs" t="Include" />
-              </e>
-              <e p="Effects" t="Include">
-                <e p="CauldronEffects.cs" t="Include" />
-                <e p="ContactSoundPlayer.cs" t="Include" />
-                <e p="EmissionChange.cs" t="Include" />
-                <e p="FanRotation.cs" t="Include" />
-                <e p="FireDestruction.cs" t="Include" />
-                <e p="ParticleVelocitySender.cs" t="Include" />
-                <e p="SelectionOutline.cs" t="Include" />
-                <e p="SFXPlayer.cs" t="Include" />
-                <e p="ShakeObject.cs" t="Include" />
-                <e p="TeleporterAnim.cs" t="Include" />
-                <e p="TriggerAnimationEvent.cs" t="Include" />
-              </e>
-              <e p="Gameplay" t="Include">
-                <e p="CauldronContent.cs" t="Include" />
-                <e p="CauldronIngredient.cs" t="Include" />
-                <e p="EndingSequence.cs" t="Include" />
-                <e p="HandPrefab.cs" t="Include" />
-                <e p="Hourglass.cs" t="Include" />
-                <e p="IndestructableObj.cs" t="Include" />
-                <e p="MagicBallProjectile.cs" t="Include" />
-                <e p="MagicReceiver.cs" t="Include" />
-                <e p="MagicTractorBeam.cs" t="Include" />
-                <e p="MasterController.cs" t="Include" />
-                <e p="ObjectLauncher.cs" t="Include" />
-                <e p="ObjectSpawner.cs" t="Include" />
-                <e p="Potion.cs" t="Include" />
-                <e p="PotionReceiver.cs" t="Include" />
-                <e p="PotionSpawner.cs" t="Include" />
-                <e p="Radio.cs" t="Include" />
-                <e p="RespawnableObject.cs" t="Include" />
-                <e p="StationaryOnPull.cs" t="Include" />
-                <e p="WatchScript.cs" t="Include" />
-                <e p="WitchHouseUIHook.cs" t="Include" />
-                <e p="WoodenLogBehaviour.cs" t="Include" />
-                <e p="XRExclusiveSocketInteractor.cs" t="Include" />
-              </e>
-              <e p="System" t="Include">
-                <e p="ActivateRotatingInteractor.cs" t="Include" />
-                <e p="AlignmentTrigger.cs" t="Include" />
-                <e p="AnimationTrigger.cs" t="Include" />
-                <e p="CCCanvas.cs" t="Include" />
-                <e p="CCDatabase.cs" t="Include" />
-                <e p="CCManager.cs" t="Include" />
-                <e p="CCSource.cs" t="Include" />
-                <e p="DebugController.cs" t="Include" />
-                <e p="DisableInteractable.cs" t="Include" />
-                <e p="InteractableLayerChange.cs" t="Include" />
-                <e p="Interactables" t="Include">
-                  <e p="AxisDragInteractable.cs" t="Include" />
-                  <e p="ButtonInteractable.cs" t="Include" />
-                  <e p="DialInteractable.cs" t="Include" />
-                  <e p="XROffsetGrabbable.cs" t="Include" />
-                </e>
-                <e p="InteractorEventDispatcher.cs" t="Include" />
-                <e p="LookAt.cs" t="Include" />
-                <e p="SetCenterOfMass.cs" t="Include" />
-                <e p="SocketTarget.cs" t="Include" />
-                <e p="XRReleaseController.cs" t="Include" />
-              </e>
-              <e p="Tutorial" t="Include">
-                <e p="FuseBox.cs" t="Include" />
-                <e p="ObjectActivator.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Shaders" t="Include">
-              <e p="UI-DefaultAlwayOnTop.shader" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="Oculus" t="Include">
           <e p="AudioManager" t="Include">
             <e p="scenes" t="Include">
@@ -1165,6 +1087,82 @@
               <e p="ReadmeEditor.cs" t="Include" />
             </e>
             <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+        <e p="VR Beginner" t="Include">
+          <e p="CreatorKitVR_Third-PartyNotice.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="CCDatabaseEditor.cs" t="Include" />
+              <e p="SceneCreator.cs" t="Include" />
+            </e>
+            <e p="Effects" t="Include">
+              <e p="CauldronEffects.cs" t="Include" />
+              <e p="ContactSoundPlayer.cs" t="Include" />
+              <e p="EmissionChange.cs" t="Include" />
+              <e p="FanRotation.cs" t="Include" />
+              <e p="FireDestruction.cs" t="Include" />
+              <e p="ParticleVelocitySender.cs" t="Include" />
+              <e p="SelectionOutline.cs" t="Include" />
+              <e p="SFXPlayer.cs" t="Include" />
+              <e p="ShakeObject.cs" t="Include" />
+              <e p="TeleporterAnim.cs" t="Include" />
+              <e p="TriggerAnimationEvent.cs" t="Include" />
+            </e>
+            <e p="Gameplay" t="Include">
+              <e p="CauldronContent.cs" t="Include" />
+              <e p="CauldronIngredient.cs" t="Include" />
+              <e p="EndingSequence.cs" t="Include" />
+              <e p="HandPrefab.cs" t="Include" />
+              <e p="Hourglass.cs" t="Include" />
+              <e p="IndestructableObj.cs" t="Include" />
+              <e p="MagicBallProjectile.cs" t="Include" />
+              <e p="MagicReceiver.cs" t="Include" />
+              <e p="MagicTractorBeam.cs" t="Include" />
+              <e p="MasterController.cs" t="Include" />
+              <e p="ObjectLauncher.cs" t="Include" />
+              <e p="ObjectSpawner.cs" t="Include" />
+              <e p="Potion.cs" t="Include" />
+              <e p="PotionReceiver.cs" t="Include" />
+              <e p="PotionSpawner.cs" t="Include" />
+              <e p="Radio.cs" t="Include" />
+              <e p="RespawnableObject.cs" t="Include" />
+              <e p="StationaryOnPull.cs" t="Include" />
+              <e p="WatchScript.cs" t="Include" />
+              <e p="WitchHouseUIHook.cs" t="Include" />
+              <e p="WoodenLogBehaviour.cs" t="Include" />
+              <e p="XRExclusiveSocketInteractor.cs" t="Include" />
+            </e>
+            <e p="System" t="Include">
+              <e p="ActivateRotatingInteractor.cs" t="Include" />
+              <e p="AlignmentTrigger.cs" t="Include" />
+              <e p="AnimationTrigger.cs" t="Include" />
+              <e p="CCCanvas.cs" t="Include" />
+              <e p="CCDatabase.cs" t="Include" />
+              <e p="CCManager.cs" t="Include" />
+              <e p="CCSource.cs" t="Include" />
+              <e p="DebugController.cs" t="Include" />
+              <e p="DisableInteractable.cs" t="Include" />
+              <e p="InteractableLayerChange.cs" t="Include" />
+              <e p="Interactables" t="Include">
+                <e p="AxisDragInteractable.cs" t="Include" />
+                <e p="ButtonInteractable.cs" t="Include" />
+                <e p="DialInteractable.cs" t="Include" />
+                <e p="XROffsetGrabbable.cs" t="Include" />
+              </e>
+              <e p="InteractorEventDispatcher.cs" t="Include" />
+              <e p="LookAt.cs" t="Include" />
+              <e p="SetCenterOfMass.cs" t="Include" />
+              <e p="SocketTarget.cs" t="Include" />
+              <e p="XRReleaseController.cs" t="Include" />
+            </e>
+            <e p="Tutorial" t="Include">
+              <e p="FuseBox.cs" t="Include" />
+              <e p="ObjectActivator.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="UI-DefaultAlwayOnTop.shader" t="Include" />
           </e>
         </e>
       </e>
