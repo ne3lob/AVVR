@@ -16,15 +16,23 @@ public class SynthScript : MonoBehaviour
     private const string oscAddressPitch = "/pitch";
     private const string oscAddressDrumVolume = "/drumVolume";
     private const string oscAddressVolumeEnv = "/VolumeEnvelope";
+    private const string oscAddressDistOnOff = "/DistortionOnOff";
+    private const string oscAddressDistValue = "/DistortionValue";
     
     //STARTING FLOATS
     private float s_VolumeRatio = 0.0f;
     private float s_PitchRatio = 0.0f;
     private float s_DrumVolume=0.0f;
+    private float s_RatioDistortion = 0.0f;
 
-    private bool changedEnvVolume=false;
+    //bools Envelope
+    private bool changedVolume=false;
     private bool sendOneTime = false;
-
+    
+    //bools Distortion
+    private bool changedDistortion=false;
+    private bool sendOneTimeDist = false;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -47,27 +55,43 @@ public class SynthScript : MonoBehaviour
      {
          float ratioDrumVolume = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_DrumVolume = ratioDrumVolume;
-         Debug.Log(s_PitchRatio);
      }
 
+     public void DistortionVolume(DialInteractable dial)
+     {
+         float ratioDistortionValue = dial.CurrentAngle / dial.RotationAngleMaximum;
+         s_RatioDistortion = ratioDistortionValue ;
+         Debug.Log(s_RatioDistortion);
+     }
      public void VolumeEnv(Single dragEnv)
      {
          if (dragEnv >=0.05f)
          {
-             changedEnvVolume = true;
-            // print(changedEnvVolume);
+             changedVolume= true;
          }
          if (dragEnv <0.05f)
          {
-             changedEnvVolume = false;
-           //  print(changedEnvVolume);
+             changedVolume = false;
          }
          
+     }
+     public void DistortionOnOff (Single dragDist)
+     {
+         if (dragDist >=0.05f)
+         {
+             changedDistortion = true;
+         }
+         if (dragDist <0.05f)
+         {
+             changedDistortion = false;
+         }
      }
      
      // Update is called once per frame
     void Update()
     {
+        //TODO bools that will checked when the Value is ==0
+        
         var messageVol = new OSCMessage(oscAddressVolume);
         messageVol.AddValue(OSCValue.Float(s_VolumeRatio));
         transmitter.Send(messageVol);
@@ -79,8 +103,13 @@ public class SynthScript : MonoBehaviour
         var messageVolumeDrumVolume = new OSCMessage(oscAddressDrumVolume);
         messageVolumeDrumVolume.AddValue(OSCValue.Float(s_DrumVolume));
         transmitter.Send(messageVolumeDrumVolume);
-
-        if (changedEnvVolume)
+        
+        var messageDistortionVolume = new OSCMessage(oscAddressDistValue);
+        messageDistortionVolume.AddValue(OSCValue.Float(s_RatioDistortion));
+        transmitter.Send(messageDistortionVolume);
+        
+        //Envelope Volume ONOFF
+        if (changedVolume)
         {
             if (!sendOneTime)
             {
@@ -90,8 +119,7 @@ public class SynthScript : MonoBehaviour
                 sendOneTime = true;
             }
         }
-
-       else if (!changedEnvVolume)
+        else if (!changedVolume)
         {
             if (sendOneTime)
             {
@@ -99,11 +127,31 @@ public class SynthScript : MonoBehaviour
                 messageDragEnvOn.AddValue(OSCValue.Int(0));
                 transmitter.Send(messageDragEnvOn);
                 sendOneTime = false;
-                
-            }
-           
+            } 
         }
         
+        //Distortion ONOFF
+        if (changedDistortion)
+        { 
+            if (!sendOneTimeDist)
+            {
+                var messageDistDrag= new OSCMessage(oscAddressDistOnOff);
+                messageDistDrag.AddValue(OSCValue.Int(1));
+                transmitter.Send(messageDistDrag);
+                sendOneTimeDist = true;
+            }
+        }
+        else if (!changedDistortion)
+        {
+            if (sendOneTimeDist) 
+            {
+                var messageDistDrag= new OSCMessage(oscAddressDistOnOff);
+                messageDistDrag.AddValue(OSCValue.Int(0));
+                transmitter.Send(messageDistDrag);
+                sendOneTimeDist = false;
+            }
+ 
+        }
     }
     
 }

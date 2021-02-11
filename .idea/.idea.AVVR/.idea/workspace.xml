@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/3D/UpDown.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/UpDown.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/EscapeRoom/System/TeleportReticle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/EscapeRoom/System/TeleportReticle.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +112,7 @@
       <workItem from="1612703479922" duration="3989000" />
       <workItem from="1612709465118" duration="1550000" />
       <workItem from="1612993957443" duration="7676000" />
+      <workItem from="1613042975610" duration="4009000" />
     </task>
     <servers />
   </component>
