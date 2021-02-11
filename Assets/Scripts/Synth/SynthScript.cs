@@ -19,6 +19,10 @@ public class SynthScript : MonoBehaviour
     private const string oscAddressDistOnOff = "/DistortionOnOff";
     private const string oscAddressDistValue = "/DistortionValue";
     private const string oscAddressSubPitch= "/SubPitch";
+    private const string oscAddressReverbOnOff= "/ReverbOnOff";
+    private const string oscAddressFilterFrequency= "/FilterFrequency";
+    private const string oscAddressFilterResonance= "/FilterResonance";
+    
     
     //STARTING FLOATS
     private float s_VolumeRatio = 0.0f;
@@ -26,6 +30,8 @@ public class SynthScript : MonoBehaviour
     private float s_DrumVolume=0.0f;
     private float s_RatioDistortion = 0.0f;
     private float s_SubPitch = 0.0f;
+    private float s_FilterFrequency=0.0f;
+    private float s_FilterResonance = 0.0f;
 
     //bools Envelope
     private bool changedVolume=false;
@@ -34,13 +40,17 @@ public class SynthScript : MonoBehaviour
     //bools Distortion
     private bool changedDistortion=false;
     private bool sendOneTimeDist = false;
+   
+    //
+    private bool changedReverb = false;
+    private bool sendOneTimeRev = false;
     
     
     // Start is called before the first frame update
     void Start()
     {
     }
-    public void SynthVolumeChanged(DialInteractable dial)
+     public void SynthVolumeChanged(DialInteractable dial)
     {
         float ratioVolume = dial.CurrentAngle / dial.RotationAngleMaximum;
         s_VolumeRatio = ratioVolume;
@@ -92,6 +102,28 @@ public class SynthScript : MonoBehaviour
          transmitter.Send(messageSubPitch);
          
      }
+     public void FilterFrequency (DialInteractable dial)
+     {
+         float ratioFilterFrequency = dial.CurrentAngle / dial.RotationAngleMaximum;
+         s_FilterFrequency = ratioFilterFrequency;
+         
+         var messageFilterFrequency = new OSCMessage(oscAddressFilterFrequency);
+         messageFilterFrequency.AddValue(OSCValue.Float(s_FilterFrequency));
+         transmitter.Send(messageFilterFrequency);
+         
+     }
+     public void FilterResonance (DialInteractable dial)
+     {
+         float ratioFilterResonance = dial.CurrentAngle / dial.RotationAngleMaximum;
+         s_FilterResonance = ratioFilterResonance;
+         
+         var messageFilterResonance = new OSCMessage(oscAddressFilterResonance);
+         messageFilterResonance.AddValue(OSCValue.Float(s_FilterResonance));
+         transmitter.Send(messageFilterResonance);
+         
+     }
+     
+     
      public void VolumeEnv(Single dragEnv)
      {
          if (dragEnv >=0.05f)
@@ -116,15 +148,23 @@ public class SynthScript : MonoBehaviour
          }
      }
      
+     public void ReverbDrag (Single dragRev)
+     {
+         if (dragRev >=0.05f)
+         {
+             changedReverb= true;
+         }
+         if (dragRev <0.05f)
+         {
+             changedReverb = false;
+         }
+         
+     }
+    
      // Update is called once per frame
     void Update()
     {
         //TODO bools that will checked when the Value is ==0
-        
-        
-        var messageDistortionVolume = new OSCMessage(oscAddressDistValue);
-        messageDistortionVolume.AddValue(OSCValue.Float(s_RatioDistortion));
-        transmitter.Send(messageDistortionVolume);
         
         //Envelope Volume ONOFF
         if (changedVolume)
@@ -169,6 +209,25 @@ public class SynthScript : MonoBehaviour
                 sendOneTimeDist = false;
             }
  
+        }
+        
+        //Reverb ONOFF
+        if (changedReverb)
+        {
+            if (sendOneTimeRev)
+            {
+                var messageRevDrag= new OSCMessage(oscAddressReverbOnOff);
+                messageRevDrag.AddValue(OSCValue.Int(1));
+                transmitter.Send(messageRevDrag);
+                sendOneTimeRev = true;
+            }
+        }
+        else if (!sendOneTimeRev)
+        {
+            var messageRevDrag= new OSCMessage(oscAddressReverbOnOff);
+            messageRevDrag.AddValue(OSCValue.Int(0));
+            transmitter.Send(messageRevDrag);
+            sendOneTimeRev = true;
         }
     }
     
