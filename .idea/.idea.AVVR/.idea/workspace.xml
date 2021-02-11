@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/3D/UpDown.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/UpDown.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,7 @@
         <option value="$PROJECT_DIR$/Assets/WavesScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
       </list>
     </option>
@@ -110,7 +112,7 @@
       <workItem from="1612654353441" duration="113000" />
       <workItem from="1612703479922" duration="3989000" />
       <workItem from="1612709465118" duration="1550000" />
-      <workItem from="1612993957443" duration="1225000" />
+      <workItem from="1612993957443" duration="7676000" />
     </task>
     <servers />
   </component>
@@ -144,10 +146,10 @@
       <screen x="2560" y="232" width="1920" height="1050" />
     </state>
     <state x="3021" y="402" key="SettingsEditor/0.0.2560.1410/2560.232.1920.1050@2560.232.1920.1050" timestamp="1612540609927" />
-    <state x="377" y="6" width="1144" height="1384" key="dock-window-1" timestamp="1612633846835">
+    <state x="1375" y="0" width="1149" height="1026" key="dock-window-1" timestamp="1612999130523">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="377" y="6" width="1144" height="1384" key="dock-window-1/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612633846835" />
+    <state x="1375" y="0" width="1149" height="1026" key="dock-window-1/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612999130523" />
     <state x="7" y="8" width="1279" height="1391" key="dock-window-2" timestamp="1612550069167">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -160,6 +162,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1122" y="36" width="1058" height="1391" key="dock-window-4/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612619729095" />
+    <state x="1074" y="307" key="run.anything.popup" timestamp="1613001681285">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1074" y="307" key="run.anything.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613001681285" />
     <state x="1433" y="356" width="670" height="58" key="search.everywhere.popup" timestamp="1612551773248">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
