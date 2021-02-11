@@ -18,6 +18,9 @@ public class SynthScript : MonoBehaviour
     private float s_PitchRatio = 0.0f;
     private float s_DrumVolume=0.0f;
     
+    private int OVSWaves = 6;
+    
+
     // Start is called before the first frame update
     void Start()
     {
