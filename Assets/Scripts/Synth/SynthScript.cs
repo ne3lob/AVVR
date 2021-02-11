@@ -44,25 +44,41 @@ public class SynthScript : MonoBehaviour
     {
         float ratioVolume = dial.CurrentAngle / dial.RotationAngleMaximum;
         s_VolumeRatio = ratioVolume;
-        Debug.Log(s_VolumeRatio);
+        
+        var messageVol = new OSCMessage(oscAddressVolume);
+        messageVol.AddValue(OSCValue.Float(s_VolumeRatio));
+        transmitter.Send(messageVol);
+       
       
     }
      public void SynthPitchChanged(DialInteractable dial)
         {
             float ratioPitch = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_PitchRatio = ratioPitch;
-            Debug.Log(s_PitchRatio);
+            
+            var messagePitch = new OSCMessage(oscAddressPitch);
+            messagePitch.AddValue(OSCValue.Float(s_PitchRatio));
+            transmitter.Send(messagePitch);
+            
         }
      public void SynthDrumVolumeChanged(DialInteractable dial)
      {
          float ratioDrumVolume = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_DrumVolume = ratioDrumVolume;
+         
+         var messageVolumeDrumVolume = new OSCMessage(oscAddressDrumVolume);
+         messageVolumeDrumVolume.AddValue(OSCValue.Float(s_DrumVolume));
+         transmitter.Send(messageVolumeDrumVolume);
      }
 
      public void DistortionVolume(DialInteractable dial)
      {
          float ratioDistortionValue = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_RatioDistortion = ratioDistortionValue ;
+         
+         var messageDistortionVolume = new OSCMessage(oscAddressDistValue);
+         messageDistortionVolume.AddValue(OSCValue.Float(s_RatioDistortion));
+         transmitter.Send(messageDistortionVolume);
        
      }
      
@@ -70,6 +86,10 @@ public class SynthScript : MonoBehaviour
      {
          float ratioSubPitch = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_SubPitch = ratioSubPitch;
+         
+         var messageSubPitch = new OSCMessage(oscAddressSubPitch);
+         messageSubPitch.AddValue(OSCValue.Float(s_SubPitch));
+         transmitter.Send(messageSubPitch);
          
      }
      public void VolumeEnv(Single dragEnv)
@@ -101,21 +121,6 @@ public class SynthScript : MonoBehaviour
     {
         //TODO bools that will checked when the Value is ==0
         
-        var messageVol = new OSCMessage(oscAddressVolume);
-        messageVol.AddValue(OSCValue.Float(s_VolumeRatio));
-        transmitter.Send(messageVol);
-        
-        var messagePitch = new OSCMessage(oscAddressPitch);
-        messagePitch.AddValue(OSCValue.Float(s_PitchRatio));
-        transmitter.Send(messagePitch);
-        
-        var messageSubPitch = new OSCMessage(oscAddressSubPitch);
-        messageSubPitch.AddValue(OSCValue.Float(s_SubPitch));
-        transmitter.Send(messageSubPitch);
-        
-        var messageVolumeDrumVolume = new OSCMessage(oscAddressDrumVolume);
-        messageVolumeDrumVolume.AddValue(OSCValue.Float(s_DrumVolume));
-        transmitter.Send(messageVolumeDrumVolume);
         
         var messageDistortionVolume = new OSCMessage(oscAddressDistValue);
         messageDistortionVolume.AddValue(OSCValue.Float(s_RatioDistortion));

@@ -14,7 +14,7 @@ public class WavesScript : MonoBehaviour
     private const string oscAddressSynthWaveVCO = "/vcoWaveFirst";
     private const string oscAddressSynthWaveVCOSub = "/vcoWaveSecond";
     private const string oscAddressSynthWaveSubOnOff = "/vcoSecondOnOff";
-    private const string oscAddressInputSynth = "/SynthInput";
+    private const string oscAddressInputSynth = "/InputSynth";
     
     
     // Start is called before the first frame update
