@@ -23,7 +23,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/EscapeRoom/System/TeleportReticle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Prefabs/EscapeRoom/System/TeleportReticle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +49,9 @@
         <option value="$PROJECT_DIR$/Assets/SynthScript.cs" />
         <option value="$PROJECT_DIR$/Assets/WavesScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
         <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
       </list>
     </option>
   </component>
@@ -112,7 +112,7 @@
       <workItem from="1612703479922" duration="3989000" />
       <workItem from="1612709465118" duration="1550000" />
       <workItem from="1612993957443" duration="7676000" />
-      <workItem from="1613042975610" duration="4009000" />
+      <workItem from="1613042975610" duration="6804000" />
     </task>
     <servers />
   </component>
@@ -170,5 +170,24 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1433" y="356" width="670" height="58" key="search.everywhere.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612551773248" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs</url>
+          <line>23</line>
+          <properties documentPath="E:\Projects\AVVR\Assets\Scripts\Synth\WavesScript.cs" initialLine="22">
+            <startOffsets>
+              <option value="707" />
+            </startOffsets>
+            <endOffsets>
+              <option value="708" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

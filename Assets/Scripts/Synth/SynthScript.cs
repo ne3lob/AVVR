@@ -18,12 +18,14 @@ public class SynthScript : MonoBehaviour
     private const string oscAddressVolumeEnv = "/VolumeEnvelope";
     private const string oscAddressDistOnOff = "/DistortionOnOff";
     private const string oscAddressDistValue = "/DistortionValue";
+    private const string oscAddressSubPitch= "/SubPitch";
     
     //STARTING FLOATS
     private float s_VolumeRatio = 0.0f;
     private float s_PitchRatio = 0.0f;
     private float s_DrumVolume=0.0f;
     private float s_RatioDistortion = 0.0f;
+    private float s_SubPitch = 0.0f;
 
     //bools Envelope
     private bool changedVolume=false;
@@ -61,7 +63,14 @@ public class SynthScript : MonoBehaviour
      {
          float ratioDistortionValue = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_RatioDistortion = ratioDistortionValue ;
-         Debug.Log(s_RatioDistortion);
+       
+     }
+     
+     public void SubPitch (DialInteractable dial)
+     {
+         float ratioSubPitch = dial.CurrentAngle / dial.RotationAngleMaximum;
+         s_SubPitch = ratioSubPitch;
+         
      }
      public void VolumeEnv(Single dragEnv)
      {
@@ -99,6 +108,10 @@ public class SynthScript : MonoBehaviour
         var messagePitch = new OSCMessage(oscAddressPitch);
         messagePitch.AddValue(OSCValue.Float(s_PitchRatio));
         transmitter.Send(messagePitch);
+        
+        var messageSubPitch = new OSCMessage(oscAddressSubPitch);
+        messageSubPitch.AddValue(OSCValue.Float(s_SubPitch));
+        transmitter.Send(messageSubPitch);
         
         var messageVolumeDrumVolume = new OSCMessage(oscAddressDrumVolume);
         messageVolumeDrumVolume.AddValue(OSCValue.Float(s_DrumVolume));

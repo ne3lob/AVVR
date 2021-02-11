@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06641271, g: 0.13861237, b: 0.13464035, a: 1}
+  m_IndirectSpecularColor: {r: 0.047075063, g: 0.020906227, b: 0.03214673, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -386,7 +386,7 @@ PrefabInstance:
     - target: {fileID: 2837938398518450557, guid: aa8c85f3b124cd344ba8a5bf6dc14cc3,
         type: 3}
       propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SocketSubOFF
+      value: OffInput
       objectReference: {fileID: 0}
     - target: {fileID: 3144366027722138664, guid: aa8c85f3b124cd344ba8a5bf6dc14cc3,
         type: 3}
@@ -421,7 +421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &164068507
 Light:
   m_ObjectHideFlags: 0
@@ -1233,7 +1233,7 @@ PrefabInstance:
     - target: {fileID: 9222722148915486841, guid: d7638c5ee3377574788c444d98a608f1,
         type: 3}
       propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SocketSubSaw
+      value: SeqSlideInput
       objectReference: {fileID: 0}
     - target: {fileID: 9222722148915486846, guid: d7638c5ee3377574788c444d98a608f1,
         type: 3}
@@ -1977,7 +1977,7 @@ GameObject:
   - component: {fileID: 803237003}
   - component: {fileID: 803237002}
   m_Layer: 0
-  m_Name: SubPitch (1)
+  m_Name: 'SubPitch '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2135,7 +2135,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 832149484182772213}
         m_TargetAssemblyTypeName: SynthScript, Assembly-CSharp
-        m_MethodName: SynthVolumeChanged
+        m_MethodName: SubPitch
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2696,7 +2696,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a0cab8cd7ce3aac41824faae73c2be5c,
         type: 3}
       propertyPath: m_Name
-      value: VolumeEnvelope (1)
+      value: Reverb
       objectReference: {fileID: 0}
     - target: {fileID: 4083501151425157549, guid: a0cab8cd7ce3aac41824faae73c2be5c,
         type: 3}
@@ -3943,7 +3943,7 @@ PrefabInstance:
     - target: {fileID: 7237018758467758662, guid: 9180fe85282e123479bdd5e1cd3c9750,
         type: 3}
       propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SocketSubRect
+      value: PitchInput
       objectReference: {fileID: 0}
     - target: {fileID: 7543080665194831371, guid: 9180fe85282e123479bdd5e1cd3c9750,
         type: 3}
@@ -5276,7 +5276,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: a0cab8cd7ce3aac41824faae73c2be5c,
         type: 3}
       propertyPath: m_Name
-      value: DistortionVolume
+      value: DistortionOnOff
       objectReference: {fileID: 0}
     - target: {fileID: 4083501151425157549, guid: a0cab8cd7ce3aac41824faae73c2be5c,
         type: 3}
@@ -5642,7 +5642,7 @@ GameObject:
   - component: {fileID: 1603209751}
   - component: {fileID: 1603209750}
   m_Layer: 0
-  m_Name: DistortionOnOff
+  m_Name: DistortionVolume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6243,7 +6243,7 @@ PrefabInstance:
     - target: {fileID: 4337890948801570771, guid: 0169a788382770d459dc54e84412804d,
         type: 3}
       propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SocketSubTri
+      value: SequencerInput
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0169a788382770d459dc54e84412804d, type: 3}

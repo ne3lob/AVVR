@@ -14,6 +14,8 @@ public class WavesScript : MonoBehaviour
     private const string oscAddressSynthWaveVCO = "/vcoWaveFirst";
     private const string oscAddressSynthWaveVCOSub = "/vcoWaveSecond";
     private const string oscAddressSynthWaveSubOnOff = "/vcoSecondOnOff";
+    private const string oscAddressInputSynth = "/SynthInput";
+    
     
     // Start is called before the first frame update
     void Start()
@@ -153,7 +155,30 @@ public class WavesScript : MonoBehaviour
         messageSubOnOff.AddValue(OSCValue.Int(0));
         transmitter.Send(messageSubOnOff);
         
-        
+    }
+    public void OffInput(XRBaseInteractable interactable)
+    {
+        var messageOffInput= new OSCMessage(oscAddressInputSynth);
+        messageOffInput.AddValue(OSCValue.Int(0));
+        transmitter.Send(messageOffInput);
+    }
+    public void PitchInput(XRBaseInteractable interactable)
+    {
+        var messagePitchInput= new OSCMessage(oscAddressInputSynth);
+        messagePitchInput.AddValue(OSCValue.Int(1));
+        transmitter.Send(messagePitchInput);
+    }
+    public void SequencerInput(XRBaseInteractable interactable)
+    {
+        var messageSeqInput= new OSCMessage(oscAddressInputSynth);
+        messageSeqInput.AddValue(OSCValue.Int(2));
+        transmitter.Send(messageSeqInput);
+    }
+    public void SeqSlideInput(XRBaseInteractable interactable)
+    {
+        var messageSeqSlideInput= new OSCMessage(oscAddressInputSynth);
+        messageSeqSlideInput.AddValue(OSCValue.Int(3));
+        transmitter.Send(messageSeqSlideInput);
     }
     
 }
