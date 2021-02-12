@@ -417,7 +417,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 832149484182772213}
         m_TargetAssemblyTypeName: SynthScript, Assembly-CSharp
-        m_MethodName: SubPitch
+        m_MethodName: LfoPitchFrequency
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -759,7 +759,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 832149484182772213}
         m_TargetAssemblyTypeName: SynthScript, Assembly-CSharp
-        m_MethodName: SubPitch
+        m_MethodName: LfoFilterLenght
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2500,13 +2500,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 651841880}
-  m_LocalRotation: {x: -0.39854452, y: 0.5547225, z: -0.29023987, w: 0.6702284}
-  m_LocalPosition: {x: -0.9704686, y: 1.2478822, z: 0.1381918}
+  m_LocalRotation: {x: -0.41672555, y: 0.59749424, z: -0.26347038, w: 0.63239527}
+  m_LocalPosition: {x: -0.970388, y: 1.243, z: 0.13821986}
   m_LocalScale: {x: 0.6999999, y: 0.7, z: 0.70000017}
   m_Children: []
   m_Father: {fileID: 460600878}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: -12.253, y: 86.075, z: -58.276}
+  m_LocalEulerAnglesHint: {x: -12.253, y: 93.598, z: -58.276}
 --- !u!54 &651841882
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2659,7 +2659,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 832149484182772213}
         m_TargetAssemblyTypeName: SynthScript, Assembly-CSharp
-        m_MethodName: SubPitch
+        m_MethodName: DelayTimeValue
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4249,13 +4249,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 881261118}
-  m_LocalRotation: {x: -0.41950488, y: 0.6041879, z: -0.25902236, w: 0.6260033}
-  m_LocalPosition: {x: 0.19569701, y: -0.038321137, z: 0.11202537}
+  m_LocalRotation: {x: -0.4113749, y: 0.58473176, z: -0.271749, w: 0.6442142}
+  m_LocalPosition: {x: 0.19926167, y: -0.038321137, z: 0.112014465}
   m_LocalScale: {x: 0.7, y: 0.70000005, z: 0.70000005}
   m_Children: []
   m_Father: {fileID: 235966138}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -12.253, y: 94.817, z: -58.276}
+  m_LocalEulerAnglesHint: {x: -12.253, y: 91.306, z: -58.276}
 --- !u!54 &881261120
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4408,7 +4408,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 832149484182772213}
         m_TargetAssemblyTypeName: SynthScript, Assembly-CSharp
-        m_MethodName: SubPitch
+        m_MethodName: LfoFilterFrequency
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7183,7 +7183,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 832149484182772213}
         m_TargetAssemblyTypeName: SynthScript, Assembly-CSharp
-        m_MethodName: SubPitch
+        m_MethodName: DelayTimeFeedback
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7407,7 +7407,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1320574002}
         m_TargetAssemblyTypeName: SynthScript, Assembly-CSharp
-        m_MethodName: VolumeEnv
+        m_MethodName: FiltrEnv
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8753,7 +8753,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 832149484182772213}
         m_TargetAssemblyTypeName: SynthScript, Assembly-CSharp
-        m_MethodName: SubPitch
+        m_MethodName: LfoPitchLenght
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9284,7 +9284,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1591023483}
         m_TargetAssemblyTypeName: SynthScript, Assembly-CSharp
-        m_MethodName: VolumeEnv
+        m_MethodName: PitchLfo
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9968,7 +9968,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1648126394}
         m_TargetAssemblyTypeName: SynthScript, Assembly-CSharp
-        m_MethodName: VolumeEnv
+        m_MethodName: FiltrLfo
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

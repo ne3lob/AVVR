@@ -22,9 +22,15 @@ public class SynthScript : MonoBehaviour
     private const string oscAddressReverbOnOff= "/ReverbOnOff";
     private const string oscAddressFilterFrequency= "/FilterFrequency";
     private const string oscAddressFilterResonance= "/FilterResonance";
-    private const string oscAdreessDelayTimeOnOff= "/DelayTimeOnOff";
-    
-    
+    private const string oscAddreessDelayTimeValue= "/DelayTimeValue";
+    private const string oscAddreessDelayTimeFeedback="/DelayTimeFeedback";
+    private const string oscAddreessFilterEnvelope="/FilterEnvelope";
+    private const string oscAddreessPitchLfo="/PitchLfo";
+    private const string oscAddreessFilterLfo="/FilterLfo";
+    private const string oscAddreessPitchLfoFrequency="/PitchLfoFrequency";
+    private const string oscAddreessPitchLfoLenght="/PitchLfoLenght";
+    private const string oscAddreessFilterLfoFrequency="/FilterLfoFrequency";
+    private const string oscAddreessFilterLfoLenght = "/FilterLfoLenght";
     
     //STARTING FLOATS
     private float s_VolumeRatio = 0.0f;
@@ -34,8 +40,16 @@ public class SynthScript : MonoBehaviour
     private float s_SubPitch = 0.0f;
     private float s_FilterFrequency=0.0f;
     private float s_FilterResonance = 0.0f;
+    private float s_DalayTimeValue = 0.0f;
+    private float s_DelayTimeFeedback = 0.0f;
+    private float s_LfoPitchFrequency = 0.0f;
+    private float s_LfoPitchLenght = 0.0f;
+    private float s_LfoFilterLenght = 0.0f;
+    private float s_LfoFilterFrequency = 0.0f;
+    
+        
 
-    //bools Envelope
+    //bools Volume Envelope
     private bool changedVolume=false;
     private bool sendOneTime = false;
     
@@ -46,6 +60,18 @@ public class SynthScript : MonoBehaviour
     //bools Reverb
     private bool changedReverb = false;
     private bool sendOneTimeRev = false;
+    
+    //bools Filter Envelope
+    private bool changedFilterEnv = false;
+    private bool sendOneTimeFilterEnve = false;
+    
+    //bools Pitch Lfo
+    private bool changedPitchLfo= false;
+    private bool sendOneTimePitchLfo = false;
+
+    //bools Filter Lfo
+    private bool changedFilterLfo=false;
+    private bool sendOneTimeFilterLfo = false;
     
 
     // Start is called before the first frame update
@@ -93,6 +119,45 @@ public class SynthScript : MonoBehaviour
          transmitter.Send(messageDistortionVolume);
        
      }
+    
+     public void LfoPitchFrequency (DialInteractable dial)
+     {
+         float ratioLfoPitchFrequency = dial.CurrentAngle / dial.RotationAngleMaximum;
+         s_LfoPitchFrequency = ratioLfoPitchFrequency ;
+         
+         var messageLfoPitchFrequency = new OSCMessage(oscAddreessPitchLfoFrequency);
+         messageLfoPitchFrequency.AddValue(OSCValue.Float(s_LfoPitchFrequency));
+         transmitter.Send(messageLfoPitchFrequency);
+       
+     }
+     public void LfoPitchLenght (DialInteractable dial)
+     {
+         float ratioLfoPitchLenght = dial.CurrentAngle / dial.RotationAngleMaximum;
+         s_LfoPitchLenght = ratioLfoPitchLenght ;
+         
+         var messageLfoPitchLenght = new OSCMessage(oscAddreessPitchLfoLenght);
+         messageLfoPitchLenght.AddValue(OSCValue.Float(s_LfoPitchLenght));
+         transmitter.Send(messageLfoPitchLenght);
+       
+     }
+     public void LfoFilterLenght (DialInteractable dial)
+     {
+         float ratioLfoFilterLenght = dial.CurrentAngle / dial.RotationAngleMaximum;
+         s_LfoFilterLenght = ratioLfoFilterLenght ;
+         
+         var messageLfoFilterLenght = new OSCMessage(oscAddreessFilterLfoLenght);
+         messageLfoFilterLenght.AddValue(OSCValue.Float(s_LfoFilterLenght));
+         transmitter.Send(messageLfoFilterLenght);
+     }
+     public void LfoFilterFrequency (DialInteractable dial)
+     {
+         float ratioLfoFilterFrequency = dial.CurrentAngle / dial.RotationAngleMaximum;
+         s_LfoFilterFrequency = ratioLfoFilterFrequency ;
+         
+         var messageLfoFilterFrequency = new OSCMessage(oscAddreessFilterLfoFrequency);
+         messageLfoFilterFrequency.AddValue(OSCValue.Float( s_LfoFilterFrequency));
+         transmitter.Send(messageLfoFilterFrequency);
+     }
      
      public void SubPitch (DialInteractable dial)
      {
@@ -124,6 +189,24 @@ public class SynthScript : MonoBehaviour
          transmitter.Send(messageFilterResonance);
          
      }
+     public void DelayTimeValue (DialInteractable dial)
+     {
+         float ratioDalayTimeValue= dial.CurrentAngle / dial.RotationAngleMaximum;
+         s_DalayTimeValue = ratioDalayTimeValue;
+         
+         var messageDelayTimeValue = new OSCMessage(oscAddreessDelayTimeValue);
+         messageDelayTimeValue.AddValue(OSCValue.Float(s_DalayTimeValue));
+         transmitter.Send( messageDelayTimeValue);
+     }
+     public void DelayTimeFeedback (DialInteractable dial)
+     {
+         float ratioDalayTimeFeedback= dial.CurrentAngle / dial.RotationAngleMaximum;
+         s_DelayTimeFeedback = ratioDalayTimeFeedback;
+         
+         var messageDelayTimeFeedback = new OSCMessage(oscAddreessDelayTimeFeedback);
+         messageDelayTimeFeedback.AddValue(OSCValue.Float(s_DelayTimeFeedback));
+         transmitter.Send( messageDelayTimeFeedback);
+     }
      
      
      public void VolumeEnv(Single dragEnv)
@@ -136,7 +219,39 @@ public class SynthScript : MonoBehaviour
          {
              changedVolume = false;
          }
-         
+     }
+     public void FiltrEnv(Single dragFilterEnv)
+     {
+         if (dragFilterEnv >=0.05f)
+         {
+             changedFilterEnv= true;
+         }
+         if (dragFilterEnv <0.05f)
+         {
+             changedFilterEnv= false;
+         }
+     }
+     public void PitchLfo(Single dragPitchLfo)
+     {
+         if (dragPitchLfo >=0.05f)
+         {
+             changedPitchLfo= true;
+         }
+         if (dragPitchLfo <0.05f)
+         {
+             changedPitchLfo= false;
+         }
+     }
+     public void FiltrLfo(Single dragFilterLfo)
+     {
+         if (dragFilterLfo >=0.05f)
+         {
+             changedFilterLfo= true;
+         }
+         if (dragFilterLfo <0.05f)
+         {
+             changedFilterLfo= false;
+         }
      }
      public void DistortionOnOff (Single dragDist)
      {
@@ -234,9 +349,52 @@ public class SynthScript : MonoBehaviour
                 sendOneTimeRev = false;
             }
             
-        }
-        
-        
+        } 
+        //Filter Envelope
+       if (changedFilterEnv)
+       {
+           if (!sendOneTimeFilterEnve)
+           {
+               var messageFilterEnvelope= new OSCMessage(oscAddreessFilterEnvelope);
+               messageFilterEnvelope.AddValue(OSCValue.Int(1));
+               transmitter.Send(messageFilterEnvelope);
+               sendOneTimeFilterEnve = true;
+           }
+       }
+       else if (!changedFilterEnv)
+       {
+           if (sendOneTimeFilterEnve)
+           { 
+               var messageFilterEnvelope= new OSCMessage(oscAddreessFilterEnvelope);
+               messageFilterEnvelope.AddValue(OSCValue.Int(0));
+               transmitter.Send(messageFilterEnvelope);
+               sendOneTimeFilterEnve = false;
+           }
+            
+       }
+       if (changedPitchLfo)
+       {
+           if (!sendOneTimePitchLfo)
+           {
+               var messagePitchLfo= new OSCMessage(oscAddreessPitchLfo);
+               messagePitchLfo.AddValue(OSCValue.Int(1));
+               transmitter.Send(messagePitchLfo);
+               sendOneTimePitchLfo = true;
+           }
+       }
+       else if (!changedPitchLfo)
+       {
+           if (sendOneTimePitchLfo)
+           { 
+               var messagePitchLfo= new OSCMessage(oscAddreessFilterLfo);
+               messagePitchLfo.AddValue(OSCValue.Int(0));
+               transmitter.Send(messagePitchLfo);
+               sendOneTimePitchLfo = false;
+           }
+            
+       }
+       
+       
+       
     }
-    
 }
