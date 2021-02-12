@@ -339,7 +339,7 @@ public class SynthScript : MonoBehaviour
                 sendOneTimeRev = true;
             }
         }
-        else if (!sendOneTimeRev)
+        else if (!changedReverb)
         {
             if (sendOneTimeRev)
             { 
@@ -386,15 +386,31 @@ public class SynthScript : MonoBehaviour
        {
            if (sendOneTimePitchLfo)
            { 
-               var messagePitchLfo= new OSCMessage(oscAddreessFilterLfo);
+               var messagePitchLfo= new OSCMessage(oscAddreessPitchLfo);
                messagePitchLfo.AddValue(OSCValue.Int(0));
                transmitter.Send(messagePitchLfo);
                sendOneTimePitchLfo = false;
            }
-            
        }
-       
-       
-       
+       if (changedFilterLfo)
+       {
+           if (!sendOneTimeFilterLfo)
+           {
+               var messageFilterLfo= new OSCMessage(oscAddreessFilterLfo);
+               messageFilterLfo.AddValue(OSCValue.Int(1));
+               transmitter.Send(messageFilterLfo);
+               sendOneTimeFilterLfo = true;
+           }
+       }
+       else if (!changedFilterLfo)
+       {
+           if (sendOneTimeFilterLfo)
+           { 
+               var messageFilterLfo= new OSCMessage(oscAddreessFilterLfo);
+               messageFilterLfo.AddValue(OSCValue.Int(0));
+               transmitter.Send(messageFilterLfo);
+               sendOneTimeFilterLfo = false;
+           }
+       }
     }
 }

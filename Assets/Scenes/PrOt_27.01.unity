@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 54068780}
   - component: {fileID: 54068779}
   m_Layer: 0
-  m_Name: Resonance (3)
+  m_Name: LfoPitchFrequency
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 127253187}
   - component: {fileID: 127253186}
   m_Layer: 0
-  m_Name: Resonance (2)
+  m_Name: LfoFilterLenght
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 1912060769}
-  cableMaterial: {fileID: 2100000, guid: 7b24afb3a7f96f94bbc6454c1a942591, type: 2}
+  cableMaterial: {fileID: 2100000, guid: 41c0ead4e42f39348ae9b990d9677c8a, type: 2}
   cableLength: 0.15
   totalSegments: 0
   segmentsPerUnit: 100
@@ -1371,7 +1371,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211313454}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1434,7 +1434,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211313454}
   m_LocalRotation: {x: -0.32375383, y: 0.36211962, z: -0.46430844, w: 0.74058795}
-  m_LocalPosition: {x: -1.00256, y: 1.386, z: -0.016}
+  m_LocalPosition: {x: -1.022, y: 1.3832, z: -0.0136}
   m_LocalScale: {x: 0.010718422, y: 0.010718422, z: 0.010718421}
   m_Children: []
   m_Father: {fileID: 1963346831}
@@ -1489,7 +1489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 773298417}
-  cableMaterial: {fileID: 2100000, guid: 7b24afb3a7f96f94bbc6454c1a942591, type: 2}
+  cableMaterial: {fileID: 2100000, guid: 41c0ead4e42f39348ae9b990d9677c8a, type: 2}
   cableLength: 0.15
   totalSegments: 0
   segmentsPerUnit: 100
@@ -1544,7 +1544,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223921071}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4236,7 +4236,7 @@ GameObject:
   - component: {fileID: 881261121}
   - component: {fileID: 881261120}
   m_Layer: 0
-  m_Name: Resonance (1)
+  m_Name: LfoFilterFrequency
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6223,7 +6223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169539316}
   m_LocalRotation: {x: -0.32375383, y: 0.36211962, z: -0.46430844, w: 0.74058795}
-  m_LocalPosition: {x: -0.9163, y: 1.35152, z: -0.58423996}
+  m_LocalPosition: {x: -0.9178, y: 1.35152, z: -0.5777}
   m_LocalScale: {x: 0.01071842, y: 0.010718421, z: 0.010718421}
   m_Children: []
   m_Father: {fileID: 680028630}
@@ -6242,7 +6242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 1422201666}
-  cableMaterial: {fileID: 2100000, guid: 7b24afb3a7f96f94bbc6454c1a942591, type: 2}
+  cableMaterial: {fileID: 2100000, guid: 41c0ead4e42f39348ae9b990d9677c8a, type: 2}
   cableLength: 0.15
   totalSegments: 0
   segmentsPerUnit: 100
@@ -6297,7 +6297,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169539316}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8581,7 +8581,7 @@ GameObject:
   - component: {fileID: 1518088377}
   - component: {fileID: 1518088376}
   m_Layer: 0
-  m_Name: Resonance (4)
+  m_Name: LfoPitchLenght
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8899,7 +8899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 490216992}
-  cableMaterial: {fileID: 2100000, guid: 7b24afb3a7f96f94bbc6454c1a942591, type: 2}
+  cableMaterial: {fileID: 2100000, guid: 41c0ead4e42f39348ae9b990d9677c8a, type: 2}
   cableLength: 0.15
   totalSegments: 0
   segmentsPerUnit: 100
@@ -8954,7 +8954,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538132328}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -13684,7 +13684,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3946113992974793174}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -13766,7 +13766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endPoint: {fileID: 2684420823410108315}
-  cableMaterial: {fileID: 2100000, guid: 7b24afb3a7f96f94bbc6454c1a942591, type: 2}
+  cableMaterial: {fileID: 2100000, guid: 41c0ead4e42f39348ae9b990d9677c8a, type: 2}
   cableLength: 0.15
   totalSegments: 0
   segmentsPerUnit: 100
