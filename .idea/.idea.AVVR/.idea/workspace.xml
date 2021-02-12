@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Table.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Table.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +51,8 @@
         <option value="$PROJECT_DIR$/Assets/WavesScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +113,8 @@
       <workItem from="1612703479922" duration="3989000" />
       <workItem from="1612709465118" duration="1550000" />
       <workItem from="1612993957443" duration="7676000" />
-      <workItem from="1613042975610" duration="11514000" />
+      <workItem from="1613042975610" duration="14037000" />
+      <workItem from="1613123191101" duration="6751000" />
     </task>
     <servers />
   </component>
@@ -141,6 +144,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612558618231" />
+    <state x="1104" y="328" key="RiderGenerateDialog" timestamp="1613125626219">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1104" y="328" key="RiderGenerateDialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613125626219" />
     <state x="3021" y="402" key="SettingsEditor" timestamp="1612540609927">
       <screen x="2560" y="232" width="1920" height="1050" />
     </state>
@@ -169,24 +176,5 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1433" y="356" width="670" height="58" key="search.everywhere.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612551773248" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs</url>
-          <line>23</line>
-          <properties documentPath="E:\Projects\AVVR\Assets\Scripts\Synth\WavesScript.cs" initialLine="22">
-            <startOffsets>
-              <option value="707" />
-            </startOffsets>
-            <endOffsets>
-              <option value="708" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

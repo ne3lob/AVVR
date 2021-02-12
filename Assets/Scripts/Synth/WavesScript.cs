@@ -15,7 +15,23 @@ public class WavesScript : MonoBehaviour
     private const string oscAddressSynthWaveVCOSub = "/vcoWaveSecond";
     private const string oscAddressSynthWaveSubOnOff = "/vcoSecondOnOff";
     private const string oscAddressInputSynth = "/InputSynth";
+    private const string oscAddressFilterType = "/FilterType";
+    private const string oscAddressDelay= "/DelayNumber";
+    private const string oscAdreessDelayTimeOnOff= "/DelayTimeOnOff";
+
     
+    //TODO
+    // public OSCMessage messageOn;
+    // public void RatiooOn(OSCMessage bang, int kak, string kuk)
+    // {
+    //     bang=new OSCMessage(kuk);
+    //     bang.AddValue(OSCValue.Int(kak));
+    //     transmitter.Send(bang);
+    // }
+    // public void RatioChange(XRBaseInteractable interactable)
+    // {
+    //     RatiooOn(messageOn,0,oscAddressSynthWaveVCO);
+    // }
     
     // Start is called before the first frame update
     void Start()
@@ -180,5 +196,90 @@ public class WavesScript : MonoBehaviour
         messageSeqSlideInput.AddValue(OSCValue.Int(3));
         transmitter.Send(messageSeqSlideInput);
     }
-    
+    public void FilterTypeOff (XRBaseInteractable interactable)
+    {
+        var messageFilterTypeOff= new OSCMessage(oscAddressFilterType);
+        messageFilterTypeOff.AddValue(OSCValue.Int(0));
+        transmitter.Send(messageFilterTypeOff);
+    }
+    public void FilterTypeLow (XRBaseInteractable interactable)
+    {
+        var messageFilterTypeLow= new OSCMessage(oscAddressFilterType);
+        messageFilterTypeLow.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageFilterTypeLow);
+    }
+    public void FilterTypeHigh (XRBaseInteractable interactable)
+    {
+        var messageFilterTypeHigh= new OSCMessage(oscAddressFilterType);
+        messageFilterTypeHigh.AddValue(OSCValue.Int(2));
+        transmitter.Send(messageFilterTypeHigh);
+    }
+    public void FilterTypeBand (XRBaseInteractable interactable)
+    {
+        var messageFilterTypeBand= new OSCMessage(oscAddressFilterType);
+        messageFilterTypeBand.AddValue(OSCValue.Int(3));
+        transmitter.Send(messageFilterTypeBand);
+    }
+    public void DelayNumberNull (XRBaseInteractable interactable)
+    {
+        var messageDelayNumberNull= new OSCMessage(oscAddressDelay);
+        messageDelayNumberNull.AddValue(OSCValue.Int(0));
+        transmitter.Send(messageDelayNumberNull);
+        
+        var messageDelayTime= new OSCMessage( oscAdreessDelayTimeOnOff);
+        messageDelayTime.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageDelayTime);
+    }
+    public void DelayNumberOne (XRBaseInteractable interactable)
+    {
+        var messageDelayNumberOne= new OSCMessage(oscAddressDelay);
+        messageDelayNumberOne.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageDelayNumberOne);
+        
+        var messageDelayTime= new OSCMessage( oscAdreessDelayTimeOnOff);
+        messageDelayTime.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageDelayTime);
+    }
+    public void DelayNumberTwo (XRBaseInteractable interactable)
+    {
+        var messageDelayNumberTwo= new OSCMessage(oscAddressDelay);
+        messageDelayNumberTwo.AddValue(OSCValue.Int(2));
+        transmitter.Send(messageDelayNumberTwo);
+        
+        var messageDelayTime= new OSCMessage( oscAdreessDelayTimeOnOff);
+        messageDelayTime.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageDelayTime);
+    }
+
+    public void DelayNumberThree(XRBaseInteractable interactable)
+    {
+        var messageDelayNumberThree = new OSCMessage(oscAddressDelay);
+        messageDelayNumberThree.AddValue(OSCValue.Int(3));
+        transmitter.Send(messageDelayNumberThree);
+        
+        var messageDelayTime= new OSCMessage( oscAdreessDelayTimeOnOff);
+        messageDelayTime.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageDelayTime);
+    }
+    public void DelayNumberFour(XRBaseInteractable interactable)
+    {
+        var messageDelayNumberFour = new OSCMessage(oscAddressDelay);
+        messageDelayNumberFour.AddValue(OSCValue.Int(4));
+        transmitter.Send(messageDelayNumberFour);
+        
+        var messageDelayTime= new OSCMessage( oscAdreessDelayTimeOnOff);
+        messageDelayTime.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageDelayTime);
+    }
+    public void DelayNumberFive(XRBaseInteractable interactable)
+    {
+        var messageDelayNumberFive = new OSCMessage(oscAddressDelay);
+        messageDelayNumberFive.AddValue(OSCValue.Int(5));
+        transmitter.Send(messageDelayNumberFive);
+        
+        var messageDelayTime= new OSCMessage( oscAdreessDelayTimeOnOff);
+        messageDelayTime.AddValue(OSCValue.Int(1));
+        transmitter.Send(messageDelayTime);
+    }
+
 }

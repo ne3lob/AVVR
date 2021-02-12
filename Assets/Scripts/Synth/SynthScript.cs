@@ -22,6 +22,8 @@ public class SynthScript : MonoBehaviour
     private const string oscAddressReverbOnOff= "/ReverbOnOff";
     private const string oscAddressFilterFrequency= "/FilterFrequency";
     private const string oscAddressFilterResonance= "/FilterResonance";
+    private const string oscAdreessDelayTimeOnOff= "/DelayTimeOnOff";
+    
     
     
     //STARTING FLOATS
@@ -41,11 +43,11 @@ public class SynthScript : MonoBehaviour
     private bool changedDistortion=false;
     private bool sendOneTimeDist = false;
    
-    //
+    //bools Reverb
     private bool changedReverb = false;
     private bool sendOneTimeRev = false;
     
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -160,7 +162,7 @@ public class SynthScript : MonoBehaviour
          }
          
      }
-    
+     
      // Update is called once per frame
     void Update()
     {
@@ -208,13 +210,13 @@ public class SynthScript : MonoBehaviour
                 transmitter.Send(messageDistDrag);
                 sendOneTimeDist = false;
             }
- 
+        
         }
         
         //Reverb ONOFF
         if (changedReverb)
         {
-            if (sendOneTimeRev)
+            if (!sendOneTimeRev)
             {
                 var messageRevDrag= new OSCMessage(oscAddressReverbOnOff);
                 messageRevDrag.AddValue(OSCValue.Int(1));
@@ -224,11 +226,17 @@ public class SynthScript : MonoBehaviour
         }
         else if (!sendOneTimeRev)
         {
-            var messageRevDrag= new OSCMessage(oscAddressReverbOnOff);
-            messageRevDrag.AddValue(OSCValue.Int(0));
-            transmitter.Send(messageRevDrag);
-            sendOneTimeRev = true;
+            if (sendOneTimeRev)
+            { 
+                var messageRevDrag= new OSCMessage(oscAddressReverbOnOff);
+                messageRevDrag.AddValue(OSCValue.Int(0));
+                transmitter.Send(messageRevDrag);
+                sendOneTimeRev = false;
+            }
+            
         }
+        
+        
     }
     
 }
