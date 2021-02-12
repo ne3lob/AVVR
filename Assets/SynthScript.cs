@@ -47,6 +47,7 @@ public class SynthScript : MonoBehaviour
     private float s_LfoFilterLenght = 0.0f;
     private float s_LfoFilterFrequency = 0.0f;
     
+<<<<<<< HEAD:Assets/Scripts/Synth/SynthScript.cs
         
 
     //bools Volume Envelope
@@ -72,6 +73,9 @@ public class SynthScript : MonoBehaviour
     //bools Filter Lfo
     private bool changedFilterLfo=false;
     private bool sendOneTimeFilterLfo = false;
+=======
+    private int OVSWaves = 6;
+>>>>>>> main:Assets/SynthScript.cs
     
 
     // Start is called before the first frame update
