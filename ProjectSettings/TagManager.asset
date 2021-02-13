@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ignite
   - Water
+  - Cable
   layers:
   - Default
   - TransparentFX

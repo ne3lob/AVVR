@@ -23,9 +23,20 @@ public class SyntHTable : MonoBehaviour
     public float speedTurn; 
     private bool fors;
     private bool state;
+    private MeshRenderer m;
+
+    //public GameObject cabelEnd;
     // Start is called before the first frame update
     void Start()
     {
+        synth.SetActive(false);
+        
+        GameObject[] cabelEnd = GameObject.FindGameObjectsWithTag("Cable");
+        foreach (GameObject go in cabelEnd)
+        {
+            m=go.GetComponent<MeshRenderer>();
+        }
+        
     }
     // Update is called once per frame
     void Update()
@@ -41,6 +52,20 @@ public class SyntHTable : MonoBehaviour
                 {
                     IsPressed = true;
                     synth.SetActive(!synth.activeSelf);
+                    
+                    GameObject[] cabelEnd = GameObject.FindGameObjectsWithTag("Cable");
+                    foreach (GameObject go in cabelEnd)
+                    {
+                        m=go.GetComponent<MeshRenderer>();
+                        if (m.enabled == true)
+                        {
+                            m.enabled = false;
+                        }
+                        else if (m.enabled == false)
+                        {
+                            m.enabled = true;
+                        }
+                    }
                 }
             }
             else if (IsPressed)
@@ -56,5 +81,4 @@ public class SyntHTable : MonoBehaviour
             speedTurn = currentStateValue.x * 40;
         }
     }
-    
 }
