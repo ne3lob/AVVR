@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,9 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InstanceObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/InstanceObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LightSettings/New Lighting Settings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LightSettings/New Lighting Settings.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ROUNDoscFirst.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/ROUNDoscFirst.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/SocketTarget.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/SocketTarget.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +46,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F359EEA-0212-45E1-B68A-A82D76EF7896/71/78e89342/InputDevices.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F359EEA-0212-45E1-B68A-A82D76EF7896/62/287b1130/CommonUsages.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/SynthScript2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Locomotion/SnapTurn/SnapTurnProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/WavesScript1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://F:/Studium/3_SEMESTER/3D Game - JaJoWa/Assets/Scripts/Movement/CameraScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://F:/Studium/3_SEMESTER/3D Game - JaJoWa/Assets/Scripts/Movement/CameraScriptfollow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -47,10 +65,16 @@
         <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Tutorial/FuseBox.cs" />
         <option value="$PROJECT_DIR$/Assets/SynthScript.cs" />
         <option value="$PROJECT_DIR$/Assets/WavesScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/SyntHTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/SocketTarget.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/InstanceObject.cs" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Locomotion/SnapTurn/SnapTurnProvider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InstanceObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
       </list>
     </option>
   </component>
@@ -113,7 +137,8 @@
       <workItem from="1612993957443" duration="7676000" />
       <workItem from="1613042975610" duration="14037000" />
       <workItem from="1613123191101" duration="14602000" />
-      <workItem from="1613153042768" duration="2133000" />
+      <workItem from="1613153042768" duration="13065000" />
+      <workItem from="1613217860886" duration="15914000" />
     </task>
     <servers />
   </component>
@@ -151,10 +176,10 @@
       <screen x="2560" y="232" width="1920" height="1050" />
     </state>
     <state x="3021" y="402" key="SettingsEditor/0.0.2560.1410/2560.232.1920.1050@2560.232.1920.1050" timestamp="1612540609927" />
-    <state x="1375" y="0" width="1149" height="1026" key="dock-window-1" timestamp="1612999130523">
+    <state x="1244" y="78" width="1259" height="1027" key="dock-window-1" timestamp="1613230839759">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="1375" y="0" width="1149" height="1026" key="dock-window-1/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612999130523" />
+    <state x="1244" y="78" width="1259" height="1027" key="dock-window-1/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613230839759" />
     <state x="7" y="8" width="1279" height="1391" key="dock-window-2" timestamp="1612550069167">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -167,13 +192,13 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1122" y="36" width="1058" height="1391" key="dock-window-4/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612619729095" />
-    <state x="1074" y="307" key="run.anything.popup" timestamp="1613066381606">
+    <state x="1074" y="307" key="run.anything.popup" timestamp="1613226264654">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="1074" y="307" key="run.anything.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613066381606" />
-    <state x="1433" y="356" width="670" height="58" key="search.everywhere.popup" timestamp="1612551773248">
+    <state x="1074" y="307" key="run.anything.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613226264654" />
+    <state x="1433" y="356" width="672" height="160" key="search.everywhere.popup" timestamp="1613162177435">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="1433" y="356" width="670" height="58" key="search.everywhere.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612551773248" />
+    <state x="1433" y="356" width="672" height="160" key="search.everywhere.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613162177435" />
   </component>
 </project>

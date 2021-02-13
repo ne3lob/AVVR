@@ -211,6 +211,7 @@ public class SynthScript : MonoBehaviour
      
      public void VolumeEnv(Single dragEnv)
      {
+         
          if (dragEnv >=0.05f)
          {
              changedVolume= true;

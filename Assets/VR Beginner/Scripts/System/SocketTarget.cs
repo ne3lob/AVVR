@@ -20,7 +20,8 @@ public class SocketTarget : MonoBehaviour
     {
         var interactable = GetComponent<XRBaseInteractable>();
 
-        interactable.onSelectEnter.AddListener(SelectedSwitch);
+       interactable.onSelectEnter.AddListener(SelectedSwitch);
+        
     }
 
     public void SelectedSwitch(XRBaseInteractor interactor)
@@ -33,18 +34,19 @@ public class SocketTarget : MonoBehaviour
         if(SocketType != socketInteractor.AcceptedType)
             return;
 
-        if (DisableSocketOnSocketed)
-        {
-            //TODO : find a better way, delay feel very wrong
+         if (DisableSocketOnSocketed)
+         {
+             //TODO : find a better way, delay feel very wrong
             StartCoroutine(DisableSocketDelayed(socketInteractor));
-        }
-
-        SocketedEvent.Invoke(interactor);
+         }
+        
+         SocketedEvent.Invoke(interactor);
+        
     }
 
-    IEnumerator DisableSocketDelayed(XRExclusiveSocketInteractor interactor)
-    {
-        yield return new WaitForSeconds(0.5f);
+     IEnumerator DisableSocketDelayed(XRExclusiveSocketInteractor interactor)
+     {
+         yield return new WaitForSeconds(0.5f);
         interactor.socketActive = false;
-    }
+     }
 }
