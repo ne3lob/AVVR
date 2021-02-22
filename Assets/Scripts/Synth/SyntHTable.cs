@@ -8,19 +8,17 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class SyntHTable : MonoBehaviour
 {
-    [SerializeField] 
-    private XRNode xrNode = XRNode.RightHand;
+    [SerializeField] private XRNode xrNode = XRNode.RightHand;
     private XRNode xrNodeL = XRNode.LeftHand;
-    
+
     private InputDevice device;
-    private List<InputDevice> rightDevice= new List<InputDevice>();
-    private List<InputDevice> leftDevice= new List<InputDevice>();
-    
+    private List<InputDevice> rightDevice = new List<InputDevice>();
+    private List<InputDevice> leftDevice = new List<InputDevice>();
+
     public GameObject synth;
-    private InputFeatureUsage<bool> inputFeature;
     public bool IsPressed { get; private set; }
-    
-    public float speedTurn; 
+
+    public float speedTurn;
     private bool fors;
     private bool state;
     private MeshRenderer m;
@@ -30,20 +28,14 @@ public class SyntHTable : MonoBehaviour
     void Start()
     {
         synth.SetActive(false);
-        
-        GameObject[] cabelEnd = GameObject.FindGameObjectsWithTag("Cable");
-        foreach (GameObject go in cabelEnd)
-        {
-            m=go.GetComponent<MeshRenderer>();
-        }
-        
     }
+
     // Update is called once per frame
     void Update()
     {
-        InputDevices.GetDevicesWithRole(InputDeviceRole.RightHanded,rightDevice);
-        InputDevices.GetDevicesWithRole(InputDeviceRole.LeftHanded,leftDevice);
-        
+        InputDevices.GetDevicesWithRole(InputDeviceRole.RightHanded, rightDevice);
+        InputDevices.GetDevicesWithRole(InputDeviceRole.LeftHanded, leftDevice);
+
         if (rightDevice.Count >= 1)
         {
             if (rightDevice[0].TryGetFeatureValue(CommonUsages.primaryButton, out fors) && fors)
@@ -52,11 +44,10 @@ public class SyntHTable : MonoBehaviour
                 {
                     IsPressed = true;
                     synth.SetActive(!synth.activeSelf);
-                    
                     GameObject[] cabelEnd = GameObject.FindGameObjectsWithTag("Cable");
                     foreach (GameObject go in cabelEnd)
                     {
-                        m=go.GetComponent<MeshRenderer>();
+                        m = go.GetComponent<MeshRenderer>();
                         if (m.enabled == true)
                         {
                             m.enabled = false;
@@ -68,17 +59,24 @@ public class SyntHTable : MonoBehaviour
                     }
                 }
             }
+
             else if (IsPressed)
             {
-                    IsPressed = false;
+                IsPressed = false;
             }
         }
-        Vector2 currentStateValue=Vector2.zero;
+
+        Vector2 currentStateValue = Vector2.zero;
         InputFeatureUsage<Vector2> currentState = CommonUsages.primary2DAxis;
-        
-        if (leftDevice[0].TryGetFeatureValue(currentState, out currentStateValue) && currentStateValue != Vector2.zero)
-        { 
-            speedTurn = currentStateValue.x * 40;
+
+        if (leftDevice.Count >= 1)
+        {
+            if (leftDevice[0].TryGetFeatureValue(currentState, out currentStateValue) && currentStateValue != Vector2.zero)
+            {
+                speedTurn = currentStateValue.x * 40;
+            
+            }
         }
+        
     }
 }

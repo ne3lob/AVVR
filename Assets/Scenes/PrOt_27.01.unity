@@ -6086,7 +6086,6 @@ GameObject:
   m_Component:
   - component: {fileID: 891123682}
   - component: {fileID: 891123681}
-  - component: {fileID: 891123683}
   m_Layer: 0
   m_Name: XR Interaction Manager
   m_TagString: Untagged
@@ -6120,25 +6119,6 @@ Transform:
   m_Father: {fileID: 1095490890}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &891123683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891123680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 847d8b0d968d4a14c89d7508f54c0db7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnableLinearMovement: 1
-  EnableRotation: 1
-  HMDRotatesPlayer: 1
-  RotationEitherThumbstick: 0
-  RotationAngle: 45
-  Speed: 0
-  CameraRig: {fileID: 0}
 --- !u!4 &892869910 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6006435334614552524, guid: 63de64b0d1a51f543b9bac893becb611,
@@ -14754,7 +14734,6 @@ GameObject:
   - component: {fileID: 4539702728372157791}
   - component: {fileID: 832149484182772214}
   - component: {fileID: 832149484182772213}
-  - component: {fileID: 832149484182772215}
   m_Layer: 0
   m_Name: SYNTH
   m_TagString: Untagged
@@ -14792,21 +14771,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &832149484182772215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832149484182772212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65a01ed90729dca419cbdf890bd8981d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xrNode: 5
-  synth: {fileID: 0}
-  speedTurn: 0
 --- !u!33 &870930022380498719
 MeshFilter:
   m_ObjectHideFlags: 0
