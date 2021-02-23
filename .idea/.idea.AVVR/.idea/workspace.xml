@@ -23,9 +23,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/BlackBloksTramsp.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/BlackBloksTramsp.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VFX/MonomeWalls.vfx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VFX/MonomeWalls.vfx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VFX/cacheMon.pcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VFX/cacheMon.pcache.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VFX/mon.vf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VFX/mon.vf.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/House/ConcretRest.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/House/ConcretRest.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Sky.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Sky.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Cauldron/CauldronBubbles.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Cauldron/CauldronBubbles.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Cauldron/CauldronSplash.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Cauldron/CauldronSplash.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/FireBoy/FireBoy.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/FireBoy/FireBoy.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Potions/PotionPop.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Potions/PotionPop.vfx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +81,8 @@
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Locomotion/SnapTurn/SnapTurnProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InstanceObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
+        <option value="$PROJECT_DIR$/Assets/StartTheWalls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
       </list>
     </option>
   </component>
@@ -126,6 +148,7 @@
       <workItem from="1613153042768" duration="13065000" />
       <workItem from="1613217860886" duration="19010000" />
       <workItem from="1614026422318" duration="3018000" />
+      <workItem from="1614108177220" duration="7239000" />
     </task>
     <servers />
   </component>

@@ -1075,6 +1075,7 @@
             <e p="NewBehaviourScript.cs" t="Include" />
             <e p="VisualEqualizer.cs" t="Include" />
           </e>
+          <e p="StartTheWalls.cs" t="Include" />
           <e p="Synth" t="Include">
             <e p="SynthScript.cs" t="Include" />
             <e p="SyntHTable.cs" t="Include" />
