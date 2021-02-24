@@ -34,7 +34,7 @@ public class SynthScript : MonoBehaviour
     
     //STARTING FLOATS
     private float s_VolumeRatio = 0.0f;
-    private float s_PitchRatio = 0.0f;
+    public float s_PitchRatio = 0.0f;
     private float s_DrumVolume=0.0f;
     private float s_RatioDistortion = 0.0f;
     private float s_SubPitch = 0.0f;
@@ -93,6 +93,7 @@ public class SynthScript : MonoBehaviour
         {
             float ratioPitch = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_PitchRatio = ratioPitch;
+            Debug.Log(s_PitchRatio);
             
             var messagePitch = new OSCMessage(oscAddressPitch);
             messagePitch.AddValue(OSCValue.Float(s_PitchRatio));

@@ -23,29 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/BlackBloksTramsp.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/BlackBloksTramsp.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp 1.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VFX/MonomeWalls.vfx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VFX/MonomeWalls.vfx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VFX/cacheMon.pcache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VFX/cacheMon.pcache.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VFX/mon.vf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VFX/mon.vf.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/TranConcretRest 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/TranConcretRest 1.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/House/ConcretRest.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/House/ConcretRest.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Sky.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Sky.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp 1.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Cauldron/CauldronBubbles.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Cauldron/CauldronBubbles.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Cauldron/CauldronSplash.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Cauldron/CauldronSplash.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/FireBoy/FireBoy.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/FireBoy/FireBoy.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Potions/PotionPop.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Potions/PotionPop.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VFX/MonomeWalls.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/MonomeWalls.vfx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,12 +62,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/SyntHTable.cs" />
         <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/SocketTarget.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
         <option value="$PROJECT_DIR$/Assets/InstanceObject.cs" />
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Locomotion/SnapTurn/SnapTurnProvider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InstanceObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
         <option value="$PROJECT_DIR$/Assets/StartTheWalls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
       </list>
     </option>
@@ -149,6 +135,9 @@
       <workItem from="1613217860886" duration="19010000" />
       <workItem from="1614026422318" duration="3018000" />
       <workItem from="1614108177220" duration="7239000" />
+      <workItem from="1614188653416" duration="718000" />
+      <workItem from="1614189430795" duration="126000" />
+      <workItem from="1614189893093" duration="4152000" />
     </task>
     <servers />
   </component>
@@ -174,17 +163,22 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1612558618231">
+    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1614190061735">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612558618231" />
+    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614190061735" />
+    <state x="877" y="357" key="IDE.errors.dialog" timestamp="1614189552278">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="877" y="357" key="IDE.errors.dialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614189552278" />
     <state x="1104" y="328" key="RiderGenerateDialog" timestamp="1613125626219">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1104" y="328" key="RiderGenerateDialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613125626219" />
-    <state x="3021" y="402" key="SettingsEditor" timestamp="1612540609927">
-      <screen x="2560" y="232" width="1920" height="1050" />
+    <state x="856" y="316" key="SettingsEditor" timestamp="1614190588416">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
+    <state x="856" y="316" key="SettingsEditor/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614190588416" />
     <state x="3021" y="402" key="SettingsEditor/0.0.2560.1410/2560.232.1920.1050@2560.232.1920.1050" timestamp="1612540609927" />
     <state x="1244" y="78" width="1259" height="1027" key="dock-window-1" timestamp="1613230839759">
       <screen x="0" y="0" width="2560" height="1410" />

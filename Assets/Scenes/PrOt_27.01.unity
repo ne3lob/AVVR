@@ -11048,6 +11048,9 @@ VisualEffect:
       - m_Value: {x: 0.1767088, y: 0.17759822, z: 0.1792453, w: 0}
         m_Name: wallsS
         m_Overridden: 1
+      - m_Value: {x: 0.2830189, y: 0.2830189, z: 0.2830189, w: 0}
+        m_Name: WallsColor
+        m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
@@ -12693,7 +12696,10 @@ MonoBehaviour:
   wallsObj: {fileID: 1124310922}
   wallsObjTransparent: {fileID: 2100000, guid: cbbdaf2da6e277c499d10b03ed6c22a5, type: 2}
   blackWallsObj: {fileID: 283097563}
-  blackWallsObjTransparent: {fileID: 2100000, guid: 3eedebeda95a192418c9b884078dd975,
+  blackWallsObjTransparent: {fileID: 2100000, guid: f8a0152040454804e9eccd39e9e701b9,
+    type: 2}
+  bottomCellingObj: {fileID: 401122466970794861}
+  bottomCellingTransparent: {fileID: 2100000, guid: a8fdafb130cf17d4d8bf0f89ba7d9a55,
     type: 2}
 --- !u!1 &1782512128
 GameObject:
@@ -14718,7 +14724,7 @@ GameObject:
   - component: {fileID: 6749577034903925933}
   - component: {fileID: 6964462608146690196}
   m_Layer: 0
-  m_Name: Cube.072
+  m_Name: BottomCeiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
