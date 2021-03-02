@@ -23,15 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/TranConcretRest 1.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/House/TranConcretRest 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ChangingRotOnAxisDial.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ChangingRotOnAxisDial.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/House/ConcretTransp 1.mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VFX/MonomeWalls.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/MonomeWalls.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,32 +46,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F359EEA-0212-45E1-B68A-A82D76EF7896/71/78e89342/InputDevices.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F359EEA-0212-45E1-B68A-A82D76EF7896/62/287b1130/CommonUsages.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Locomotion/SnapTurn/SnapTurnProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ChangingRotOnAxisDial.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/WitchHouseUIHook.cs" />
-        <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" />
-        <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/Radio.cs" />
-        <option value="$PROJECT_DIR$/Assets/BestQuality.cs" />
-        <option value="$PROJECT_DIR$/Assets/CabelTargets.cs" />
-        <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Tutorial/FuseBox.cs" />
-        <option value="$PROJECT_DIR$/Assets/SynthScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/WavesScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/SyntHTable.cs" />
-        <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/SocketTarget.cs" />
-        <option value="$PROJECT_DIR$/Assets/InstanceObject.cs" />
-        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Locomotion/SnapTurn/SnapTurnProvider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InstanceObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
-        <option value="$PROJECT_DIR$/Assets/StartTheWalls.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/ChangingRotOnAxisDial.cs" />
+      <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />
   <component name="ProjectLevelVcsManager">
@@ -94,7 +76,7 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -103,7 +85,7 @@
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
       <option name="selectedOptions">
-        <set />
+        <list />
       </option>
       <method v="2" />
     </configuration>
@@ -138,6 +120,9 @@
       <workItem from="1614188653416" duration="718000" />
       <workItem from="1614189430795" duration="126000" />
       <workItem from="1614189893093" duration="4152000" />
+      <workItem from="1614248051933" duration="5931000" />
+      <workItem from="1614678927222" duration="142000" />
+      <workItem from="1614681136761" duration="12475000" />
     </task>
     <servers />
   </component>
@@ -163,10 +148,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1614190061735">
+    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1614678939882">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614190061735" />
+    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614678939882" />
     <state x="877" y="357" key="IDE.errors.dialog" timestamp="1614189552278">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -175,10 +160,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1104" y="328" key="RiderGenerateDialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613125626219" />
-    <state x="856" y="316" key="SettingsEditor" timestamp="1614190588416">
+    <state x="1045" y="300" key="SettingsEditor" timestamp="1614248311068">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="856" y="316" key="SettingsEditor/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614190588416" />
+    <state x="1045" y="300" key="SettingsEditor/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614248311068" />
     <state x="3021" y="402" key="SettingsEditor/0.0.2560.1410/2560.232.1920.1050@2560.232.1920.1050" timestamp="1612540609927" />
     <state x="1244" y="78" width="1259" height="1027" key="dock-window-1" timestamp="1613230839759">
       <screen x="0" y="0" width="2560" height="1410" />
@@ -200,9 +185,9 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1074" y="307" key="run.anything.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613226264654" />
-    <state x="1433" y="356" width="672" height="160" key="search.everywhere.popup" timestamp="1613162177435">
+    <state x="1433" y="356" width="672" height="160" key="search.everywhere.popup" timestamp="1614604969916">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="1433" y="356" width="672" height="160" key="search.everywhere.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613162177435" />
+    <state x="1433" y="356" width="672" height="160" key="search.everywhere.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614604969916" />
   </component>
 </project>

@@ -33,12 +33,16 @@ public class StartTheWalls : MonoBehaviour
 
     private SynthScript _synthScript;
     private float pitchValue;
+    public GameObject synthObj;
+
+    private bool one=false;
+    
     
     // Start is called before the first frame update
     void Start()
     {
         wallsVfx.SetActive(false);
-        _synthScript = GameObject.Find("SYNTH").GetComponent<SynthScript>();
+        _synthScript = synthObj.GetComponent<SynthScript>();
     }
 
     // Update is called once per frame
@@ -47,15 +51,16 @@ public class StartTheWalls : MonoBehaviour
         pitchValue = _synthScript.s_PitchRatio;
         print("WallScript have Amount" + pitchValue);
         
-        if (Input.GetKeyDown(KeyCode.A))
+        if (!one && pitchValue>=0.1f)
         { 
-            print("a");
+            print("Big");
             wallsVfx.SetActive(true);
 
             GiveMesh();
             
             lerpNow = true;
             lerpStart = Time.time;
+            one = true;
         }
         if (lerpNow) 
         {
@@ -63,6 +68,13 @@ public class StartTheWalls : MonoBehaviour
             ChangeToTransparentLerp(blackWallsObj);
             ChangeToTransparentLerp(bottomCellingObj);
             
+        }
+        
+        if (one && pitchValue <= 0.1)
+        {
+            print("Small");
+            wallsVfx.SetActive(false);
+            one = false;
         }
     }
     void ChangeToTransparentLerp(GameObject obj)

@@ -39,8 +39,14 @@ public class AxisDragInteractable : XRBaseInteractable
     float m_CurrentDistance;
     int m_CurrentStep;
     XRBaseInteractor m_GrabbingInteractor;
+    
+    [SerializeField]
+    public GameObject targetAxisPoint;
+   
 
     float m_StepLength;
+    
+    
     
     // Start is called before the first frame update
     void Start()
@@ -63,9 +69,6 @@ public class AxisDragInteractable : XRBaseInteractable
             m_StepLength = AxisLength / Steps;
         }
         
-        m_StartPoint = transform.position;
-        m_EndPoint = transform.position + transform.TransformDirection(LocalAxis) * AxisLength;
-        
         if (MovingRigidbody == null)
         {
             MovingRigidbody = GetComponentInChildren<Rigidbody>();
@@ -74,17 +77,26 @@ public class AxisDragInteractable : XRBaseInteractable
         m_CurrentStep = 0;
     }
 
+   public void Update()
+    {
+       
+    }
+   
     public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
     {
         if (isSelected)
         {
             if (updatePhase == XRInteractionUpdateOrder.UpdatePhase.Fixed)
             {
+                m_StartPoint = targetAxisPoint.transform.position;
+                m_EndPoint = targetAxisPoint.transform.position + targetAxisPoint.transform.TransformDirection(LocalAxis) * AxisLength;
+                
                 Vector3 WorldAxis = transform.TransformDirection(LocalAxis);
 
                 Vector3 distance = m_GrabbingInteractor.transform.position - transform.position - m_GrabbedOffset;
                 float projected = Vector3.Dot(distance, WorldAxis);
                 
+
                 //ajust projected to clamp it to steps if there is steps
                 if (Steps != 0 && !SnapOnlyOnRelease)
                 {
@@ -98,22 +110,22 @@ public class AxisDragInteractable : XRBaseInteractable
                 else
                     targetPoint = Vector3.MoveTowards(transform.position, m_StartPoint, -projected);
 
-                if (Steps > 0)
-                {
-                    int posStep = Mathf.RoundToInt((targetPoint - m_StartPoint).magnitude / m_StepLength);
-                    if (posStep != m_CurrentStep)
-                    {
-                        SFXPlayer.Instance.PlaySFX(SnapAudioClip, transform.position, new SFXPlayer.PlayParameters()
-                        {
-                            Pitch = Random.Range(0.9f, 1.1f),
-                            SourceID = -1,
-                            Volume = 1.0f
-                        }, 0.0f);
-                        OnDragStep.Invoke(posStep);
-                    }
-                    
-                    m_CurrentStep = posStep;
-                }
+                // if (Steps > 0)
+                // {
+                //     int posStep = Mathf.RoundToInt((targetPoint - m_StartPoint).magnitude / m_StepLength);
+                //     if (posStep != m_CurrentStep)
+                //     {
+                //         SFXPlayer.Instance.PlaySFX(SnapAudioClip, transform.position, new SFXPlayer.PlayParameters()
+                //         {
+                //             Pitch = Random.Range(0.9f, 1.1f),
+                //             SourceID = -1,
+                //             Volume = 1.0f
+                //         }, 0.0f);
+                //         OnDragStep.Invoke(posStep);
+                //     }
+                //     
+                //     m_CurrentStep = posStep;
+                // }
 
                 OnDragDistance.Invoke((targetPoint - m_StartPoint).magnitude);
 

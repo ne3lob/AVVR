@@ -2251,7 +2251,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.0,"y":0.0,"z":0.0}'
+      m_SerializableObject: '{"x":0.0,"y":1.0,"z":0.0}'
     m_Space: 2147483647
   m_Property:
     name: valueScale
@@ -2497,7 +2497,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661615177}
       inputSlot: {fileID: 8926484042661615170}
-    position: {x: 604, y: 1081}
+    position: {x: 604, y: 1006}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661615177
