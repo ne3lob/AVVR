@@ -22,7 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="" />
+    <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TestCpu.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TestCpu.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LineMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LineMesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +46,6 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/XR/XRRig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F359EEA-0212-45E1-B68A-A82D76EF7896/62/287b1130/CommonUsages.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Desktop/MagicTractorBeam.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Locomotion/SnapTurn/SnapTurnProvider.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -49,9 +58,12 @@
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/ObjectLauncher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LineMesh.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />

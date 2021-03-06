@@ -5,12 +5,20 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
+using List = System.Collections.Generic.List<int>;
 
 public class SyntHTable : MonoBehaviour
 {
     private InputDevice device;
-    private List<InputDevice> rightDevice = new List<InputDevice>();
-    private List<InputDevice> leftDevice = new List<InputDevice>();
+    private List<InputDevice> rightDevice = new List<InputDevice>
+    {
+        new InputDevice()
+    };
+    private List<InputDevice> leftDevice = new List<InputDevice>
+    {
+        new InputDevice()
+        
+    };
 
     public GameObject synth;
     public bool IsPressed { get; private set; }
@@ -20,18 +28,20 @@ public class SyntHTable : MonoBehaviour
     private bool state;
     private MeshRenderer m;
 
-    //public GameObject cabelEnd;
+   
     // Start is called before the first frame update
     void Start()
     {
+        rightDevice.Clear();
+        leftDevice.Clear();
         synth.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        InputDevices.GetDevicesWithRole(InputDeviceRole.RightHanded, rightDevice);
-        InputDevices.GetDevicesWithRole(InputDeviceRole.LeftHanded, leftDevice);
+        InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Right, rightDevice);
+        InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Left, leftDevice);
 
         if (rightDevice.Count >= 1)
         {

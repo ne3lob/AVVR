@@ -77,31 +77,40 @@ public class SynthScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
     }
      public void SynthVolumeChanged(DialInteractable dial)
     {
+        if (transmitter == null) return;
+        
         float ratioVolume = dial.CurrentAngle / dial.RotationAngleMaximum;
         s_VolumeRatio = ratioVolume;
         
         var messageVol = new OSCMessage(oscAddressVolume);
         messageVol.AddValue(OSCValue.Float(s_VolumeRatio));
         transmitter.Send(messageVol);
+        
        
       
     }
      public void SynthPitchChanged(DialInteractable dial)
         {
+            if (transmitter == null) return;
+            
             float ratioPitch = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_PitchRatio = ratioPitch;
-            Debug.Log(s_PitchRatio);
+            
             
             var messagePitch = new OSCMessage(oscAddressPitch);
             messagePitch.AddValue(OSCValue.Float(s_PitchRatio));
             transmitter.Send(messagePitch);
+           
             
         }
      public void SynthDrumVolumeChanged(DialInteractable dial)
      {
+         if (transmitter == null) return;
+         
          float ratioDrumVolume = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_DrumVolume = ratioDrumVolume;
          
@@ -112,6 +121,8 @@ public class SynthScript : MonoBehaviour
 
      public void DistortionVolume(DialInteractable dial)
      {
+         if (transmitter == null) return;
+         
          float ratioDistortionValue = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_RatioDistortion = ratioDistortionValue ;
          
@@ -123,6 +134,8 @@ public class SynthScript : MonoBehaviour
     
      public void LfoPitchFrequency (DialInteractable dial)
      {
+         if (transmitter == null) return;
+         
          float ratioLfoPitchFrequency = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_LfoPitchFrequency = ratioLfoPitchFrequency ;
          
@@ -133,6 +146,8 @@ public class SynthScript : MonoBehaviour
      }
      public void LfoPitchLenght (DialInteractable dial)
      {
+         if (transmitter == null) return;
+         
          float ratioLfoPitchLenght = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_LfoPitchLenght = ratioLfoPitchLenght ;
          
@@ -143,6 +158,8 @@ public class SynthScript : MonoBehaviour
      }
      public void LfoFilterLenght (DialInteractable dial)
      {
+         if (transmitter == null) return;
+         
          float ratioLfoFilterLenght = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_LfoFilterLenght = ratioLfoFilterLenght ;
          
@@ -152,6 +169,8 @@ public class SynthScript : MonoBehaviour
      }
      public void LfoFilterFrequency (DialInteractable dial)
      {
+         if (transmitter == null) return;
+         
          float ratioLfoFilterFrequency = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_LfoFilterFrequency = ratioLfoFilterFrequency ;
          
@@ -162,6 +181,8 @@ public class SynthScript : MonoBehaviour
      
      public void SubPitch (DialInteractable dial)
      {
+         if (transmitter == null) return;
+         
          float ratioSubPitch = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_SubPitch = ratioSubPitch;
          
@@ -172,6 +193,8 @@ public class SynthScript : MonoBehaviour
      }
      public void FilterFrequency (DialInteractable dial)
      {
+         if (transmitter == null) return;
+         
          float ratioFilterFrequency = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_FilterFrequency = ratioFilterFrequency;
          
@@ -182,6 +205,8 @@ public class SynthScript : MonoBehaviour
      }
      public void FilterResonance (DialInteractable dial)
      {
+         if (transmitter == null) return;
+         
          float ratioFilterResonance = dial.CurrentAngle / dial.RotationAngleMaximum;
          s_FilterResonance = ratioFilterResonance;
          
@@ -192,6 +217,8 @@ public class SynthScript : MonoBehaviour
      }
      public void DelayTimeValue (DialInteractable dial)
      {
+         if (transmitter == null) return;
+         
          float ratioDalayTimeValue= dial.CurrentAngle / dial.RotationAngleMaximum;
          s_DalayTimeValue = ratioDalayTimeValue;
          
@@ -201,6 +228,8 @@ public class SynthScript : MonoBehaviour
      }
      public void DelayTimeFeedback (DialInteractable dial)
      {
+         if (transmitter == null) return;
+         
          float ratioDalayTimeFeedback= dial.CurrentAngle / dial.RotationAngleMaximum;
          s_DelayTimeFeedback = ratioDalayTimeFeedback;
          
@@ -284,6 +313,8 @@ public class SynthScript : MonoBehaviour
     void Update()
     {
         //TODO bools that will checked when the Value is ==0
+        
+        if (transmitter == null) return;
         
         //Envelope Volume ONOFF
         if (changedVolume)
