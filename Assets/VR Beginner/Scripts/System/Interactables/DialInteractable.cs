@@ -137,13 +137,7 @@ public class DialInteractable : XRBaseInteractable
                     
                     if (!Mathf.Approximately(finalAngle , m_CurrentAngle))
                     {
-                        SFXPlayer.Instance.PlaySFX(SnapAudioClip, transform.position, new SFXPlayer.PlayParameters()
-                        {
-                            Pitch = UnityEngine.Random.Range(0.9f, 1.1f),
-                            SourceID = -1,
-                            Volume = 1.0f
-                        }, 0.0f);
-                        
+
                         OnDialStepChanged.Invoke(step);
                         OnDialChanged.Invoke(this);
                         m_CurrentStep = step;
@@ -216,12 +210,6 @@ public class DialInteractable : XRBaseInteractable
             
             if (angle != m_CurrentAngle)
             {
-                SFXPlayer.Instance.PlaySFX(SnapAudioClip, transform.position, new SFXPlayer.PlayParameters()
-                {
-                    Pitch = UnityEngine.Random.Range(0.9f, 1.1f),
-                    SourceID = -1,
-                    Volume = 1.0f
-                }, 0.0f);
                 
                 OnDialStepChanged.Invoke(step);
                 OnDialChanged.Invoke(this);

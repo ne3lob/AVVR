@@ -49,7 +49,6 @@ public class StartTheWalls : MonoBehaviour
     void Update()
     {
         pitchValue = _synthScript.s_PitchRatio;
-        print("WallScript have Amount" + pitchValue);
         
         if (!one && pitchValue>=0.1f)
         { 

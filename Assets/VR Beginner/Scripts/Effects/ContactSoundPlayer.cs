@@ -30,11 +30,6 @@ public class ContactSoundPlayer : MonoBehaviour
         
         AudioClip randomClip = Clips[Random.Range(0, Clips.Length)];
         
-        SFXPlayer.Instance.PlaySFX(randomClip, other.contacts[0].point, new SFXPlayer.PlayParameters()
-        {
-            Volume = 1.0f,
-            Pitch = Random.Range(0.8f, 1.2f),
-            SourceID = m_ID
-        }, 0.5f, CloseCaptioned);
+       
     }
 }

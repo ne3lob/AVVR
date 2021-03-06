@@ -60,6 +60,15 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.project-auditor": {
+      "version": "https://github.com/Unity-Technologies/ProjectAuditor.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "nuget.mono-cecil": "0.1.6-preview"
+      },
+      "hash": "3278f2ba00001971072035d8972465734c9efe7a"
+    },
     "com.unity.recorder": {
       "version": "2.5.2",
       "depth": 0,
@@ -208,6 +217,13 @@
         "com.unity.xr.management": "3.2.16",
         "com.unity.ugui": "1.0.0"
       },
+      "url": "https://packages.unity.com"
+    },
+    "nuget.mono-cecil": {
+      "version": "0.1.6-preview",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.modules.ai": {

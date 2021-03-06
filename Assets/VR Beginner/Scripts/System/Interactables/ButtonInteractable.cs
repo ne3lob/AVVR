@@ -58,23 +58,13 @@ public class ButtonInteractable : MonoBehaviour
         if (!m_Pressed && Mathf.Approximately(newDistance, MaxDistance))
         {//was just pressed
             m_Pressed = true;
-            SFXPlayer.Instance.PlaySFX(ButtonPressAudioClip, transform.position, new SFXPlayer.PlayParameters()
-            {
-                Pitch = Random.Range(0.9f, 1.1f),
-                SourceID = -1,
-                Volume = 1.0f
-            }, 0.0f);
+           
             OnButtonPressed.Invoke();
         }
         else if (m_Pressed && !Mathf.Approximately(newDistance, MaxDistance))
         {//was just released
             m_Pressed = false;
-            SFXPlayer.Instance.PlaySFX(ButtonReleaseAudioClip, transform.position, new SFXPlayer.PlayParameters()
-            {
-                Pitch = Random.Range(0.9f, 1.1f),
-                SourceID = -1,
-                Volume = 1.0f
-            }, 0.0f);
+            
             OnButtonReleased.Invoke();
         }
     }

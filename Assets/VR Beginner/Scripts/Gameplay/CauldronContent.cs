@@ -72,12 +72,6 @@ public class CauldronContent : MonoBehaviour
 
         SplashEffect.transform.position = contactPosition;
         
-        SFXPlayer.Instance.PlaySFX(SplashClips[Random.Range(0, SplashClips.Length)], contactPosition, new SFXPlayer.PlayParameters()
-        {
-            Pitch = Random.Range(0.8f, 1.2f),
-            SourceID = 17624,
-            Volume = 1.0f
-        }, 0.2f, true);
 
         splashVFX.Play();
 

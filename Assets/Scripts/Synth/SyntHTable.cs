@@ -8,9 +8,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class SyntHTable : MonoBehaviour
 {
-    [SerializeField] private XRNode xrNode = XRNode.RightHand;
-    private XRNode xrNodeL = XRNode.LeftHand;
-
     private InputDevice device;
     private List<InputDevice> rightDevice = new List<InputDevice>();
     private List<InputDevice> leftDevice = new List<InputDevice>();

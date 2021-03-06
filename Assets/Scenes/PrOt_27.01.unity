@@ -839,6 +839,10 @@ MonoBehaviour:
   BeamRenderer: {fileID: 1144431688}
   TargetDistance: 0.05
   LocalRayAxis: {x: -1, y: 0, z: 0}
+  m_DirectInteractor: {fileID: 0}
+  m_HighlightedRigidbody: {fileID: 0}
+  m_CurrentSelectionOutline: {fileID: 0}
+  m_TractingObject: 0
 --- !u!1 &127253184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,7 +1329,6 @@ MonoBehaviour:
   cableWidth: 0.006
   verletIterations: 1
   solverIterations: 2
-  stiffness: 1
 --- !u!145 &211313456
 SpringJoint:
   m_ObjectHideFlags: 0
@@ -1498,7 +1501,6 @@ MonoBehaviour:
   cableWidth: 0.006
   verletIterations: 1
   solverIterations: 2
-  stiffness: 1
 --- !u!145 &223921074
 SpringJoint:
   m_ObjectHideFlags: 0
@@ -7116,6 +7118,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 934824324}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1075893839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1075893840}
+  m_Layer: 0
+  m_Name: ========MONOM=========
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1075893840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075893839}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.6771216, y: 1.0993843, z: -0.95590675}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1076223822
 GameObject:
   m_ObjectHideFlags: 0
@@ -7178,7 +7210,7 @@ Transform:
   - {fileID: 829485896}
   - {fileID: 718990258}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1077929902
 GameObject:
@@ -7243,7 +7275,7 @@ Transform:
   - {fileID: 1368787605}
   - {fileID: 1052988317}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1095490891
 MonoBehaviour:
@@ -7257,7 +7289,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a01ed90729dca419cbdf890bd8981d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xrNode: 5
   synth: {fileID: 1304319591}
   speedTurn: 0
 --- !u!1001 &1102432515
@@ -8033,7 +8064,6 @@ MonoBehaviour:
   cableWidth: 0.006
   verletIterations: 1
   solverIterations: 2
-  stiffness: 1
 --- !u!145 &1169539319
 SpringJoint:
   m_ObjectHideFlags: 0
@@ -10629,7 +10659,6 @@ MonoBehaviour:
   cableWidth: 0.006
   verletIterations: 1
   solverIterations: 2
-  stiffness: 1
 --- !u!145 &1538132331
 SpringJoint:
   m_ObjectHideFlags: 0
@@ -10936,7 +10965,7 @@ Transform:
   m_LocalScale: {x: 0.7587144, y: 0.7587144, z: 0.7587144}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1001 &1573113311
 PrefabInstance:
@@ -12411,7 +12440,7 @@ Transform:
   - {fileID: 1795868904}
   - {fileID: 1681919522}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1766236844
 MonoBehaviour:
@@ -12764,7 +12793,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1832035123
 PrefabInstance:
@@ -15231,6 +15260,22 @@ MonoBehaviour:
   RightTeleportInteractor: {fileID: 3487965465488213716}
   RightDirectInteractor: {fileID: 1837324664781893261}
   RightTractorBeam: {fileID: 102712763}
+  m_Rig: {fileID: 0}
+  m_RightLineVisual: {fileID: 0}
+  m_LeftLineVisual: {fileID: 0}
+  m_RightHandPrefab: {fileID: 0}
+  m_LeftHandPrefab: {fileID: 0}
+  m_RightController: {fileID: 0}
+  m_LeftController: {fileID: 0}
+  m_PreviousRightClicked: 0
+  m_PreviousLeftClicked: 0
+  m_LastFrameRightEnable: 0
+  m_LastFrameLeftEnable: 0
+  m_OriginalRightMask:
+    m_Bits: 0
+  m_OriginalLeftMask:
+    m_Bits: 0
+  m_InteractableCache: []
 --- !u!114 &1837324663684300448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17009,7 +17054,6 @@ MonoBehaviour:
   cableWidth: 0.006
   verletIterations: 1
   solverIterations: 2
-  stiffness: 1
 --- !u!4 &4083501149533582625
 Transform:
   m_ObjectHideFlags: 0
@@ -18164,6 +18208,10 @@ MonoBehaviour:
   BeamRenderer: {fileID: 5222936905719452371}
   TargetDistance: 0.05
   LocalRayAxis: {x: 1, y: 0, z: 0}
+  m_DirectInteractor: {fileID: 0}
+  m_HighlightedRigidbody: {fileID: 0}
+  m_CurrentSelectionOutline: {fileID: 0}
+  m_TractingObject: 0
 --- !u!33 &6749577034903925933
 MeshFilter:
   m_ObjectHideFlags: 0

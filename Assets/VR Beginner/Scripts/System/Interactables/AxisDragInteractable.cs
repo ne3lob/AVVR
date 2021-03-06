@@ -174,12 +174,7 @@ public class AxisDragInteractable : XRBaseInteractable
 
             if (step != m_CurrentStep)
             {
-                SFXPlayer.Instance.PlaySFX(SnapAudioClip, transform.position, new SFXPlayer.PlayParameters()
-                {
-                    Pitch = Random.Range(0.9f, 1.1f),
-                    SourceID = -1,
-                    Volume = 1.0f
-                }, 0.0f);
+                
                 OnDragStep.Invoke(step);
             }
         }
