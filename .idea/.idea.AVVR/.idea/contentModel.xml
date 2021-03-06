@@ -315,9 +315,6 @@
           <e p="CableParticle.cs" t="Include" />
           <e p="InstanceObject.cs" t="Include" />
           <e p="LineMesh.cs" t="Include" />
-          <e p="ScriptExample" t="Include">
-            <e p="VisualEqualizer.cs" t="Include" />
-          </e>
           <e p="StartTheWalls.cs" t="Include" />
           <e p="Synth" t="Include">
             <e p="SynthScript.cs" t="Include" />
@@ -356,19 +353,10 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
-        <e p="TutorialInfo" t="Include">
-          <e p="Scripts" t="Include">
-            <e p="Editor" t="Include">
-              <e p="ReadmeEditor.cs" t="Include" />
-            </e>
-            <e p="Readme.cs" t="Include" />
-          </e>
-        </e>
         <e p="VR Beginner" t="Include">
           <e p="CreatorKitVR_Third-PartyNotice.txt" t="Include" />
           <e p="Scripts" t="Include">
             <e p="Effects" t="Include">
-              <e p="CauldronEffects.cs" t="Include" />
               <e p="ContactSoundPlayer.cs" t="Include" />
               <e p="EmissionChange.cs" t="Include" />
               <e p="FanRotation.cs" t="Include" />
@@ -380,11 +368,10 @@
               <e p="TriggerAnimationEvent.cs" t="Include" />
             </e>
             <e p="Gameplay" t="Include">
-              <e p="CauldronContent.cs" t="Include" />
-              <e p="CauldronIngredient.cs" t="Include" />
               <e p="EndingSequence.cs" t="Include" />
               <e p="HandPrefab.cs" t="Include" />
               <e p="IndestructableObj.cs" t="Include" />
+              <e p="MasterController.cs" t="Include" />
               <e p="Radio.cs" t="Include" />
               <e p="RespawnableObject.cs" t="Include" />
               <e p="StationaryOnPull.cs" t="Include" />

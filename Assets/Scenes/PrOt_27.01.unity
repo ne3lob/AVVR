@@ -824,25 +824,6 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63de64b0d1a51f543b9bac893becb611, type: 3}
---- !u!114 &102712763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837324664781893251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f994272725f8a44bb170d4ed52827a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BeamRenderer: {fileID: 1144431688}
-  TargetDistance: 0.05
-  LocalRayAxis: {x: -1, y: 0, z: 0}
-  m_DirectInteractor: {fileID: 0}
-  m_HighlightedRigidbody: {fileID: 0}
-  m_CurrentSelectionOutline: {fileID: 0}
-  m_TractingObject: 0
 --- !u!1 &127253184
 GameObject:
   m_ObjectHideFlags: 0
@@ -15259,23 +15240,6 @@ MonoBehaviour:
   DisableSetupForDebug: 0
   RightTeleportInteractor: {fileID: 3487965465488213716}
   RightDirectInteractor: {fileID: 1837324664781893261}
-  RightTractorBeam: {fileID: 102712763}
-  m_Rig: {fileID: 0}
-  m_RightLineVisual: {fileID: 0}
-  m_LeftLineVisual: {fileID: 0}
-  m_RightHandPrefab: {fileID: 0}
-  m_LeftHandPrefab: {fileID: 0}
-  m_RightController: {fileID: 0}
-  m_LeftController: {fileID: 0}
-  m_PreviousRightClicked: 0
-  m_PreviousLeftClicked: 0
-  m_LastFrameRightEnable: 0
-  m_LastFrameLeftEnable: 0
-  m_OriginalRightMask:
-    m_Bits: 0
-  m_OriginalLeftMask:
-    m_Bits: 0
-  m_InteractableCache: []
 --- !u!114 &1837324663684300448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15353,7 +15317,6 @@ GameObject:
   - component: {fileID: 1837324663684300460}
   - component: {fileID: 1837324663684300448}
   - component: {fileID: 1837324663684300449}
-  - component: {fileID: 6341845781199132530}
   m_Layer: 9
   m_Name: LeftHand Controller
   m_TagString: Untagged
@@ -15416,7 +15379,6 @@ GameObject:
   - component: {fileID: 1837324664781893257}
   - component: {fileID: 1837324664781893261}
   - component: {fileID: 1837324664781893262}
-  - component: {fileID: 102712763}
   m_Layer: 9
   m_Name: RightHand Controller
   m_TagString: Untagged
@@ -15494,7 +15456,7 @@ MonoBehaviour:
   m_OnSelectEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 102712763}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: StopTracting
         m_Mode: 1
@@ -15939,8 +15901,7 @@ MonoBehaviour:
   m_SmoothMovement: 1
   m_FollowTightness: 10
   m_SnapThresholdDistance: 10
-  m_Reticle: {fileID: 2663450942975863113, guid: 2ed38cd6755f763469944dc94449ee0a,
-    type: 3}
+  m_Reticle: {fileID: 76289055132269279, guid: debb6542ad708a7499e815c8750cc71a, type: 3}
   m_StopLineAtFirstRaycastHit: 1
 --- !u!1 &2514756473615130090
 GameObject:
@@ -18193,25 +18154,6 @@ Transform:
   m_Father: {fileID: 1837324664781893260}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6341845781199132530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837324663684300454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f994272725f8a44bb170d4ed52827a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BeamRenderer: {fileID: 5222936905719452371}
-  TargetDistance: 0.05
-  LocalRayAxis: {x: 1, y: 0, z: 0}
-  m_DirectInteractor: {fileID: 0}
-  m_HighlightedRigidbody: {fileID: 0}
-  m_CurrentSelectionOutline: {fileID: 0}
-  m_TractingObject: 0
 --- !u!33 &6749577034903925933
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19385,7 +19327,6 @@ GameObject:
   - component: {fileID: 1591023486}
   - component: {fileID: 1591023485}
   - component: {fileID: 1591023484}
-  - component: {fileID: 8707273951769941865}
   m_Layer: 0
   m_Name: Cube.001
   m_TagString: Untagged
@@ -19393,18 +19334,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8707273951769941865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8707273951769941864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b081a2b08b331941ba81b8c1370c917, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8707273952036199487
 GameObject:
   m_ObjectHideFlags: 0
