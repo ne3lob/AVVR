@@ -7,7 +7,7 @@ public class LineMesh : MonoBehaviour
     private List<Vector3> points = new List<Vector3>();
 
     // Use this for initialization
-    public void Start(LineRenderer lines)
+    public void start(LineRenderer lines)
     {
         points.Clear();
         line = lines;
