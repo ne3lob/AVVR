@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Synth;
 using UnityEngine;
 using UnityEngine.Experimental.VFX;
 using UnityEngine.VFX;

@@ -24,7 +24,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LineMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LineMesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,9 +56,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LineMesh.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
     </changedPaths>
   </component>
@@ -130,6 +132,10 @@
       <workItem from="1614678927222" duration="142000" />
       <workItem from="1614681136761" duration="15617000" />
       <workItem from="1614960323462" duration="1369000" />
+      <workItem from="1615114083413" duration="5181000" />
+      <workItem from="1615122662610" duration="712000" />
+      <workItem from="1615289160579" duration="2167000" />
+      <workItem from="1615292889214" duration="2135000" />
     </task>
     <servers />
   </component>

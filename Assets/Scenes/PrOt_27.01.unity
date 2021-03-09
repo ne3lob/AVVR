@@ -6576,9 +6576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receiver: {fileID: 1819411097}
   transmitter: {fileID: 1819411096}
-  socketInteractor: {fileID: 1005006245}
 --- !u!114 &1005006245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6607,8 +6605,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1005006244}
-        m_TargetAssemblyTypeName: WavesScript, Assembly-CSharp
-        m_MethodName: SocketOFF
+        m_TargetAssemblyTypeName: Synth.WavesScript, Assembly-CSharp
+        m_MethodName: SocketOff
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8825,7 +8823,12 @@ PrefabInstance:
     - target: {fileID: 9127028662677028563, guid: 2df14c9e37b763b4f825da5b5f4ede63,
         type: 3}
       propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SockeSubNoise
+      value: SocketSubNoise
+      objectReference: {fileID: 0}
+    - target: {fileID: 9127028662677028563, guid: 2df14c9e37b763b4f825da5b5f4ede63,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Synth.WavesScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9127028663876177634, guid: 2df14c9e37b763b4f825da5b5f4ede63,
         type: 3}
@@ -9966,7 +9969,12 @@ PrefabInstance:
     - target: {fileID: 2837938398518450557, guid: aa8c85f3b124cd344ba8a5bf6dc14cc3,
         type: 3}
       propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SocketSubOFF
+      value: SocketSubOff
+      objectReference: {fileID: 0}
+    - target: {fileID: 2837938398518450557, guid: aa8c85f3b124cd344ba8a5bf6dc14cc3,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Synth.WavesScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3144366027722138664, guid: aa8c85f3b124cd344ba8a5bf6dc14cc3,
         type: 3}
@@ -16125,9 +16133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receiver: {fileID: 1819411097}
   transmitter: {fileID: 1819411096}
-  socketInteractor: {fileID: 2837938397196801000}
 --- !u!135 &2837938397196801003
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16166,9 +16172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receiver: {fileID: 1819411097}
   transmitter: {fileID: 1819411096}
-  socketInteractor: {fileID: 2837938398388415059}
 --- !u!114 &2837938398388415059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17030,9 +17034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receiver: {fileID: 1819411097}
   transmitter: {fileID: 1819411096}
-  socketInteractor: {fileID: 4337890948021712590}
 --- !u!114 &4337890948021712590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17107,9 +17109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receiver: {fileID: 1819411097}
   transmitter: {fileID: 1819411096}
-  socketInteractor: {fileID: 4337890948043507540}
 --- !u!114 &4337890948043507540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18456,9 +18456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receiver: {fileID: 1819411097}
   transmitter: {fileID: 1819411096}
-  socketInteractor: {fileID: 7237018759502627873}
 --- !u!1 &7238662057746757034
 GameObject:
   m_ObjectHideFlags: 0
@@ -19638,6 +19636,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 891123681}
+    - target: {fileID: 9127028662677028563, guid: 2df14c9e37b763b4f825da5b5f4ede63,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Synth.WavesScript, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 9127028663876177634, guid: 2df14c9e37b763b4f825da5b5f4ede63,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19675,9 +19678,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receiver: {fileID: 1819411097}
   transmitter: {fileID: 1819411096}
-  socketInteractor: {fileID: 9222722148795297444}
 --- !u!114 &9222722148795297444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19916,9 +19917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receiver: {fileID: 1819411097}
   transmitter: {fileID: 1819411096}
-  socketInteractor: {fileID: 9222722149527362292}
 --- !u!114 &9222722149527362292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20059,9 +20058,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 083978fc3fcb51341b1da7ada62aefe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receiver: {fileID: 1819411097}
   transmitter: {fileID: 1819411096}
-  socketInteractor: {fileID: 9222722150141003417}
 --- !u!135 &9222722150141003423
 SphereCollider:
   m_ObjectHideFlags: 0
