@@ -10,14 +10,15 @@ using List = System.Collections.Generic.List<int>;
 public class SyntHTable : MonoBehaviour
 {
     private InputDevice device;
-    private List<InputDevice> rightDevice = new List<InputDevice>
+
+    private List<InputDevice> rightDevices = new List<InputDevice>
     {
         new InputDevice()
     };
-    private List<InputDevice> leftDevice = new List<InputDevice>
+
+    private List<InputDevice> leftDevices = new List<InputDevice>
     {
         new InputDevice()
-        
     };
 
     public GameObject synth;
@@ -28,62 +29,71 @@ public class SyntHTable : MonoBehaviour
     private bool state;
     private MeshRenderer m;
 
-   
+    private InputDevice rightDevice;
+    private InputDevice leftDevice;
+
+    [SerializeField] private List<MeshRenderer> cabelsMeshes;
+    private Vector2 currentStateValue = Vector2.zero;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        rightDevice.Clear();
-        leftDevice.Clear();
+        rightDevices.Clear();
+        leftDevices.Clear();
         synth.SetActive(false);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Right, rightDevice);
-        InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Left, leftDevice);
-
-        if (rightDevice.Count >= 1)
+        InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Right, rightDevices);
+        InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Left, leftDevices);
+        
+        if (rightDevices.Count == 1)
         {
-            if (rightDevice[0].TryGetFeatureValue(CommonUsages.primaryButton, out fors) && fors)
+            rightDevice = rightDevices[0];
+        }
+
+        if (leftDevices.Count == 1)
+        {
+            leftDevice = leftDevices[0];
+        }
+        
+        if (rightDevice.TryGetFeatureValue(CommonUsages.primaryButton, out fors) && fors)
+        {
+            if (!IsPressed)
             {
-                if (!IsPressed)
+                IsPressed = true;
+                synth.SetActive(!synth.activeSelf);
+
+                for (int i = 0; i < cabelsMeshes.Count; i++)
                 {
-                    IsPressed = true;
-                    synth.SetActive(!synth.activeSelf);
-                    GameObject[] cabelEnd = GameObject.FindGameObjectsWithTag("Cable");
-                    foreach (GameObject go in cabelEnd)
+                    MeshRenderer cabelMesh = cabelsMeshes[i];
+
+                    if (cabelMesh.enabled)
                     {
-                        m = go.GetComponent<MeshRenderer>();
-                        if (m.enabled == true)
-                        {
-                            m.enabled = false;
-                        }
-                        else if (m.enabled == false)
-                        {
-                            m.enabled = true;
-                        }
+                        cabelMesh.enabled = false;
+                    }
+                    else if (!cabelMesh.enabled)
+                    {
+                        cabelMesh.enabled = true;
                     }
                 }
             }
-
-            else if (IsPressed)
-            {
-                IsPressed = false;
-            }
         }
 
-        Vector2 currentStateValue = Vector2.zero;
-        InputFeatureUsage<Vector2> currentState = CommonUsages.primary2DAxis;
-
-        if (leftDevice.Count >= 1)
+        else if (IsPressed)
         {
-            if (leftDevice[0].TryGetFeatureValue(currentState, out currentStateValue) && currentStateValue != Vector2.zero)
-            {
-                speedTurn = currentStateValue.x * 40;
-            
-            }
+            IsPressed = false;
         }
         
+        InputFeatureUsage<Vector2> currentState = CommonUsages.primary2DAxis;
+        
+        if (leftDevice.TryGetFeatureValue(currentState, out currentStateValue) && currentStateValue != Vector2.zero)
+        {
+            speedTurn = currentStateValue.x * 40;
+        }
     }
 }

@@ -104,9 +104,9 @@ public class StartTheWalls : MonoBehaviour
         
         newMatBlackWall= blackWallsObjTransparent;
         blackWallsObj.GetComponent<MeshRenderer>().material = newMatBlackWall;
-
+    
         newMatCelling = bottomCellingTransparent;
         bottomCellingObj.GetComponent<MeshRenderer>().material = newMatCelling;
-
+    
     }
 }

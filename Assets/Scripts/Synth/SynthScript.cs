@@ -6,9 +6,9 @@ namespace Synth
 {
     public class SynthScript : MonoBehaviour
     {
-        [Header("OSC Settings")] public OSCReceiver receiver;
+        [Header("OSC Settings")] 
         public OSCTransmitter transmitter;
-    
+
         //ADRESS
         private const string oscAddressVolume = "/volume";
         private const string oscAddressPitch = "/pitch";
@@ -16,27 +16,27 @@ namespace Synth
         private const string oscAddressVolumeEnv = "/VolumeEnvelope";
         private const string oscAddressDistOnOff = "/DistortionOnOff";
         private const string oscAddressDistValue = "/DistortionValue";
-        private const string oscAddressSubPitch= "/SubPitch";
-        private const string oscAddressReverbOnOff= "/ReverbOnOff";
-        private const string oscAddressFilterFrequency= "/FilterFrequency";
-        private const string oscAddressFilterResonance= "/FilterResonance";
-        private const string oscAddreessDelayTimeValue= "/DelayTimeValue";
-        private const string oscAddreessDelayTimeFeedback="/DelayTimeFeedback";
-        private const string oscAddreessFilterEnvelope="/FilterEnvelope";
-        private const string oscAddreessPitchLfo="/PitchLfo";
-        private const string oscAddreessFilterLfo="/FilterLfo";
-        private const string oscAddreessPitchLfoFrequency="/PitchLfoFrequency";
-        private const string oscAddreessPitchLfoLenght="/PitchLfoLenght";
-        private const string oscAddreessFilterLfoFrequency="/FilterLfoFrequency";
+        private const string oscAddressSubPitch = "/SubPitch";
+        private const string oscAddressReverbOnOff = "/ReverbOnOff";
+        private const string oscAddressFilterFrequency = "/FilterFrequency";
+        private const string oscAddressFilterResonance = "/FilterResonance";
+        private const string oscAddreessDelayTimeValue = "/DelayTimeValue";
+        private const string oscAddreessDelayTimeFeedback = "/DelayTimeFeedback";
+        private const string oscAddreessFilterEnvelope = "/FilterEnvelope";
+        private const string oscAddreessPitchLfo = "/PitchLfo";
+        private const string oscAddreessFilterLfo = "/FilterLfo";
+        private const string oscAddreessPitchLfoFrequency = "/PitchLfoFrequency";
+        private const string oscAddreessPitchLfoLenght = "/PitchLfoLenght";
+        private const string oscAddreessFilterLfoFrequency = "/FilterLfoFrequency";
         private const string oscAddreessFilterLfoLenght = "/FilterLfoLenght";
-    
+
         //STARTING FLOATS
         private float s_VolumeRatio = 0.0f;
-        public float s_PitchRatio = 0.0f;
-        private float s_DrumVolume=0.0f;
+        public float  s_PitchRatio = 0.0f;
+        private float s_DrumVolume = 0.0f;
         private float s_RatioDistortion = 0.0f;
         private float s_SubPitch = 0.0f;
-        private float s_FilterFrequency=0.0f;
+        private float s_FilterFrequency = 0.0f;
         private float s_FilterResonance = 0.0f;
         private float s_DalayTimeValue = 0.0f;
         private float s_DelayTimeFeedback = 0.0f;
@@ -44,405 +44,392 @@ namespace Synth
         private float s_LfoPitchLenght = 0.0f;
         private float s_LfoFilterLenght = 0.0f;
         private float s_LfoFilterFrequency = 0.0f;
-    
-        
+
 
         //bools Volume Envelope
-        private bool changedVolume=false;
+        private bool changedVolume = false;
         private bool sendOneTime = false;
-    
+
         //bools Distortion
-        private bool changedDistortion=false;
+        private bool changedDistortion = false;
         private bool sendOneTimeDist = false;
-   
+
         //bools Reverb
         private bool changedReverb = false;
         private bool sendOneTimeRev = false;
-    
+
         //bools Filter Envelope
         private bool changedFilterEnv = false;
         private bool sendOneTimeFilterEnve = false;
-    
+
         //bools Pitch Lfo
-        private bool changedPitchLfo= false;
+        private bool changedPitchLfo = false;
         private bool sendOneTimePitchLfo = false;
 
         //bools Filter Lfo
-        private bool changedFilterLfo=false;
+        private bool changedFilterLfo = false;
         private bool sendOneTimeFilterLfo = false;
-    
 
-        // Start is called before the first frame update
-        void Start()
+        #region OSCMessagesSec
+
+        private OSCMessage _messageVol;
+        private OSCMessage _messagePitch;
+        private OSCMessage _messageVolumeDrumVolume;
+        private OSCMessage _messageDistortionVolume;
+        private OSCMessage _messageLfoPitchFrequency;
+        private OSCMessage _messageLfoPitchLenght;
+        private OSCMessage _messageLfoFilterLenght;
+        private OSCMessage _messageLfoFilterFrequency;
+        private OSCMessage _messageSubPitch;
+        private OSCMessage _messageFilterFrequency;
+        private OSCMessage _messageFilterResonance;
+        private OSCMessage _messageDelayTimeValue;
+        private OSCMessage _messageDelayTimeFeedback;
+        private OSCMessage _messageDragEnvOn;
+        private OSCMessage _messageDistDrag;
+        private OSCMessage _messageRevDrag;
+        private OSCMessage _messageFilterEnvelope;
+        private OSCMessage _messagePitchLfo;
+        private OSCMessage _messageFilterLfo;
+
+        #endregion
+
+
+        private void DialTypeChangedFloat(out OSCMessage messageName, string addressType, float ratioScaleFlaot)
         {
-       
+            messageName = new OSCMessage(addressType);
+            messageName.AddValue(OSCValue.Float(ratioScaleFlaot));
+            transmitter.Send(messageName);
         }
+
+        private void DialTypeChangedInt(out OSCMessage messageName, string addressType, int ratioScaleInt)
+        {
+            messageName = new OSCMessage(addressType);
+            messageName.AddValue(OSCValue.Float(ratioScaleInt));
+            transmitter.Send(messageName);
+        }
+
         public void SynthVolumeChanged(DialInteractable dial)
         {
-            if (transmitter == null) return;
-        
             float ratioVolume = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_VolumeRatio = ratioVolume;
-        
-            var messageVol = new OSCMessage(oscAddressVolume);
-            messageVol.AddValue(OSCValue.Float(s_VolumeRatio));
-            transmitter.Send(messageVol);
-        
-       
-      
+
+            DialTypeChangedFloat(out _messageVol, oscAddressVolume, s_VolumeRatio);
         }
+
         public void SynthPitchChanged(DialInteractable dial)
         {
-            if (transmitter == null) return;
-            
             float ratioPitch = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_PitchRatio = ratioPitch;
-            
-            
-            var messagePitch = new OSCMessage(oscAddressPitch);
-            messagePitch.AddValue(OSCValue.Float(s_PitchRatio));
-            transmitter.Send(messagePitch);
-           
-            
+
+            DialTypeChangedFloat(out _messagePitch, oscAddressPitch, s_PitchRatio);
         }
+
         public void SynthDrumVolumeChanged(DialInteractable dial)
         {
-            if (transmitter == null) return;
-         
             float ratioDrumVolume = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_DrumVolume = ratioDrumVolume;
-         
-            var messageVolumeDrumVolume = new OSCMessage(oscAddressDrumVolume);
-            messageVolumeDrumVolume.AddValue(OSCValue.Float(s_DrumVolume));
-            transmitter.Send(messageVolumeDrumVolume);
+
+            DialTypeChangedFloat(out _messageVolumeDrumVolume, oscAddressDrumVolume, s_DrumVolume);
         }
 
         public void DistortionVolume(DialInteractable dial)
         {
-            if (transmitter == null) return;
-         
             float ratioDistortionValue = dial.CurrentAngle / dial.RotationAngleMaximum;
-            s_RatioDistortion = ratioDistortionValue ;
-         
-            var messageDistortionVolume = new OSCMessage(oscAddressDistValue);
-            messageDistortionVolume.AddValue(OSCValue.Float(s_RatioDistortion));
-            transmitter.Send(messageDistortionVolume);
-       
+            s_RatioDistortion = ratioDistortionValue;
+
+            DialTypeChangedFloat(out _messageDistortionVolume, oscAddressDistValue, s_RatioDistortion);
         }
-    
-        public void LfoPitchFrequency (DialInteractable dial)
+
+        public void LfoPitchFrequency(DialInteractable dial)
         {
-            if (transmitter == null) return;
-         
             float ratioLfoPitchFrequency = dial.CurrentAngle / dial.RotationAngleMaximum;
-            s_LfoPitchFrequency = ratioLfoPitchFrequency ;
-         
-            var messageLfoPitchFrequency = new OSCMessage(oscAddreessPitchLfoFrequency);
-            messageLfoPitchFrequency.AddValue(OSCValue.Float(s_LfoPitchFrequency));
-            transmitter.Send(messageLfoPitchFrequency);
-       
+            s_LfoPitchFrequency = ratioLfoPitchFrequency;
+
+            DialTypeChangedFloat(out _messageLfoPitchFrequency, oscAddreessPitchLfoFrequency, s_LfoPitchFrequency);
         }
-        public void LfoPitchLenght (DialInteractable dial)
+
+        public void LfoPitchLenght(DialInteractable dial)
         {
-            if (transmitter == null) return;
-         
             float ratioLfoPitchLenght = dial.CurrentAngle / dial.RotationAngleMaximum;
-            s_LfoPitchLenght = ratioLfoPitchLenght ;
-         
-            var messageLfoPitchLenght = new OSCMessage(oscAddreessPitchLfoLenght);
-            messageLfoPitchLenght.AddValue(OSCValue.Float(s_LfoPitchLenght));
-            transmitter.Send(messageLfoPitchLenght);
-       
+            s_LfoPitchLenght = ratioLfoPitchLenght;
+
+            DialTypeChangedFloat(out _messageLfoPitchLenght, oscAddreessPitchLfoLenght, s_LfoPitchLenght);
         }
-        public void LfoFilterLenght (DialInteractable dial)
+
+        public void LfoFilterLenght(DialInteractable dial)
         {
-            if (transmitter == null) return;
-         
             float ratioLfoFilterLenght = dial.CurrentAngle / dial.RotationAngleMaximum;
-            s_LfoFilterLenght = ratioLfoFilterLenght ;
-         
-            var messageLfoFilterLenght = new OSCMessage(oscAddreessFilterLfoLenght);
-            messageLfoFilterLenght.AddValue(OSCValue.Float(s_LfoFilterLenght));
-            transmitter.Send(messageLfoFilterLenght);
+            s_LfoFilterLenght = ratioLfoFilterLenght;
+
+            DialTypeChangedFloat(out _messageLfoFilterLenght, oscAddreessFilterLfoLenght, s_LfoFilterLenght);
         }
-        public void LfoFilterFrequency (DialInteractable dial)
+
+        public void LfoFilterFrequency(DialInteractable dial)
         {
-            if (transmitter == null) return;
-         
             float ratioLfoFilterFrequency = dial.CurrentAngle / dial.RotationAngleMaximum;
-            s_LfoFilterFrequency = ratioLfoFilterFrequency ;
-         
-            var messageLfoFilterFrequency = new OSCMessage(oscAddreessFilterLfoFrequency);
-            messageLfoFilterFrequency.AddValue(OSCValue.Float( s_LfoFilterFrequency));
-            transmitter.Send(messageLfoFilterFrequency);
+            s_LfoFilterFrequency = ratioLfoFilterFrequency;
+
+            DialTypeChangedFloat(out _messageLfoFilterFrequency, oscAddreessFilterLfoFrequency, s_LfoFilterFrequency);
         }
-     
-        public void SubPitch (DialInteractable dial)
+
+        public void SubPitch(DialInteractable dial)
         {
-            if (transmitter == null) return;
-         
             float ratioSubPitch = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_SubPitch = ratioSubPitch;
-         
-            var messageSubPitch = new OSCMessage(oscAddressSubPitch);
-            messageSubPitch.AddValue(OSCValue.Float(s_SubPitch));
-            transmitter.Send(messageSubPitch);
-         
+
+            DialTypeChangedFloat(out _messageSubPitch, oscAddressSubPitch, s_SubPitch);
         }
-        public void FilterFrequency (DialInteractable dial)
+
+        public void FilterFrequency(DialInteractable dial)
         {
-            if (transmitter == null) return;
-         
             float ratioFilterFrequency = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_FilterFrequency = ratioFilterFrequency;
-         
-            var messageFilterFrequency = new OSCMessage(oscAddressFilterFrequency);
-            messageFilterFrequency.AddValue(OSCValue.Float(s_FilterFrequency));
-            transmitter.Send(messageFilterFrequency);
-         
+
+            DialTypeChangedFloat(out _messageFilterFrequency, oscAddressFilterFrequency, s_FilterFrequency);
         }
-        public void FilterResonance (DialInteractable dial)
+
+        public void FilterResonance(DialInteractable dial)
         {
-            if (transmitter == null) return;
-         
             float ratioFilterResonance = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_FilterResonance = ratioFilterResonance;
-         
-            var messageFilterResonance = new OSCMessage(oscAddressFilterResonance);
-            messageFilterResonance.AddValue(OSCValue.Float(s_FilterResonance));
-            transmitter.Send(messageFilterResonance);
-         
+
+            DialTypeChangedFloat(out _messageFilterResonance, oscAddressFilterResonance, s_FilterResonance);
         }
-        public void DelayTimeValue (DialInteractable dial)
+
+        public void DelayTimeValue(DialInteractable dial)
         {
-            if (transmitter == null) return;
-         
-            float ratioDalayTimeValue= dial.CurrentAngle / dial.RotationAngleMaximum;
+            float ratioDalayTimeValue = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_DalayTimeValue = ratioDalayTimeValue;
-         
-            var messageDelayTimeValue = new OSCMessage(oscAddreessDelayTimeValue);
-            messageDelayTimeValue.AddValue(OSCValue.Float(s_DalayTimeValue));
-            transmitter.Send( messageDelayTimeValue);
+
+            DialTypeChangedFloat(out _messageDelayTimeValue, oscAddreessDelayTimeValue, s_DalayTimeValue);
         }
-        public void DelayTimeFeedback (DialInteractable dial)
+
+        public void DelayTimeFeedback(DialInteractable dial)
         {
-            if (transmitter == null) return;
-         
-            float ratioDalayTimeFeedback= dial.CurrentAngle / dial.RotationAngleMaximum;
+            float ratioDalayTimeFeedback = dial.CurrentAngle / dial.RotationAngleMaximum;
             s_DelayTimeFeedback = ratioDalayTimeFeedback;
-         
-            var messageDelayTimeFeedback = new OSCMessage(oscAddreessDelayTimeFeedback);
-            messageDelayTimeFeedback.AddValue(OSCValue.Float(s_DelayTimeFeedback));
-            transmitter.Send( messageDelayTimeFeedback);
+
+            DialTypeChangedFloat(out _messageDelayTimeFeedback, oscAddreessDelayTimeFeedback, s_DelayTimeFeedback);
         }
-     
-     
+
+
         public void VolumeEnv(Single dragEnv)
         {
-         
-            if (dragEnv >=0.05f)
+            if (dragEnv >= 0.05f)
             {
-                changedVolume= true;
+                changedVolume = true;
             }
-            if (dragEnv <0.05f)
+
+            if (dragEnv < 0.05f)
             {
                 changedVolume = false;
             }
         }
+
         public void FiltrEnv(Single dragFilterEnv)
         {
-            if (dragFilterEnv >=0.05f)
+            if (dragFilterEnv >= 0.05f)
             {
-                changedFilterEnv= true;
+                changedFilterEnv = true;
             }
-            if (dragFilterEnv <0.05f)
+
+            if (dragFilterEnv < 0.05f)
             {
-                changedFilterEnv= false;
+                changedFilterEnv = false;
             }
         }
+
         public void PitchLfo(Single dragPitchLfo)
         {
-            if (dragPitchLfo >=0.05f)
+            if (dragPitchLfo >= 0.05f)
             {
-                changedPitchLfo= true;
+                changedPitchLfo = true;
             }
-            if (dragPitchLfo <0.05f)
+
+            if (dragPitchLfo < 0.05f)
             {
-                changedPitchLfo= false;
+                changedPitchLfo = false;
             }
         }
+
         public void FiltrLfo(Single dragFilterLfo)
         {
-            if (dragFilterLfo >=0.05f)
+            if (dragFilterLfo >= 0.05f)
             {
-                changedFilterLfo= true;
+                changedFilterLfo = true;
             }
-            if (dragFilterLfo <0.05f)
+
+            if (dragFilterLfo < 0.05f)
             {
-                changedFilterLfo= false;
+                changedFilterLfo = false;
             }
         }
-        public void DistortionOnOff (Single dragDist)
+
+        public void DistortionOnOff(Single dragDist)
         {
-            if (dragDist >=0.05f)
+            if (dragDist >= 0.05f)
             {
                 changedDistortion = true;
-            }
-            if (dragDist <0.05f)
-            {
-                changedDistortion = false;
-            }
-        }
-     
-        public void ReverbDrag (Single dragRev)
-        {
-            if (dragRev >=0.05f)
-            {
-                changedReverb= true;
-            }
-            if (dragRev <0.05f)
-            {
-                changedReverb = false;
-            }
-         
-        }
-     
-        // Update is called once per frame
-        void Update()
-        {
-            //TODO bools that will checked when the Value is ==0
-        
-            if (transmitter == null) return;
-        
-            //Envelope Volume ONOFF
-            if (changedVolume)
-            {
-                if (!sendOneTime)
-                {
-                    var messageDragEnvOn= new OSCMessage(oscAddressVolumeEnv);
-                    messageDragEnvOn.AddValue(OSCValue.Int(1));
-                    transmitter.Send(messageDragEnvOn);
-                    sendOneTime = true;
-                }
-            }
-            else if (!changedVolume)
-            {
-                if (sendOneTime)
-                {
-                    var messageDragEnvOn= new OSCMessage(oscAddressVolumeEnv);
-                    messageDragEnvOn.AddValue(OSCValue.Int(0));
-                    transmitter.Send(messageDragEnvOn);
-                    sendOneTime = false;
-                } 
-            }
-        
-            //Distortion ONOFF
-            if (changedDistortion)
-            { 
                 if (!sendOneTimeDist)
                 {
-                    var messageDistDrag= new OSCMessage(oscAddressDistOnOff);
-                    messageDistDrag.AddValue(OSCValue.Int(1));
-                    transmitter.Send(messageDistDrag);
+                    DialTypeChangedInt(out _messageDistDrag, oscAddressDistOnOff, 1);
                     sendOneTimeDist = true;
                 }
             }
-            else if (!changedDistortion)
+
+            if (dragDist < 0.05f)
             {
-                if (sendOneTimeDist) 
+                changedDistortion = false;
+                if (sendOneTimeDist)
                 {
-                    var messageDistDrag= new OSCMessage(oscAddressDistOnOff);
-                    messageDistDrag.AddValue(OSCValue.Int(0));
-                    transmitter.Send(messageDistDrag);
+                    DialTypeChangedInt(out _messageDistDrag, oscAddressDistOnOff, 0);
                     sendOneTimeDist = false;
                 }
-        
             }
-        
-            //Reverb ONOFF
-            if (changedReverb)
+        }
+
+        public void ReverbDrag(Single dragRev)
+        {
+            if (dragRev >= 0.05f)
             {
-                if (!sendOneTimeRev)
-                {
-                    var messageRevDrag= new OSCMessage(oscAddressReverbOnOff);
-                    messageRevDrag.AddValue(OSCValue.Int(1));
-                    transmitter.Send(messageRevDrag);
-                    sendOneTimeRev = true;
-                }
+                changedReverb = true;
             }
-            else if (!changedReverb)
+
+            if (dragRev < 0.05f)
             {
-                if (sendOneTimeRev)
-                { 
-                    var messageRevDrag= new OSCMessage(oscAddressReverbOnOff);
-                    messageRevDrag.AddValue(OSCValue.Int(0));
-                    transmitter.Send(messageRevDrag);
-                    sendOneTimeRev = false;
-                }
-            
-            } 
-            //Filter Envelope
-            if (changedFilterEnv)
-            {
-                if (!sendOneTimeFilterEnve)
-                {
-                    var messageFilterEnvelope= new OSCMessage(oscAddreessFilterEnvelope);
-                    messageFilterEnvelope.AddValue(OSCValue.Int(1));
-                    transmitter.Send(messageFilterEnvelope);
-                    sendOneTimeFilterEnve = true;
-                }
+                changedReverb = false;
             }
-            else if (!changedFilterEnv)
-            {
-                if (sendOneTimeFilterEnve)
-                { 
-                    var messageFilterEnvelope= new OSCMessage(oscAddreessFilterEnvelope);
-                    messageFilterEnvelope.AddValue(OSCValue.Int(0));
-                    transmitter.Send(messageFilterEnvelope);
-                    sendOneTimeFilterEnve = false;
-                }
-            
-            }
-            if (changedPitchLfo)
-            {
-                if (!sendOneTimePitchLfo)
-                {
-                    var messagePitchLfo= new OSCMessage(oscAddreessPitchLfo);
-                    messagePitchLfo.AddValue(OSCValue.Int(1));
-                    transmitter.Send(messagePitchLfo);
-                    sendOneTimePitchLfo = true;
-                }
-            }
-            else if (!changedPitchLfo)
-            {
-                if (sendOneTimePitchLfo)
-                { 
-                    var messagePitchLfo= new OSCMessage(oscAddreessPitchLfo);
-                    messagePitchLfo.AddValue(OSCValue.Int(0));
-                    transmitter.Send(messagePitchLfo);
-                    sendOneTimePitchLfo = false;
-                }
-            }
-            if (changedFilterLfo)
-            {
-                if (!sendOneTimeFilterLfo)
-                {
-                    var messageFilterLfo= new OSCMessage(oscAddreessFilterLfo);
-                    messageFilterLfo.AddValue(OSCValue.Int(1));
-                    transmitter.Send(messageFilterLfo);
-                    sendOneTimeFilterLfo = true;
-                }
-            }
-            else if (!changedFilterLfo)
-            {
-                if (sendOneTimeFilterLfo)
-                { 
-                    var messageFilterLfo= new OSCMessage(oscAddreessFilterLfo);
-                    messageFilterLfo.AddValue(OSCValue.Int(0));
-                    transmitter.Send(messageFilterLfo);
-                    sendOneTimeFilterLfo = false;
-                }
-            }
+
+            // if (changedReverb)
+            // {
+            //     if (!sendOneTimeRev)
+            //     {
+            //         
+            //         DialTypeChangedInt(out _messageRevDrag, oscAddressReverbOnOff, 1);
+            //        
+            //         sendOneTimeRev = true;
+            //     }
+            // }
+            // else if (!changedReverb)
+            // {
+            //     if (sendOneTimeRev)
+            //     { 
+            //         
+            //         DialTypeChangedInt(out _messageRevDrag, oscAddressReverbOnOff, 0);
+            //        
+            //         sendOneTimeRev = false;
+            //     }
+            //
+            // } 
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            // //Envelope Volume ONOFF
+            // if (changedVolume)
+            // {
+            //     if (!sendOneTime)
+            //     {
+            //         
+            //         DialTypeChangedInt(out _messageDragEnvOn, oscAddressVolumeEnv, 1);
+            //         sendOneTime = true;
+            //     }
+            // }
+            // else if (!changedVolume)
+            // {
+            //     if (sendOneTime)
+            //     {
+            //         
+            //         DialTypeChangedInt(out _messageDragEnvOn, oscAddressVolumeEnv, 0);
+            //         sendOneTime = false;
+            //     } 
+            // }
+            //
+            // //Distortion ONOFF
+            // if (changedDistortion)
+            // { 
+            //     if (!sendOneTimeDist)
+            //     {
+            //         
+            //         DialTypeChangedInt(out _messageDistDrag, oscAddressDistOnOff, 1);
+            //         sendOneTimeDist = true;
+            //     }
+            // }
+            // else if (!changedDistortion)
+            // {
+            //     if (sendOneTimeDist) 
+            //     {
+            //         
+            //         DialTypeChangedInt(out _messageDistDrag, oscAddressDistOnOff, 0);
+            //         sendOneTimeDist = false;
+            //     }
+            //
+            // }
+            //
+            //
+            // //Filter Envelope
+            // if (changedFilterEnv)
+            // {
+            //     if (!sendOneTimeFilterEnve)
+            //     {
+            //         
+            //         DialTypeChangedInt(out _messageFilterEnvelope, oscAddreessFilterEnvelope, 1);
+            //        
+            //         sendOneTimeFilterEnve = true;
+            //     }
+            // }
+            // else if (!changedFilterEnv)
+            // {
+            //     if (sendOneTimeFilterEnve)
+            //     { 
+            //         
+            //         DialTypeChangedInt(out _messageFilterEnvelope, oscAddreessFilterEnvelope, 0);
+            //         sendOneTimeFilterEnve = false;
+            //     }
+            //
+            // }
+            // if (changedPitchLfo)
+            // {
+            //     if (!sendOneTimePitchLfo)
+            //     {
+            //         
+            //         DialTypeChangedInt(out _messagePitchLfo, oscAddreessPitchLfo, 1);
+            //      
+            //         sendOneTimePitchLfo = true;
+            //     }
+            // }
+            // else if (!changedPitchLfo)
+            // {
+            //     if (sendOneTimePitchLfo)
+            //     { 
+            //         
+            //         DialTypeChangedInt(out _messagePitchLfo, oscAddreessPitchLfo, 0);
+            //        
+            //         sendOneTimePitchLfo = false;
+            //     }
+            // }
+            // if (changedFilterLfo)
+            // {
+            //     if (!sendOneTimeFilterLfo)
+            //     {
+            //        
+            //         DialTypeChangedInt(out _messageFilterLfo, oscAddreessFilterLfo, 1);
+            //      
+            //         sendOneTimeFilterLfo = true;
+            //     }
+            // }
+            // else if (!changedFilterLfo)
+            // {
+            //     if (sendOneTimeFilterLfo)
+            //     { 
+            //         
+            //         DialTypeChangedInt(out _messageFilterLfo, oscAddreessFilterLfo, 0);
+            //         
+            //         sendOneTimeFilterLfo = false;
+            //     }
+            // } 
         }
     }
 }

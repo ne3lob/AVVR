@@ -23,11 +23,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/3D/FINISH MONOM11.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/FINISH MONOM11.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/LightingData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/LightingData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-1_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-1_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-1_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-1_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/ReflectionProbe-0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/ReflectionProbe-0.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01/LightingData.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01/LightingData.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01/ReflectionProbe-0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01/ReflectionProbe-0.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/1Tile.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/1Tile.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/BlackHouse.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/BlackHouse.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/Disks.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Disks.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/HouseWithUv.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/HouseWithUv.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/photo_2021-02-07_00-49-37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/photo_2021-02-07_00-49-37.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/Oculus Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/Oculus Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +94,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LineMesh.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />
@@ -136,6 +174,7 @@
       <workItem from="1615122662610" duration="712000" />
       <workItem from="1615289160579" duration="2167000" />
       <workItem from="1615292889214" duration="2135000" />
+      <workItem from="1615489584401" duration="1000000" />
     </task>
     <servers />
   </component>

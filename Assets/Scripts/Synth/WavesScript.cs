@@ -59,48 +59,50 @@ namespace Synth
 
         public void SocketOff(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
-            SocketType(out _messageOff, OscAddressSynthWaveVco, 0);
+            
+            
+                SocketType(out _messageOff, OscAddressSynthWaveVco, 0);
         }
 
         //SAW
         public void SocketSaw(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
-            SocketType(out _messageSaw, OscAddressSynthWaveVco, 1);
+            
+            
+                SocketType(out _messageSaw, OscAddressSynthWaveVco, 1);
+            
         }
 
         //RECT
         public void SocketRect(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
-            SocketType(out _messageRect, OscAddressSynthWaveVco, 2);
+           
+                SocketType(out _messageRect, OscAddressSynthWaveVco, 2);
         }
 
         //TRI
         public void SocketTri(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageTri, OscAddressSynthWaveVco, 3);
         }
 
         //SIN
         public void SocketSin(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
             SocketType(out _messageSin, OscAddressSynthWaveVco, 4);
         }
 
         //NOISE
         public void SocketNoise(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageNoise, OscAddressSynthWaveVco, 5);
         }
 
         public void SocketSubNoise(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             
             SocketType(out _messageNoiseSub, OscAddressSynthWaveVcoSub, 5);
             SocketType(out _messageSubOnOff, OscAddressSynthWaveSubOnOff, 1);
@@ -108,7 +110,7 @@ namespace Synth
 
         public void SocketSubSin(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             
             SocketType(out _messageSinSub, OscAddressSynthWaveVcoSub, 4);
             SocketType(out _messageSubOnOff, OscAddressSynthWaveSubOnOff, 1);
@@ -117,7 +119,7 @@ namespace Synth
 
         public void SocketSubTri(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+           
             SocketType(out _messageTriSub, OscAddressSynthWaveVcoSub, 3);
             SocketType(out _messageSubOnOff, OscAddressSynthWaveSubOnOff, 1);
            
@@ -125,7 +127,7 @@ namespace Synth
 
         public void SocketSubSaw(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageSawSub, OscAddressSynthWaveVcoSub, 1);
             SocketType(out _messageSubOnOff, OscAddressSynthWaveSubOnOff, 1);
             
@@ -134,71 +136,71 @@ namespace Synth
         //RECT
         public void SocketSubRect(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageRectSub, OscAddressSynthWaveVcoSub, 2);
             SocketType(out _messageSubOnOff, OscAddressSynthWaveSubOnOff, 1);
         }
 
         public void SocketSubOff(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
-            SocketType(out _messageOff, OscAddressSynthWaveVcoSub, 0);
+            
+            SocketType(out _messageOffInput, OscAddressSynthWaveVcoSub, 0);
             SocketType(out _messageSubOnOff, OscAddressSynthWaveSubOnOff, 0);
         }
 
         public void OffInput(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             
             SocketType(out _messageOffInput, OscAddressInputSynth, 0);
         }
 
         public void PitchInput(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messagePitchInput, OscAddressInputSynth, 1);
         }
 
         public void SequencerInput(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageSeqInput, OscAddressInputSynth, 2);
         }
 
         public void SeqSlideInput(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageSeqSlideInput, OscAddressInputSynth, 3);
         }
 
         public void FilterTypeOff(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageFilterTypeOff, OscAddressFilterType, 0);
         }
 
         public void FilterTypeLow(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageFilterTypeLow, OscAddressFilterType, 1);
         }
 
         public void FilterTypeHigh(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageFilterTypeHigh, OscAddressFilterType, 2);
         }
 
         public void FilterTypeBand(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageFilterTypeBand, OscAddressFilterType, 3);
            
         }
 
         public void DelayNumberNull(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageDelayNumberNull, OscAddressDelay, 0);
             
             SocketType(out _messageDelayTime, OscAddressDelayTimeOnOff, 1);
@@ -207,7 +209,7 @@ namespace Synth
         
         public void DelayNumberOne(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+            
             SocketType(out _messageDelayNumberOne, OscAddressDelay, 1);
             
             SocketType(out _messageDelayTime, OscAddressDelayTimeOnOff, 1);
@@ -215,7 +217,7 @@ namespace Synth
 
         public void DelayNumberTwo(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+           
             SocketType(out _messageDelayNumberTwo, OscAddressDelay, 2);
             
             SocketType(out _messageDelayTime, OscAddressDelayTimeOnOff, 1);
@@ -223,7 +225,7 @@ namespace Synth
 
         public void DelayNumberThree(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+           
             SocketType(out _messageDelayNumberThree, OscAddressDelay, 3);
            
             SocketType(out _messageDelayTime, OscAddressDelayTimeOnOff, 1);
@@ -232,14 +234,14 @@ namespace Synth
 
         public void DelayNumberFour(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+           
             SocketType(out _messageDelayNumberFour, OscAddressDelay, 4);
             SocketType(out _messageDelayTime, OscAddressDelayTimeOnOff, 1);
         }
 
         public void DelayNumberFive(XRBaseInteractable interactable)
         {
-            if (transmitter == null) return;
+           
             SocketType(out _messageDelayNumberFive, OscAddressDelay, 5);
             SocketType(out _messageDelayTime, OscAddressDelayTimeOnOff, 1);
         }
