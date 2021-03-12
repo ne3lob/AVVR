@@ -23,48 +23,316 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/3D/FINISH MONOM11.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/FINISH MONOM11.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/LightingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-1_comp_dir.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-1_comp_dir.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-1_comp_light.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-1_comp_light.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/ReflectionProbe-0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/ReflectionProbe-0.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01/LightingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01/ReflectionProbe-0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01/ReflectionProbe-0.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AdditiveSprite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AdditiveSprite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSkyDemoEnvironment_Unity4.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSkyDemoEnvironment_Unity4.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSky_DemoEnvironment.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSky_DemoEnvironment.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSky_DemoEnvironment02.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSky_DemoEnvironment02.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSky_DemoEnvironment_Center.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSky_DemoEnvironment_Center.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSky_DemoEnvironment_Light.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSky_DemoEnvironment_Light.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSky_Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/AllSky_Logo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/BlackTransparentGradient.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/BlackTransparentGradient.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/HowToUpResSkies.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/HowToUpResSkies.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Building.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Building.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_FlagGreen.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_FlagGreen.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Blue.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Blue.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Gold.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Gold.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Red.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Flag_Red.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Landscape.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Landscape.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_LightIllum.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_LightIllum.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_LightMetal.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_LightMetal.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_MountainGlow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_MountainGlow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Rock.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_Rock.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_SphereSkyReflect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_SphereSkyReflect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_TreeLeaves.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_TreeLeaves.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_TreeTrunk.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/AllSkyDemoEnv_TreeTrunk.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/Landscape.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/Landscape.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/TreeLeaves.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/TreeLeaves.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/TreeTrunk.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/TreeTrunk.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/rock.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Materials/rock.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Moon Glare.flare" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Moon Glare.flare.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/MoonGlow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/MoonGlow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Mountain Glare.flare" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Mountain Glare.flare.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Sun Glare.flare" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/Sun Glare.flare.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/SunGlare.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/SunGlare.psd.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/SunGlow.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyDemoEnvironment/SunGlow.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyFree_Menu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyFree_Menu.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyFree_Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/AllSkyFree_Readme.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_Nothing.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_NothingSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Day_BlueSky_NothingSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base BlueSky/Sky_Day_BlueSky_Nothing_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSkySettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSkySettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cartoon Base NightSky/Cartoon Base NightSky_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold NightSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold NightSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Cold Night__Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Materials/Cold Night Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Night/Materials/Cold Night Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold SunsetSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold SunsetSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Cold Sunset__Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Materials/Cold Sunset Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Cold Sunset/Materials/Cold Sunset Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep DuskSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep DuskSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Deep Dusk/Deep Dusk__Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunsetSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunsetSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_EquiRect_flat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_BlueSunset/Epic_BlueSunset_EquiRect_flat.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPinkSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPinkSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_EquiRect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Epic_GloriousPink/Epic_GloriousPink_EquiRect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/AllSky_Night_MoonBurst Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon BurstSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon BurstSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Night MoonBurst/Night Moon Burst_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_LowSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_LowSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/Sky_AllSky_Overcast4_Low_Cam_5_Down-Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet Equirect.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanetSettings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanetSettings.lighting.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_0_Front+Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_0_Front+Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_1_Back-Z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_1_Back-Z.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_2_Left+X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_2_Left+X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_3_Right-X.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_3_Right-X.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_4_Up+Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_4_Up+Y.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_5_Down-Y.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Space_AnotherPlanet/AllSky_Space_AnotherPlanet_Cam_5_Down-Y.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/1Tile.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/1Tile.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/BlackHouse.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/BlackHouse.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/Disks.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/Disks.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/HouseWithUv.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/HouseWithUv.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/photo_2021-02-07_00-49-37.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/photo_2021-02-07_00-49-37.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/Oculus Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/Oculus Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,6 +443,7 @@
       <workItem from="1615289160579" duration="2167000" />
       <workItem from="1615292889214" duration="2135000" />
       <workItem from="1615489584401" duration="1000000" />
+      <workItem from="1615549701821" duration="599000" />
     </task>
     <servers />
   </component>
