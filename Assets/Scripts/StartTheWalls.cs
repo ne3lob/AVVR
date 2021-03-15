@@ -12,15 +12,12 @@ public class StartTheWalls : MonoBehaviour
     public VisualEffect myEffect;
     public static readonly string SPAWN_RATE_NAME = "SizeRate";
 
-    public GameObject wallsObj;
-    public Material wallsObjTransparent;
+    public MeshRenderer wallsObj;
     
+    public MeshRenderer blackWallsObj;
     
-    public GameObject blackWallsObj;
-    public Material blackWallsObjTransparent;
-
-    public GameObject bottomCellingObj;
-    public Material bottomCellingTransparent;
+    public MeshRenderer bottomCellingObj;
+  
     
     private Material newMatWall;
     private Material newMatBlackWall;
@@ -37,7 +34,9 @@ public class StartTheWalls : MonoBehaviour
     public GameObject synthObj;
 
     private bool one=false;
-    
+
+    float currentDiss;
+    float targetDiss;
     
     // Start is called before the first frame update
     void Start()
@@ -55,19 +54,19 @@ public class StartTheWalls : MonoBehaviour
         { 
             print("Big");
             wallsVfx.SetActive(true);
-
-            GiveMesh();
             
             lerpNow = true;
             lerpStart = Time.time;
             one = true;
         }
         if (lerpNow) 
+        
         {
+            print("Da");
             ChangeToTransparentLerp(wallsObj);
             ChangeToTransparentLerp(blackWallsObj);
             ChangeToTransparentLerp(bottomCellingObj);
-            
+           
         }
         
         if (one && pitchValue <= 0.1)
@@ -77,17 +76,13 @@ public class StartTheWalls : MonoBehaviour
             one = false;
         }
     }
-    void ChangeToTransparentLerp(GameObject obj)
+    void ChangeToTransparentLerp(MeshRenderer obj)
     {
         var progress = Time.time - lerpStart;
-        Color colorOq = obj.GetComponent<MeshRenderer>().material.color ;
-        colorOq.a = 1;
-            
-        Color colorTra = obj.GetComponent<MeshRenderer>().material.color ;
-        colorTra.a = 0;
+
+        obj.material.SetFloat("_Blend",currentDiss);
         
-        newTranspWall = Color.Lerp(colorOq, colorTra, progress/lerpDuration);
-        obj.GetComponent<MeshRenderer>().material.color = newTranspWall;
+        currentDiss = Mathf.Lerp(currentDiss, targetDiss, progress/lerpDuration);
         
         myEffect.SetFloat(SPAWN_RATE_NAME, 4000);
         
@@ -95,18 +90,9 @@ public class StartTheWalls : MonoBehaviour
         {
             lerpNow = false;
         }
+        
     }
 
-    void GiveMesh()
-    {
-        newMatWall= wallsObjTransparent;
-        wallsObj.GetComponent<MeshRenderer>().material = newMatWall;
-        
-        newMatBlackWall= blackWallsObjTransparent;
-        blackWallsObj.GetComponent<MeshRenderer>().material = newMatBlackWall;
+   
     
-        newMatCelling = bottomCellingTransparent;
-        bottomCellingObj.GetComponent<MeshRenderer>().material = newMatCelling;
-    
-    }
 }
