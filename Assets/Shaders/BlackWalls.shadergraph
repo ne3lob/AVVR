@@ -333,7 +333,7 @@
     "m_ShaderOutputName": "Texture",
     "m_StageCapability": 3,
     "m_Texture": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"f3ec323ec66663343916c997eb3e741a\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"16e3256d1506710439272fb6a55c0418\",\"type\":3}}",
         "m_Guid": ""
     },
     "m_DefaultType": 0
@@ -438,8 +438,8 @@
     "m_ShaderOutputName": "OutMinMax",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": -5.0,
-        "y": 5.0
+        "x": -50.0,
+        "y": 50.0
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -799,8 +799,8 @@
     "m_ShaderOutputName": "OutMinMax",
     "m_StageCapability": 3,
     "m_Value": {
-        "x": -5.0,
-        "y": 5.0
+        "x": -50.0,
+        "y": 50.0
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -918,17 +918,17 @@
     },
     "m_Name": "Blend",
     "m_DefaultReferenceName": "Vector1_6fa451481b7347039d12ab918a0b48de",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_Blend2",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 1.100000023841858,
+    "m_Value": 0.9300000071525574,
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,
-        "y": 1.100000023841858
+        "y": 0.9300000071525574
     }
 }
 

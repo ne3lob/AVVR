@@ -6,8 +6,7 @@ namespace Synth
 {
     public class SynthScript : MonoBehaviour
     {
-        [Header("OSC Settings")] 
-        public OSCTransmitter transmitter;
+        [Header("OSC Settings")] public OSCTransmitter transmitter;
 
         //ADRESS
         private const string oscAddressVolume = "/volume";
@@ -32,7 +31,7 @@ namespace Synth
 
         //STARTING FLOATS
         private float s_VolumeRatio = 0.0f;
-        public float  s_PitchRatio = 0.0f;
+        public float s_PitchRatio = 0.0f;
         private float s_DrumVolume = 0.0f;
         private float s_RatioDistortion = 0.0f;
         private float s_SubPitch = 0.0f;
@@ -71,7 +70,6 @@ namespace Synth
         private bool sendOneTimeFilterLfo = false;
 
         #region OSCMessagesSec
-
         private OSCMessage _messageVol;
         private OSCMessage _messagePitch;
         private OSCMessage _messageVolumeDrumVolume;
@@ -91,7 +89,6 @@ namespace Synth
         private OSCMessage _messageFilterEnvelope;
         private OSCMessage _messagePitchLfo;
         private OSCMessage _messageFilterLfo;
-
         #endregion
 
 
@@ -219,11 +216,21 @@ namespace Synth
             if (dragEnv >= 0.05f)
             {
                 changedVolume = true;
+                if (!sendOneTime)
+                {
+                    DialTypeChangedInt(out _messageDragEnvOn, oscAddressVolumeEnv, 1);
+                    sendOneTime = true;
+                }
             }
 
             if (dragEnv < 0.05f)
             {
                 changedVolume = false;
+                if (sendOneTime)
+                {
+                    DialTypeChangedInt(out _messageDragEnvOn, oscAddressVolumeEnv, 0);
+                    sendOneTime = false;
+                }
             }
         }
 
@@ -232,11 +239,22 @@ namespace Synth
             if (dragFilterEnv >= 0.05f)
             {
                 changedFilterEnv = true;
+                if (!sendOneTimeFilterEnve)
+                {
+                    DialTypeChangedInt(out _messageFilterEnvelope, oscAddreessFilterEnvelope, 1);
+
+                    sendOneTimeFilterEnve = true;
+                }
             }
 
             if (dragFilterEnv < 0.05f)
             {
                 changedFilterEnv = false;
+                if (sendOneTimeFilterEnve)
+                {
+                    DialTypeChangedInt(out _messageFilterEnvelope, oscAddreessFilterEnvelope, 0);
+                    sendOneTimeFilterEnve = false;
+                }
             }
         }
 
@@ -245,11 +263,23 @@ namespace Synth
             if (dragPitchLfo >= 0.05f)
             {
                 changedPitchLfo = true;
+                if (!sendOneTimePitchLfo)
+                {
+                    DialTypeChangedInt(out _messagePitchLfo, oscAddreessPitchLfo, 1);
+
+                    sendOneTimePitchLfo = true;
+                }
             }
 
             if (dragPitchLfo < 0.05f)
             {
                 changedPitchLfo = false;
+                if (sendOneTimePitchLfo)
+                {
+                    DialTypeChangedInt(out _messagePitchLfo, oscAddreessPitchLfo, 0);
+
+                    sendOneTimePitchLfo = false;
+                }
             }
         }
 
@@ -258,11 +288,23 @@ namespace Synth
             if (dragFilterLfo >= 0.05f)
             {
                 changedFilterLfo = true;
+                if (!sendOneTimeFilterLfo)
+                {
+                    DialTypeChangedInt(out _messageFilterLfo, oscAddreessFilterLfo, 1);
+
+                    sendOneTimeFilterLfo = true;
+                }
             }
 
             if (dragFilterLfo < 0.05f)
             {
                 changedFilterLfo = false;
+                if (sendOneTimeFilterLfo)
+                {
+                    DialTypeChangedInt(out _messageFilterLfo, oscAddreessFilterLfo, 0);
+
+                    sendOneTimeFilterLfo = false;
+                }
             }
         }
 
@@ -294,142 +336,23 @@ namespace Synth
             if (dragRev >= 0.05f)
             {
                 changedReverb = true;
+                if (!sendOneTimeRev)
+                {
+                    DialTypeChangedInt(out _messageRevDrag, oscAddressReverbOnOff, 1);
+                    sendOneTimeRev = true;
+                }
             }
 
             if (dragRev < 0.05f)
             {
                 changedReverb = false;
+                if (sendOneTimeRev)
+                {
+                    DialTypeChangedInt(out _messageRevDrag, oscAddressReverbOnOff, 0);
+
+                    sendOneTimeRev = false;
+                }
             }
-
-            // if (changedReverb)
-            // {
-            //     if (!sendOneTimeRev)
-            //     {
-            //         
-            //         DialTypeChangedInt(out _messageRevDrag, oscAddressReverbOnOff, 1);
-            //        
-            //         sendOneTimeRev = true;
-            //     }
-            // }
-            // else if (!changedReverb)
-            // {
-            //     if (sendOneTimeRev)
-            //     { 
-            //         
-            //         DialTypeChangedInt(out _messageRevDrag, oscAddressReverbOnOff, 0);
-            //        
-            //         sendOneTimeRev = false;
-            //     }
-            //
-            // } 
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-            // //Envelope Volume ONOFF
-            // if (changedVolume)
-            // {
-            //     if (!sendOneTime)
-            //     {
-            //         
-            //         DialTypeChangedInt(out _messageDragEnvOn, oscAddressVolumeEnv, 1);
-            //         sendOneTime = true;
-            //     }
-            // }
-            // else if (!changedVolume)
-            // {
-            //     if (sendOneTime)
-            //     {
-            //         
-            //         DialTypeChangedInt(out _messageDragEnvOn, oscAddressVolumeEnv, 0);
-            //         sendOneTime = false;
-            //     } 
-            // }
-            //
-            // //Distortion ONOFF
-            // if (changedDistortion)
-            // { 
-            //     if (!sendOneTimeDist)
-            //     {
-            //         
-            //         DialTypeChangedInt(out _messageDistDrag, oscAddressDistOnOff, 1);
-            //         sendOneTimeDist = true;
-            //     }
-            // }
-            // else if (!changedDistortion)
-            // {
-            //     if (sendOneTimeDist) 
-            //     {
-            //         
-            //         DialTypeChangedInt(out _messageDistDrag, oscAddressDistOnOff, 0);
-            //         sendOneTimeDist = false;
-            //     }
-            //
-            // }
-            //
-            //
-            // //Filter Envelope
-            // if (changedFilterEnv)
-            // {
-            //     if (!sendOneTimeFilterEnve)
-            //     {
-            //         
-            //         DialTypeChangedInt(out _messageFilterEnvelope, oscAddreessFilterEnvelope, 1);
-            //        
-            //         sendOneTimeFilterEnve = true;
-            //     }
-            // }
-            // else if (!changedFilterEnv)
-            // {
-            //     if (sendOneTimeFilterEnve)
-            //     { 
-            //         
-            //         DialTypeChangedInt(out _messageFilterEnvelope, oscAddreessFilterEnvelope, 0);
-            //         sendOneTimeFilterEnve = false;
-            //     }
-            //
-            // }
-            // if (changedPitchLfo)
-            // {
-            //     if (!sendOneTimePitchLfo)
-            //     {
-            //         
-            //         DialTypeChangedInt(out _messagePitchLfo, oscAddreessPitchLfo, 1);
-            //      
-            //         sendOneTimePitchLfo = true;
-            //     }
-            // }
-            // else if (!changedPitchLfo)
-            // {
-            //     if (sendOneTimePitchLfo)
-            //     { 
-            //         
-            //         DialTypeChangedInt(out _messagePitchLfo, oscAddreessPitchLfo, 0);
-            //        
-            //         sendOneTimePitchLfo = false;
-            //     }
-            // }
-            // if (changedFilterLfo)
-            // {
-            //     if (!sendOneTimeFilterLfo)
-            //     {
-            //        
-            //         DialTypeChangedInt(out _messageFilterLfo, oscAddreessFilterLfo, 1);
-            //      
-            //         sendOneTimeFilterLfo = true;
-            //     }
-            // }
-            // else if (!changedFilterLfo)
-            // {
-            //     if (sendOneTimeFilterLfo)
-            //     { 
-            //         
-            //         DialTypeChangedInt(out _messageFilterLfo, oscAddreessFilterLfo, 0);
-            //         
-            //         sendOneTimeFilterLfo = false;
-            //     }
-            // } 
         }
     }
 }
