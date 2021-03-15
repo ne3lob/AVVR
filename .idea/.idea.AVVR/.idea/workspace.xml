@@ -23,26 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Textures/test 3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Textures/test 3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TogglelShader.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TogglelShader.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/Toggles.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/Toggles.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low Equirect.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low Equirect.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AllSkyFree/Overcast Low/AllSky_Overcast4_Low.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LightSettings/New Lighting Settings.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LightSettings/New Lighting Settings.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/TeleportationTex.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/TeleportationTex.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/u9ybH.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Textures/u9ybH.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BlackBloks 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BlackBloks 1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/BlackWalls.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/BlackWalls.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/House.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/House.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/HouseRest.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/HouseRest.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/WallsDissolve.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/WallsDissolve.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Data/UniversalRenderPipelineAssetMobile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Data/UniversalRenderPipelineAssetMobile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TheMaterialOutline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TheMaterialOutline.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +142,7 @@
       <workItem from="1615489584401" duration="1000000" />
       <workItem from="1615549701821" duration="599000" />
       <workItem from="1615823765106" duration="4713000" />
-      <workItem from="1615832364630" duration="5291000" />
+      <workItem from="1615832364630" duration="6489000" />
     </task>
     <servers />
   </component>
