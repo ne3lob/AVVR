@@ -46,28 +46,28 @@ namespace Synth
 
 
         //bools Volume Envelope
-        private bool changedVolume = false;
-        private bool sendOneTime = false;
+        private bool changedVolume ;
+        private bool sendOneTime ;
 
         //bools Distortion
-        private bool changedDistortion = false;
-        private bool sendOneTimeDist = false;
+        private bool changedDistortion ;
+        private bool sendOneTimeDist ;
 
         //bools Reverb
-        private bool changedReverb = false;
-        private bool sendOneTimeRev = false;
+        private bool changedReverb ;
+        private bool sendOneTimeRev ;
 
         //bools Filter Envelope
-        private bool changedFilterEnv = false;
-        private bool sendOneTimeFilterEnve = false;
+        private bool changedFilterEnv ;
+        private bool sendOneTimeFilterEnve ;
 
         //bools Pitch Lfo
-        private bool changedPitchLfo = false;
-        private bool sendOneTimePitchLfo = false;
+        private bool changedPitchLfo ;
+        private bool sendOneTimePitchLfo ;
 
         //bools Filter Lfo
-        private bool changedFilterLfo = false;
-        private bool sendOneTimeFilterLfo = false;
+        private bool changedFilterLfo;
+        private bool sendOneTimeFilterLfo ;
 
         #region OSCMessagesSec
         private OSCMessage _messageVol;

@@ -23,14 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TogglelShader.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TogglelShader.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/Toggles.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/Toggles.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/BlackBloks 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BlackBloks 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TheMaterialOutline.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/TheMaterialOutline.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +55,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/LineMesh.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
+      <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/XR/XRRig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/InstanceObject.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />
@@ -142,7 +138,7 @@
       <workItem from="1615489584401" duration="1000000" />
       <workItem from="1615549701821" duration="599000" />
       <workItem from="1615823765106" duration="4713000" />
-      <workItem from="1615832364630" duration="6489000" />
+      <workItem from="1615832364630" duration="8033000" />
     </task>
     <servers />
   </component>
