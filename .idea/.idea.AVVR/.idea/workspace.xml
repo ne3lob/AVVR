@@ -23,8 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/ReflectionProbe-0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/ReflectionProbe-0.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +64,8 @@
       <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/XR/XRRig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/InstanceObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Effects/SelectionOutline.cs" />
+      <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Effects/ToggleLighting.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />
@@ -139,6 +146,7 @@
       <workItem from="1615549701821" duration="599000" />
       <workItem from="1615823765106" duration="4713000" />
       <workItem from="1615832364630" duration="8033000" />
+      <workItem from="1615901793425" duration="3346000" />
     </task>
     <servers />
   </component>
@@ -162,48 +170,5 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1614678939882">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="952" y="374" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614678939882" />
-    <state x="877" y="357" key="IDE.errors.dialog" timestamp="1614189552278">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="877" y="357" key="IDE.errors.dialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614189552278" />
-    <state x="1104" y="328" key="RiderGenerateDialog" timestamp="1613125626219">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1104" y="328" key="RiderGenerateDialog/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613125626219" />
-    <state x="1045" y="300" key="SettingsEditor" timestamp="1614248311068">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1045" y="300" key="SettingsEditor/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614248311068" />
-    <state x="3021" y="402" key="SettingsEditor/0.0.2560.1410/2560.232.1920.1050@2560.232.1920.1050" timestamp="1612540609927" />
-    <state x="1244" y="78" width="1259" height="1027" key="dock-window-1" timestamp="1613230839759">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1244" y="78" width="1259" height="1027" key="dock-window-1/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613230839759" />
-    <state x="7" y="8" width="1279" height="1391" key="dock-window-2" timestamp="1612550069167">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="7" y="8" width="1279" height="1391" key="dock-window-2/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612550069167" />
-    <state x="87" y="0" width="1125" height="1391" key="dock-window-3" timestamp="1612559247505">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="87" y="0" width="1125" height="1391" key="dock-window-3/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612559247505" />
-    <state x="1122" y="36" width="1058" height="1391" key="dock-window-4" timestamp="1612619729095">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1122" y="36" width="1058" height="1391" key="dock-window-4/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1612619729095" />
-    <state x="1074" y="307" key="run.anything.popup" timestamp="1613226264654">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1074" y="307" key="run.anything.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1613226264654" />
-    <state x="1433" y="356" width="672" height="160" key="search.everywhere.popup" timestamp="1614604969916">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1433" y="356" width="672" height="160" key="search.everywhere.popup/0.0.2560.1410/2560.232.1920.1050@0.0.2560.1410" timestamp="1614604969916" />
   </component>
 </project>
