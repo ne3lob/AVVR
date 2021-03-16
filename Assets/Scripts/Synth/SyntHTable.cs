@@ -35,6 +35,8 @@ public class SyntHTable : MonoBehaviour
     [SerializeField] private List<MeshRenderer> cabelsMeshes;
     private Vector2 currentStateValue = Vector2.zero;
 
+    public float _speedOnOff;
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +44,6 @@ public class SyntHTable : MonoBehaviour
         rightDevices.Clear();
         leftDevices.Clear();
         synth.SetActive(false);
-        
     }
 
     // Update is called once per frame
@@ -50,7 +51,7 @@ public class SyntHTable : MonoBehaviour
     {
         InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Right, rightDevices);
         InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.Left, leftDevices);
-        
+
         if (rightDevices.Count == 1)
         {
             rightDevice = rightDevices[0];
@@ -60,7 +61,7 @@ public class SyntHTable : MonoBehaviour
         {
             leftDevice = leftDevices[0];
         }
-        
+
         if (rightDevice.TryGetFeatureValue(CommonUsages.primaryButton, out fors) && fors)
         {
             if (!IsPressed)
@@ -88,12 +89,23 @@ public class SyntHTable : MonoBehaviour
         {
             IsPressed = false;
         }
-        
+
         InputFeatureUsage<Vector2> currentState = CommonUsages.primary2DAxis;
-        
+
+
         if (leftDevice.TryGetFeatureValue(currentState, out currentStateValue) && currentStateValue != Vector2.zero)
         {
-            speedTurn = currentStateValue.x * 40;
+            speedTurn = currentStateValue.x * _speedOnOff;
+        }
+
+
+        if (rightDevice.TryGetFeatureValue(CommonUsages.gripButton, out bool trigger) && trigger)
+        {
+            _speedOnOff = 0f;
+        }
+        else
+        {
+            _speedOnOff = 40f;
         }
     }
 }

@@ -11,6 +11,7 @@ public class SelectionOutline : MonoBehaviour
     float m_Highlighted = 0.0f;
     MaterialPropertyBlock m_Block;
     int m_HighlightActiveID;
+   
 
     private void Start()
     {
@@ -18,7 +19,8 @@ public class SelectionOutline : MonoBehaviour
         {
             Renderer = GetComponent<Renderer>();
         }
-
+        
+        
         m_HighlightActiveID = Shader.PropertyToID("HighlightActive");
         m_Block = new MaterialPropertyBlock();
         m_Block.SetFloat(m_HighlightActiveID, m_Highlighted);
@@ -32,6 +34,7 @@ public class SelectionOutline : MonoBehaviour
         Renderer.GetPropertyBlock(m_Block);
         m_Block.SetFloat(m_HighlightActiveID, m_Highlighted);
         Renderer.SetPropertyBlock(m_Block);
+        
     }
 
     public void RemoveHighlight()
@@ -41,5 +44,6 @@ public class SelectionOutline : MonoBehaviour
         Renderer.GetPropertyBlock(m_Block);
         m_Block.SetFloat(m_HighlightActiveID, m_Highlighted);
         Renderer.SetPropertyBlock(m_Block);
+       
     }
 }

@@ -369,7 +369,6 @@
               <e p="SelectionOutline.cs" t="Include" />
               <e p="ShakeObject.cs" t="Include" />
               <e p="TeleporterAnim.cs" t="Include" />
-              <e p="ToggleLighting.cs" t="Include" />
               <e p="TriggerAnimationEvent.cs" t="Include" />
             </e>
             <e p="Gameplay" t="Include">

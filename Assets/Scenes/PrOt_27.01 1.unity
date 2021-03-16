@@ -461,8 +461,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 54068780}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -964,9 +964,9 @@ MonoBehaviour:
   m_OnSelectEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 127253187}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+      - m_Target: {fileID: 54068780}
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4345,9 +4345,9 @@ MonoBehaviour:
   m_OnSelectEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 651841883}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+      - m_Target: {fileID: 54068780}
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4787,8 +4787,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 702082896}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5585,9 +5585,9 @@ MonoBehaviour:
   m_OnSelectEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 803237003}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+      - m_Target: {fileID: 54068780}
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6276,9 +6276,9 @@ MonoBehaviour:
   m_OnSelectEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 881261121}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+      - m_Target: {fileID: 54068780}
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7866,6 +7866,7 @@ MonoBehaviour:
   - {fileID: 1422201664}
   - {fileID: 773298415}
   - {fileID: 2684420823410108312}
+  _speedOnOff: 0
 --- !u!1001 &1102432515
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8086,9 +8087,9 @@ MonoBehaviour:
   m_OnSelectEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1118809964}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+      - m_Target: {fileID: 54068780}
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9157,8 +9158,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1235204490}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9705,9 +9706,9 @@ MonoBehaviour:
   m_OnSelectEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1320407101}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+      - m_Target: {fileID: 54068780}
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11124,9 +11125,9 @@ MonoBehaviour:
   m_OnSelectEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1518088377}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+      - m_Target: {fileID: 54068780}
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12023,9 +12024,9 @@ MonoBehaviour:
   m_OnSelectEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1603209751}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+      - m_Target: {fileID: 702082896}
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15314,9 +15315,9 @@ MonoBehaviour:
   m_OnSelectEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2122960663}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+      - m_Target: {fileID: 54068780}
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19520,8 +19521,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 9062940772119128036}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: RemoveHighlight
+        m_TargetAssemblyTypeName: SelectionOutline, Assembly-CSharp
+        m_MethodName: Highlight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
