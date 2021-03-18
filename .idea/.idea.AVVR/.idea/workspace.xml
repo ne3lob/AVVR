@@ -23,12 +23,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/3D/FirsRaycast.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/FirsRaycast.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/BarColor.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/BarColor.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HandButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HandButton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BlackBloks 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BlackBloks 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TeleportationMat 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TeleportationMat 1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Effects/SelectionOutline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Effects/SelectionOutline.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +48,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F359EEA-0212-45E1-B68A-A82D76EF7896/71/78e89342/InputDevices.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Interaction/Controllers/XRController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/XR/XRRig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Locomotion/LocomotionSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HandButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F359EEA-0212-45E1-B68A-A82D76EF7896/62/287b1130/CommonUsages.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Locomotion/SnapTurn/SnapTurnProvider.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -52,10 +64,8 @@
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Effects/ContactSoundPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/CauldronContent.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" />
-      <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/ObjectLauncher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
-      <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LineMesh.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
@@ -64,7 +74,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/InstanceObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Effects/SelectionOutline.cs" />
+      <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HandButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />
@@ -146,7 +159,9 @@
       <workItem from="1615823765106" duration="4713000" />
       <workItem from="1615832364630" duration="8033000" />
       <workItem from="1615901793425" duration="3346000" />
-      <workItem from="1615911735979" duration="5661000" />
+      <workItem from="1615911735979" duration="8122000" />
+      <workItem from="1615990344982" duration="7421000" />
+      <workItem from="1616086865743" duration="3848000" />
     </task>
     <servers />
   </component>

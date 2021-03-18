@@ -317,6 +317,7 @@
           <e p="BestQuality.cs" t="Include" />
           <e p="CableComponent.cs" t="Include" />
           <e p="CableParticle.cs" t="Include" />
+          <e p="HandButton.cs" t="Include" />
           <e p="InstanceObject.cs" t="Include" />
           <e p="LineMesh.cs" t="Include" />
           <e p="StartTheWalls.cs" t="Include" />

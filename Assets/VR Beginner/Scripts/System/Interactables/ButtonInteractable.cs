@@ -28,7 +28,7 @@ public class ButtonInteractable : MonoBehaviour
     void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody>();
-        m_Collider = GetComponentInChildren<Collider>();
+        m_Collider = GetComponent<Collider>();
         m_StartPosition = transform.position;
     }
 
@@ -42,7 +42,7 @@ public class ButtonInteractable : MonoBehaviour
 
         float move = 0.0f;
 
-        if (m_Rigidbody.SweepTest(-worldAxis, out info, ReturnSpeed * Time.deltaTime + 0.005f))
+        if (m_Rigidbody.SweepTest(-worldAxis, out info, 0.2f * Time.deltaTime + 0.005f))
         {//hitting something, if the contact is < mean we are pressed, move downward
             move = (ReturnSpeed * Time.deltaTime) - info.distance;
         }
