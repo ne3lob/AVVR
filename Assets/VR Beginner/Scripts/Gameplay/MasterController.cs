@@ -149,23 +149,12 @@ public class MasterController : MonoBehaviour
             Application.Quit();
 
         RightTeleportUpdate();
-        
+        RightRayUpdate();
+
     }
 
-    void RightTeleportUpdate()
+     void RightTeleportUpdate()
     {
-
-        m_RightInputDevice.TryGetFeatureValue(CommonUsages.triggerButton, out m_triggerOn);
-
-        if (m_triggerOn)
-        {
-            m_RightLineVisualSelector.enabled = true;
-            Debug.Log("Selector");
-        }
-        else
-        {
-            m_RightLineVisualSelector.enabled = false;
-        }
         
         //RightSelectorInteractor.InteractionLayerMask=m_LastFrameRightEnable ? m_OriginalRightMask : new LayerMask();
         //Teleportation
@@ -183,20 +172,38 @@ public class MasterController : MonoBehaviour
 
         //if the right animator is null, we try to get it. It's not the best performance wise but no other way as setup
         //of the model by the Interaction Toolkit is done on the first update.
-        if (m_RightHandPrefab == null)
-        {
-            m_RightHandPrefab = RightDirectInteractor.GetComponentInChildren<HandPrefab>();
-        }
+        // if (m_RightHandPrefab == null)
+        // {
+        //     m_RightHandPrefab = RightDirectInteractor.GetComponentInChildren<HandPrefab>();
+        // }
 
         m_PreviousRightClicked = axisInput.y > 0.5f;
 
-        if (m_RightHandPrefab != null)
-        {
-            m_RightHandPrefab.Animator.SetBool("Pointing", m_PreviousRightClicked);
-        }
+        // if (m_RightHandPrefab != null)
+        // {
+        //     m_RightHandPrefab.Animator.SetBool("Pointing", m_PreviousRightClicked);
+        // }
 
         m_LastFrameRightEnable = m_RightLineVisual.enabled;
     }
+
+     void RightRayUpdate()
+     {
+         m_RightInputDevice.TryGetFeatureValue(CommonUsages.triggerButton, out m_triggerOn);
+
+         if (m_triggerOn)
+         {
+             m_RightLineVisualSelector.enabled = true;
+            RightSelectorInteractor.enabled = true;
+             
+         }
+         else
+         {
+             m_RightLineVisualSelector.enabled = false;
+             RightSelectorInteractor.enabled = false;
+         }
+         
+     }
 
     void LeftTeleportUpdate()
     {

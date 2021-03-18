@@ -23,20 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/3D/FirsRaycast.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/FirsRaycast.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/BarColor.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/BarColor.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HandButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HandButton.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/BlackBloks 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BlackBloks 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TeleportationMat 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TeleportationMat 1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +151,7 @@
       <workItem from="1615901793425" duration="3346000" />
       <workItem from="1615911735979" duration="8122000" />
       <workItem from="1615990344982" duration="7421000" />
-      <workItem from="1616086865743" duration="3848000" />
+      <workItem from="1616086865743" duration="6524000" />
     </task>
     <servers />
   </component>
