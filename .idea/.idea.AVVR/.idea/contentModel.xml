@@ -327,6 +327,7 @@
             <e p="WavesScript.cs" t="Include" />
           </e>
         </e>
+        <e p="TabblesScript.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />

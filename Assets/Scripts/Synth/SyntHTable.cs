@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.XR;
-
 using List = System.Collections.Generic.List<int>;
 
 public class SyntHTable : MonoBehaviour
@@ -93,13 +92,14 @@ public class SyntHTable : MonoBehaviour
         InputFeatureUsage<Vector2> currentState = CommonUsages.primary2DAxis;
 
 
-        if (leftDevice.TryGetFeatureValue(currentState, out currentStateValue) && currentStateValue != Vector2.zero)
+        if (leftDevice.TryGetFeatureValue(currentState, out currentStateValue))
         {
             speedTurn = currentStateValue.x * _speedOnOff;
         }
 
 
-        if (rightDevice.TryGetFeatureValue(CommonUsages.gripButton, out bool trigger) && trigger)
+        if (rightDevice.TryGetFeatureValue(CommonUsages.gripButton, out var trigger) && trigger ||
+            leftDevice.TryGetFeatureValue(CommonUsages.gripButton, out var triggerTwo) && triggerTwo)
         {
             _speedOnOff = 0f;
         }
