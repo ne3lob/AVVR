@@ -28,7 +28,8 @@ public class SyntHTable : MonoBehaviour
     private bool state;
     private MeshRenderer m;
 
-    private InputDevice rightDevice;
+    
+    public InputDevice rightDevice;
     private InputDevice leftDevice;
 
     [SerializeField] private List<MeshRenderer> cabelsMeshes;
