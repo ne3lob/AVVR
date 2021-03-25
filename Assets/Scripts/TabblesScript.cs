@@ -5,27 +5,25 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR;
+using extOSC;
 
 public class TabblesScript : MonoBehaviour
 {
     public List<GameObject> cubes = new List<GameObject>(8);
 
     public Material notSelected;
-
-    private SyntHTable inputScript;
+    [Header("OSC Settings")] public OSCTransmitter transmitter;
 
     private bool isPressed;
 
-    private void Start()
-    {
-        inputScript = GameObject.Find("======== VR MANAGMENT ========").GetComponent<SyntHTable>();
-    }
+    private const string octaveInput = "/InputOctave";
 
-    private float grip;
-
-    private void Update()
+    private void TransmitterXandY(string addressType, int x, int y)
     {
-       
+        var message = new OSCMessage(addressType);
+        message.AddValue(OSCValue.Int(x));
+        message.AddValue(OSCValue.Int(y));
+        transmitter.Send(message);
     }
 
     public void ChangeTheColor(Material change)
@@ -33,9 +31,13 @@ public class TabblesScript : MonoBehaviour
         foreach (var cubesMaterial in cubes)
         {
             cubesMaterial.GetComponent<MeshRenderer>().material = notSelected;
-            
         }
+
         this.gameObject.GetComponent<MeshRenderer>().material = change;
     }
-    
+
+    public void SendXandYOctave0(int y)
+    {
+        TransmitterXandY(octaveInput, 0, y);
+    }
 }
