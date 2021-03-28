@@ -28,6 +28,8 @@ namespace Synth
         private const string oscAddreessPitchLfoLenght = "/PitchLfoLenght";
         private const string oscAddreessFilterLfoFrequency = "/FilterLfoFrequency";
         private const string oscAddreessFilterLfoLenght = "/FilterLfoLenght";
+        private const string timeSeqSlider = "TimeSeqSlider";
+        private const string reverbSpace = "ReverbSpace";
 
         //STARTING FLOATS
         private float s_VolumeRatio = 0.0f;
@@ -43,6 +45,8 @@ namespace Synth
         private float s_LfoPitchLenght = 0.0f;
         private float s_LfoFilterLenght = 0.0f;
         private float s_LfoFilterFrequency = 0.0f;
+        private float s_TimeSeqSlider;
+        private float s_ReverbSpace;
 
 
         //bools Volume Envelope
@@ -91,6 +95,8 @@ namespace Synth
         private OSCMessage _messageFilterEnvelope;
         private OSCMessage _messagePitchLfo;
         private OSCMessage _messageFilterLfo;
+        private OSCMessage _messageTimeSeqSlider;
+        private OSCMessage _messageReverbSpace;
 
         #endregion
 
@@ -212,6 +218,24 @@ namespace Synth
 
             DialTypeChangedFloat(out _messageDelayTimeFeedback, oscAddreessDelayTimeFeedback, s_DelayTimeFeedback);
         }
+
+        public void TimeSeqSlider(DialInteractable dial)
+        {
+            float ratioTimeSeqSlider = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_TimeSeqSlider = ratioTimeSeqSlider;
+
+            DialTypeChangedFloat(out _messageTimeSeqSlider, timeSeqSlider, s_TimeSeqSlider);
+        }
+
+        public void ReverbSpace(DialInteractable dial)
+        {
+            float ratioReverbSpace = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_ReverbSpace = ratioReverbSpace;
+
+            DialTypeChangedFloat(out _messageReverbSpace, reverbSpace, s_ReverbSpace);
+        }
+        
+        
 
 
         public void VolumeEnv(Single dragEnv)

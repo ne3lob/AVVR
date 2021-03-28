@@ -23,10 +23,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/TabbleNew 1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/TabbleNew 1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/TabbleNew.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/TabbleNew.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mitte.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Mitte.mat.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TabblesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TabblesScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Data/UniversalRenderPipelineAssetMobile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Data/UniversalRenderPipelineAssetMobile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +72,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
       <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/XR/XRRig.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Effects/ToggleLighting.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Effects/SelectionOutline.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/HandButton.cs" />
@@ -73,6 +82,7 @@
       <option value="$PROJECT_DIR$/Assets/TabblesScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TabblesScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />
@@ -161,7 +171,9 @@
       <workItem from="1616416613194" duration="7367000" />
       <workItem from="1616447574351" duration="2862000" />
       <workItem from="1616603884890" duration="20154000" />
-      <workItem from="1616699430494" duration="4153000" />
+      <workItem from="1616699430494" duration="4896000" />
+      <workItem from="1616777594710" duration="3003000" />
+      <workItem from="1616951862995" duration="1840000" />
     </task>
     <servers />
   </component>
