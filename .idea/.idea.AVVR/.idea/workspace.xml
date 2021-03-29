@@ -23,21 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/3D/TabbleOneMeh 1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/TabbleOneMeh 1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/TabbleOneMeh.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/TabbleOneMeh.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Tabble/Octave.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Tabble/Octave.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Tabble/Octave.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Tabble/Octave.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/FEEDBACK 1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Sprites/FEEDBACK 1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Bahnschrift Regular SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Bahnschrift Regular SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Bahnschrift Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Fonts/Bahnschrift Regular.ttf.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Tabble/Selected.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Tabble/Selected.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +169,8 @@
       <workItem from="1616777594710" duration="3003000" />
       <workItem from="1616951862995" duration="1840000" />
       <workItem from="1616969331477" duration="886000" />
-      <workItem from="1617045526700" duration="2978000" />
+      <workItem from="1617045526700" duration="7569000" />
+      <workItem from="1617056718320" duration="312000" />
     </task>
     <servers />
   </component>

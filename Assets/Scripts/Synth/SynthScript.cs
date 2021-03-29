@@ -1,5 +1,7 @@
 using System;
+using System.Globalization;
 using extOSC;
+using TMPro;
 using UnityEngine;
 
 namespace Synth
@@ -31,6 +33,7 @@ namespace Synth
         private const string timeSeqSlider = "/TimeSeqSlider";
         private const string reverbSpace = "/ReverbSpace";
         private const string _reflectionReverb = "/ReverbReflection";
+        private const string _sequencerOnOff = "/SequencerOnOff";
 
         //STARTING FLOATS
         private float s_VolumeRatio = 0.0f;
@@ -75,6 +78,9 @@ namespace Synth
         private bool changedFilterLfo;
         private bool sendOneTimeFilterLfo;
 
+        private bool changedSeq;
+        private bool sendOneTimeSeq;
+
 
         #region OSCMessagesSec
 
@@ -100,8 +106,14 @@ namespace Synth
         private OSCMessage _messageTimeSeqSlider;
         private OSCMessage _messageReverbSpace;
         private OSCMessage _messageReverbReflection;
+        private OSCMessage _messageSeq;
 
         #endregion
+
+
+        public TextMeshPro space;
+        private string nameS;
+        private string start = "0.00";
 
 
         private void DialTypeChangedFloat(out OSCMessage messageName, string addressType, float ratioScaleFlaot)
@@ -242,6 +254,32 @@ namespace Synth
         public void ReflectionReverb(Single reflectionReverb)
         {
             DialTypeChangedFloat(out _messageReverbReflection, _reflectionReverb, reflectionReverb);
+            var rightreflectionReverb = reflectionReverb * 10f;
+            space.maxVisibleCharacters = 4;
+            space.text = rightreflectionReverb.ToString(nameS);
+        }
+
+        public void SequencerOnOff(Single dragSeq)
+        {
+            if (dragSeq >= 0.05f)
+            {
+                changedSeq = true;
+                if (!sendOneTimeSeq)
+                {
+                    DialTypeChangedInt(out _messageSeq, _sequencerOnOff, 1);
+                    sendOneTimeSeq = true;
+                }
+            }
+
+            if (dragSeq < 0.05f)
+            {
+                changedSeq = false;
+                if (sendOneTimeSeq)
+                {
+                    DialTypeChangedInt(out _messageSeq, _sequencerOnOff, 0);
+                    sendOneTimeSeq = false;
+                }
+            }
         }
 
 
