@@ -23,12 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/TabblesOffOffBottom.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/TabblesOffOffBottom.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/TabblesNames/TabbleTrigger.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/TabblesNames/TabbleTrigger.fbx.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/TabblesNames/TabblePitchName.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/TabblesNames/TabblePitchName.fbx.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TabblesScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TabblesScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +63,6 @@
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/DialInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Effects/ContactSoundPlayer.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/CauldronContent.cs" />
-      <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/ObjectLauncher.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/CableComponent.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LineMesh.cs" />
@@ -67,7 +70,6 @@
       <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/XR/XRRig.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Effects/ToggleLighting.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Effects/SelectionOutline.cs" />
-      <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/HandButton.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/Gameplay/MasterController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/WavesScript.cs" />
@@ -75,9 +77,11 @@
       <option value="$PROJECT_DIR$/Assets/ListColomnOctave.cs" />
       <option value="$PROJECT_DIR$/Assets/TabblesScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SyntHTable.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TabblesScript.cs" />
       <option value="$PROJECT_DIR$/Assets/TabblesOffOffBottom.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" />
+      <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TabblesScript.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />
@@ -172,6 +176,7 @@
       <workItem from="1616969331477" duration="886000" />
       <workItem from="1617045526700" duration="7569000" />
       <workItem from="1617056718320" duration="4183000" />
+      <workItem from="1617098833328" duration="8563000" />
     </task>
     <servers />
   </component>

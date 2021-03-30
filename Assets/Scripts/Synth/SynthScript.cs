@@ -35,7 +35,7 @@ namespace Synth
         private const string _reflectionReverb = "/ReverbReflection";
         private const string _sequencerOnOff = "/SequencerOnOff";
         private const string adressBpm = "/Bpm";
-        private const string oscAddressButtonRandom = "/ButtonRandom";
+        private const string oscAddressButtonRandom ="/ButtonRandom";
 
         //STARTING FLOATS
         private float s_VolumeRatio = 0.0f;
@@ -275,7 +275,7 @@ namespace Synth
             s_Bpm = ratioBpm;
             DialTypeChangedFloat(out _messageBpm, adressBpm, s_Bpm);
 
-            var rightBpm = s_Bpm * 1000f;
+            var rightBpm = s_Bpm/5.6f * 1000f;
             bpm.maxVisibleCharacters = 3;
             bpm.text = rightBpm.ToString(nameBpm);
         }
@@ -307,6 +307,7 @@ namespace Synth
         public void ButtonRandom()
         {
             DialTypeChangedInt(out _messageButtonRandom, oscAddressButtonRandom, 1);
+            Debug.Log(_messageButtonRandom);
         }
 
 

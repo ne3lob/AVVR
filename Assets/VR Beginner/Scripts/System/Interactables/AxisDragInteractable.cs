@@ -75,6 +75,7 @@ public class AxisDragInteractable : XRBaseInteractable
         }
 
         m_CurrentStep = 0;
+        ReturnOnFree = false;
     }
 
    public void Update()
@@ -135,6 +136,7 @@ public class AxisDragInteractable : XRBaseInteractable
                     MovingRigidbody.MovePosition(MovingRigidbody.position + move);
                 else
                     transform.position = transform.position + move;
+                ReturnOnFree = true;
             }
         }
         else
@@ -142,12 +144,12 @@ public class AxisDragInteractable : XRBaseInteractable
             if (ReturnOnFree)
             {
                 Vector3 targetPoint = Vector3.MoveTowards(transform.position, m_StartPoint, ReturnSpeed * Time.deltaTime);
-                Vector3 move = targetPoint - transform.position;
+                Vector3 move =targetPoint - transform.position;
                 
                 if (MovingRigidbody != null)
                     MovingRigidbody.MovePosition(MovingRigidbody.position + move);
                 else
-                    transform.position = transform.position + move;
+                    transform.position = m_EndPoint + move;
             }
         }
     }

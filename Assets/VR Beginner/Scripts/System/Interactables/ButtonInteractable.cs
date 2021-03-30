@@ -9,7 +9,7 @@ public class ButtonInteractable : MonoBehaviour
     [System.Serializable]
     public class ButtonReleasedEvent : UnityEvent { }
 
-    public Vector3 Axis = new Vector3(0,-1,0 );
+    public Vector3 Axis = new Vector3(-1,0,0 );
     public float MaxDistance;
     public float ReturnSpeed = 10.0f;
 
@@ -32,7 +32,7 @@ public class ButtonInteractable : MonoBehaviour
         m_StartPosition = transform.position;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         Vector3 worldAxis = transform.TransformDirection(Axis);
         Vector3 end = transform.position + worldAxis * MaxDistance;
@@ -42,7 +42,7 @@ public class ButtonInteractable : MonoBehaviour
 
         float move = 0.0f;
 
-        if (m_Rigidbody.SweepTest(-worldAxis, out info, 0.2f * Time.deltaTime + 0.005f))
+        if (m_Rigidbody.SweepTest(-worldAxis, out info, 0.5f * Time.deltaTime ))
         {//hitting something, if the contact is < mean we are pressed, move downward
             move = (ReturnSpeed * Time.deltaTime) - info.distance;
         }
