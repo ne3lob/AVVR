@@ -34,6 +34,8 @@ namespace Synth
         private const string reverbSpace = "/ReverbSpace";
         private const string _reflectionReverb = "/ReverbReflection";
         private const string _sequencerOnOff = "/SequencerOnOff";
+        private const string adressBpm = "/Bpm";
+        private const string oscAddressButtonRandom = "/ButtonRandom";
 
         //STARTING FLOATS
         private float s_VolumeRatio = 0.0f;
@@ -52,6 +54,7 @@ namespace Synth
         private float s_TimeSeqSlider = 0.0f;
         private float s_ReverbSpace = 0.0f;
         private float s_ReverbReflection = 0.0f;
+        private float s_Bpm = 0.0f;
 
 
         //bools Volume Envelope
@@ -107,13 +110,20 @@ namespace Synth
         private OSCMessage _messageReverbSpace;
         private OSCMessage _messageReverbReflection;
         private OSCMessage _messageSeq;
+        private OSCMessage _messageBpm;
+        private OSCMessage _messageButtonRandom;
 
         #endregion
 
 
+        //space
         public TextMeshPro space;
         private string nameS;
-        private string start = "0.00";
+
+
+        //bpm
+        public TextMeshPro bpm;
+        private string nameBpm;
 
 
         private void DialTypeChangedFloat(out OSCMessage messageName, string addressType, float ratioScaleFlaot)
@@ -259,6 +269,17 @@ namespace Synth
             space.text = rightreflectionReverb.ToString(nameS);
         }
 
+        public void Bpm(DialInteractable dial)
+        {
+            float ratioBpm = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_Bpm = ratioBpm;
+            DialTypeChangedFloat(out _messageBpm, adressBpm, s_Bpm);
+
+            var rightBpm = s_Bpm * 1000f;
+            bpm.maxVisibleCharacters = 3;
+            bpm.text = rightBpm.ToString(nameBpm);
+        }
+
         public void SequencerOnOff(Single dragSeq)
         {
             if (dragSeq >= 0.05f)
@@ -280,6 +301,12 @@ namespace Synth
                     sendOneTimeSeq = false;
                 }
             }
+        }
+
+
+        public void ButtonRandom()
+        {
+            DialTypeChangedInt(out _messageButtonRandom, oscAddressButtonRandom, 1);
         }
 
 

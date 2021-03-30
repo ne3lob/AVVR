@@ -11,6 +11,7 @@
           <e p="AllSkyFree_Menu.cs" t="Include" />
           <e p="AllSkyFree_Readme.txt" t="Include" />
         </e>
+        <e p="ButtonRandomParametrs.cs" t="Include" />
         <e p="extOSC" t="Include">
           <e p="Examples" t="Include">
             <e p="01) Getting Started" t="Include">
@@ -328,6 +329,7 @@
           </e>
           <e p="TabblesScript.cs" t="Include" />
         </e>
+        <e p="TabblesOffOffBottom.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
