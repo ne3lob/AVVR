@@ -35,7 +35,13 @@ namespace Synth
         private const string _reflectionReverb = "/ReverbReflection";
         private const string _sequencerOnOff = "/SequencerOnOff";
         private const string adressBpm = "/Bpm";
-        private const string oscAddressButtonRandom ="/ButtonRandom";
+        private const string oscAddressButtonRandom = "/ButtonRandom";
+
+        private const string _drumSeqOn = "/DrumSeqOn";
+        private const string _drumSecondSeqOn = "/DrumSecondSeqOn";
+        private const string _drumKlangOnOff = "/DrumKlang";
+        private const string _drumKickOnOff = "/DrumKick";
+        private const string _drumKickTwoOnOff = "/DrumKickTwo";
 
         //STARTING FLOATS
         private float s_VolumeRatio = 0.0f;
@@ -84,6 +90,13 @@ namespace Synth
         private bool changedSeq;
         private bool sendOneTimeSeq;
 
+        //SeqDrum
+        private bool changedDragSeqOn;
+        private bool sendOneTimeDrugSeq;
+
+
+        private bool changedDragKickTwo;
+        private bool sendOneTimeKickTwo;
 
         #region OSCMessagesSec
 
@@ -112,6 +125,8 @@ namespace Synth
         private OSCMessage _messageSeq;
         private OSCMessage _messageBpm;
         private OSCMessage _messageButtonRandom;
+        private OSCMessage _messageSeqDrumOn;
+        private OSCMessage _messageKickTwo;
 
         #endregion
 
@@ -275,7 +290,7 @@ namespace Synth
             s_Bpm = ratioBpm;
             DialTypeChangedFloat(out _messageBpm, adressBpm, s_Bpm);
 
-            var rightBpm = s_Bpm/5.6f * 1000f;
+            var rightBpm = s_Bpm / 5.6f * 1000f;
             bpm.maxVisibleCharacters = 3;
             bpm.text = rightBpm.ToString(nameBpm);
         }
@@ -304,10 +319,138 @@ namespace Synth
         }
 
 
+        public void DrumSeqOn(Single dragSeq)
+        {
+            if (dragSeq >= 0.05f)
+            {
+                changedDragSeqOn = true;
+                if (!sendOneTimeDrugSeq)
+                {
+                    DialTypeChangedInt(out _messageSeqDrumOn, _drumSeqOn, 1);
+                    sendOneTimeDrugSeq = true;
+                }
+            }
+
+            if (dragSeq < 0.05f)
+            {
+                changedDragSeqOn = false;
+                if (sendOneTimeDrugSeq)
+                {
+                    DialTypeChangedInt(out _messageSeqDrumOn, _drumSeqOn, 0);
+                    sendOneTimeDrugSeq = false;
+                }
+            }
+        }
+
+        private bool changedDragSecondSeqOn;
+        private bool sendOneTimeDrugSecondSeq;
+        private OSCMessage _messageSecondSeqDrumOn;
+
+        public void DrumSecondSeqOn(Single dragSeq)
+        {
+            if (dragSeq >= 0.05f)
+            {
+                changedDragSecondSeqOn = true;
+                if (!sendOneTimeDrugSecondSeq)
+                {
+                    DialTypeChangedInt(out _messageSecondSeqDrumOn, _drumSecondSeqOn, 1);
+                    sendOneTimeDrugSecondSeq = true;
+                }
+            }
+
+            if (dragSeq < 0.05f)
+            {
+                changedDragSecondSeqOn = false;
+                if (sendOneTimeDrugSecondSeq)
+                {
+                    DialTypeChangedInt(out _messageSecondSeqDrumOn, _drumSecondSeqOn, 0);
+                    sendOneTimeDrugSecondSeq = false;
+                }
+            }
+        }
+
+        private bool changedDragKlang;
+        private bool sendOneTimeKlang;
+        private OSCMessage _messageKlang;
+
+        public void DrumKlang(Single dragSeq)
+        {
+            if (dragSeq >= 0.05f)
+            {
+                changedDragKlang = true;
+                if (!sendOneTimeKlang)
+                {
+                    DialTypeChangedInt(out _messageKlang, _drumKlangOnOff, 1);
+                    sendOneTimeKlang = true;
+                }
+            }
+
+            if (dragSeq < 0.05f)
+            {
+                changedDragKlang = false;
+                if (sendOneTimeKlang)
+                {
+                    DialTypeChangedInt(out _messageKlang, _drumKlangOnOff, 0);
+                    sendOneTimeKlang = false;
+                }
+            }
+        }
+
+        private bool changedDragKick;
+        private bool sendOneTimeKick;
+        private OSCMessage _messageKick;
+
+        public void DrumKick(Single dragSeq)
+        {
+            if (dragSeq >= 0.05f)
+            {
+                changedDragKick = true;
+                if (!sendOneTimeKick)
+                {
+                    DialTypeChangedInt(out _messageKick, _drumKickOnOff, 1);
+                    sendOneTimeKick = true;
+                }
+            }
+
+            if (dragSeq < 0.05f)
+            {
+                changedDragKick = false;
+                if (sendOneTimeKick)
+                {
+                    DialTypeChangedInt(out _messageKick, _drumKickOnOff, 0);
+                    sendOneTimeKick = false;
+                }
+            }
+        }
+
+
+        public void DrumKickTwo(Single dragSeq)
+        {
+            if (dragSeq >= 0.05f)
+            {
+                changedDragKickTwo = true;
+                if (!sendOneTimeKickTwo)
+                {
+                    DialTypeChangedInt(out _messageKickTwo, _drumKickTwoOnOff, 1);
+                    sendOneTimeKickTwo = true;
+                }
+            }
+
+            if (dragSeq < 0.05f)
+            {
+                changedDragKickTwo = false;
+                if (sendOneTimeKickTwo)
+                {
+                    DialTypeChangedInt(out _messageKickTwo, _drumKickTwoOnOff, 0);
+                    sendOneTimeKickTwo = false;
+                }
+            }
+        }
+
+
         public void ButtonRandom()
         {
             DialTypeChangedInt(out _messageButtonRandom, oscAddressButtonRandom, 1);
-            Debug.Log(_messageButtonRandom);
         }
 
 
