@@ -43,5 +43,6 @@ Material:
     m_Floats:
     - Boolean_A48C4DFA: 0
     - HighlightActive: 0
-    m_Colors: []
+    m_Colors:
+    - Color_2895ec94d7b2490abcdd780040668e15: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

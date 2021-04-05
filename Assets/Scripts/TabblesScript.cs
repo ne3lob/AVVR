@@ -23,7 +23,7 @@ public class TabblesScript : MonoBehaviour
     private const string InputSecondSeqOn = "/InputSecondSeqOn";
     private const string InputDrumKlang = "/InputDrumKlang";
     private const string InputDrumKick = "/InputDrumKick";
-    private const string InputDrumKickTwo = "/ InputDrumKickTwo";
+    private const string InputDrumKickTwo = "/InputDrumKickTwo";
 
 
     private void TransmitterXandY(string addressType, int x, int y)
@@ -43,6 +43,7 @@ public class TabblesScript : MonoBehaviour
 
         this.gameObject.GetComponent<MeshRenderer>().material = change;
     }
+
 
     #region Octave Methoden
 
@@ -127,6 +128,7 @@ public class TabblesScript : MonoBehaviour
     }
 
     #endregion
+
 
     #region Pitch Methoden
 
@@ -300,82 +302,82 @@ public class TabblesScript : MonoBehaviour
 
     public void SendXandYInputDrumSeq0(int y)
     {
-        TransmitterXandY(InputDrumSeq, 0, y);
+        TransmitterXandY(InputDrumSeq, 1, y);
     }
 
     public void SendXandYInputDrumSeq1(int y)
     {
-        TransmitterXandY(InputDrumSeq, 1, y);
+        TransmitterXandY(InputDrumSeq, 2, y);
     }
 
     public void SendXandYInputDrumSeq2(int y)
     {
-        TransmitterXandY(InputDrumSeq, 2, y);
+        TransmitterXandY(InputDrumSeq, 3, y);
     }
 
     public void SendXandYInputDrumSeq3(int y)
     {
-        TransmitterXandY(InputDrumSeq, 3, y);
+        TransmitterXandY(InputDrumSeq, 4, y);
     }
 
     public void SendXandYInputDrumSeq4(int y)
     {
-        TransmitterXandY(InputDrumSeq, 4, y);
+        TransmitterXandY(InputDrumSeq, 5, y);
     }
 
     public void SendXandYInputDrumSeq5(int y)
     {
-        TransmitterXandY(InputDrumSeq, 5, y);
+        TransmitterXandY(InputDrumSeq, 6, y);
     }
 
     public void SendXandYInputDrumSeq6(int y)
     {
-        TransmitterXandY(InputDrumSeq, 6, y);
+        TransmitterXandY(InputDrumSeq, 7, y);
     }
 
     public void SendXandYInputDrumSeq7(int y)
     {
-        TransmitterXandY(InputDrumSeq, 7, y);
+        TransmitterXandY(InputDrumSeq, 8, y);
     }
 
     public void SendXandYInputDrumSeq8(int y)
     {
-        TransmitterXandY(InputDrumSeq, 8, y);
+        TransmitterXandY(InputDrumSeq, 9, y);
     }
 
     public void SendXandYInputDrumSeq9(int y)
     {
-        TransmitterXandY(InputDrumSeq, 9, y);
+        TransmitterXandY(InputDrumSeq, 10, y);
     }
 
     public void SendXandYInputDrumSeq10(int y)
     {
-        TransmitterXandY(InputDrumSeq, 10, y);
+        TransmitterXandY(InputDrumSeq, 11, y);
     }
 
     public void SendXandYInputDrumSeq11(int y)
     {
-        TransmitterXandY(InputDrumSeq, 11, y);
+        TransmitterXandY(InputDrumSeq, 12, y);
     }
 
     public void SendXandYInputDrumSeq12(int y)
     {
-        TransmitterXandY(InputDrumSeq, 12, y);
+        TransmitterXandY(InputDrumSeq, 13, y);
     }
 
     public void SendXandYInputDrumSeq13(int y)
     {
-        TransmitterXandY(InputDrumSeq, 13, y);
+        TransmitterXandY(InputDrumSeq, 14, y);
     }
 
     public void SendXandYInputDrumSeq14(int y)
     {
-        TransmitterXandY(InputDrumSeq, 14, y);
+        TransmitterXandY(InputDrumSeq, 15, y);
     }
 
     public void SendXandYInputDrumSeq15(int y)
     {
-        TransmitterXandY(InputDrumSeq, 15, y);
+        TransmitterXandY(InputDrumSeq, 16, y);
     }
 
     #endregion
@@ -384,82 +386,82 @@ public class TabblesScript : MonoBehaviour
 
     public void SendXandYInputSecondSeqOn0(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 0, y);
+        TransmitterXandY(InputSecondSeqOn, 1, y);
     }
 
     public void SendXandYInputSecondSeqOn1(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 1, y);
+        TransmitterXandY(InputSecondSeqOn, 2, y);
     }
 
     public void SendXandYInputSecondSeqOn2(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 2, y);
+        TransmitterXandY(InputSecondSeqOn, 3, y);
     }
 
     public void SendXandYInputSecondSeqOn3(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 3, y);
+        TransmitterXandY(InputSecondSeqOn, 4, y);
     }
 
     public void SendXandYInputSecondSeqOn4(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 4, y);
+        TransmitterXandY(InputSecondSeqOn, 5, y);
     }
 
     public void SendXandYInputSecondSeqOn5(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 5, y);
+        TransmitterXandY(InputSecondSeqOn, 6, y);
     }
 
     public void SendXandYInputSecondSeqOn6(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 6, y);
+        TransmitterXandY(InputSecondSeqOn, 7, y);
     }
 
     public void SendXandYInputSecondSeqOn7(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 7, y);
+        TransmitterXandY(InputSecondSeqOn, 8, y);
     }
 
     public void SendXandYInputSecondSeqOn8(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 8, y);
+        TransmitterXandY(InputSecondSeqOn, 9, y);
     }
 
     public void SendXandYInputSecondSeqOn9(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 9, y);
+        TransmitterXandY(InputSecondSeqOn, 10, y);
     }
 
     public void SendXandYInputSecondSeqOn10(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 10, y);
+        TransmitterXandY(InputSecondSeqOn, 11, y);
     }
 
     public void SendXandYInputSecondSeqOn11(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 11, y);
+        TransmitterXandY(InputSecondSeqOn, 12, y);
     }
 
     public void SendXandYInputSecondSeqOn12(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 12, y);
+        TransmitterXandY(InputSecondSeqOn, 13, y);
     }
 
     public void SendXandYInputSecondSeqOn13(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 13, y);
+        TransmitterXandY(InputSecondSeqOn, 14, y);
     }
 
     public void SendXandYInputSecondSeqOn14(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 14, y);
+        TransmitterXandY(InputSecondSeqOn, 15, y);
     }
 
     public void SendXandYInputSecondSeqOn15(int y)
     {
-        TransmitterXandY(InputSecondSeqOn, 15, y);
+        TransmitterXandY(InputSecondSeqOn, 16, y);
     }
 
     #endregion
@@ -468,82 +470,82 @@ public class TabblesScript : MonoBehaviour
 
     public void SendXandYInputDrumKlang0(int y)
     {
-        TransmitterXandY(InputDrumKlang, 0, y);
+        TransmitterXandY(InputDrumKlang, 1, y);
     }
 
     public void SendXandYInputDrumKlang1(int y)
     {
-        TransmitterXandY(InputDrumKlang, 1, y);
+        TransmitterXandY(InputDrumKlang, 2, y);
     }
 
     public void SendXandYInputDrumKlang2(int y)
     {
-        TransmitterXandY(InputDrumKlang, 2, y);
+        TransmitterXandY(InputDrumKlang, 3, y);
     }
 
     public void SendXandYInputDrumKlang3(int y)
     {
-        TransmitterXandY(InputDrumKlang, 3, y);
+        TransmitterXandY(InputDrumKlang, 4, y);
     }
 
     public void SendXandYInputDrumKlang4(int y)
     {
-        TransmitterXandY(InputDrumKlang, 4, y);
+        TransmitterXandY(InputDrumKlang, 5, y);
     }
 
     public void SendXandYInputDrumKlang5(int y)
     {
-        TransmitterXandY(InputDrumKlang, 5, y);
+        TransmitterXandY(InputDrumKlang, 6, y);
     }
 
     public void SendXandYInputDrumKlang6(int y)
     {
-        TransmitterXandY(InputDrumKlang, 6, y);
+        TransmitterXandY(InputDrumKlang, 7, y);
     }
 
     public void SendXandYInputDrumKlang7(int y)
     {
-        TransmitterXandY(InputDrumKlang, 7, y);
+        TransmitterXandY(InputDrumKlang, 8, y);
     }
 
     public void SendXandYInputDrumKlang8(int y)
     {
-        TransmitterXandY(InputDrumKlang, 8, y);
+        TransmitterXandY(InputDrumKlang, 9, y);
     }
 
     public void SendXandYInputDrumKlang9(int y)
     {
-        TransmitterXandY(InputDrumKlang, 9, y);
+        TransmitterXandY(InputDrumKlang, 10, y);
     }
 
     public void SendXandYInputDrumKlang10(int y)
     {
-        TransmitterXandY(InputDrumKlang, 10, y);
+        TransmitterXandY(InputDrumKlang, 11, y);
     }
 
     public void SendXandYInputDrumKlang11(int y)
     {
-        TransmitterXandY(InputDrumKlang, 11, y);
+        TransmitterXandY(InputDrumKlang, 12, y);
     }
 
     public void SendXandYInputDrumKlang12(int y)
     {
-        TransmitterXandY(InputDrumKlang, 12, y);
+        TransmitterXandY(InputDrumKlang, 13, y);
     }
 
     public void SendXandYInputDrumKlang13(int y)
     {
-        TransmitterXandY(InputDrumKlang, 13, y);
+        TransmitterXandY(InputDrumKlang, 14, y);
     }
 
     public void SendXandYInputDrumKlang14(int y)
     {
-        TransmitterXandY(InputDrumKlang, 14, y);
+        TransmitterXandY(InputDrumKlang, 15, y);
     }
 
     public void SendXandYInputDrumKlang15(int y)
     {
-        TransmitterXandY(InputDrumKlang, 15, y);
+        TransmitterXandY(InputDrumKlang, 16, y);
     }
 
     #endregion
@@ -552,166 +554,167 @@ public class TabblesScript : MonoBehaviour
 
     public void SendXandYInputDrumKick0(int y)
     {
-        TransmitterXandY(InputDrumKick, 0, y);
+        TransmitterXandY(InputDrumKick, 1, y);
     }
 
     public void SendXandYInputDrumKick1(int y)
     {
-        TransmitterXandY(InputDrumKick, 1, y);
+        TransmitterXandY(InputDrumKick, 2, y);
     }
 
     public void SendXandYInputDrumKick2(int y)
     {
-        TransmitterXandY(InputDrumKick, 2, y);
+        TransmitterXandY(InputDrumKick, 3, y);
     }
 
     public void SendXandYInputDrumKick3(int y)
     {
-        TransmitterXandY(InputDrumKick, 3, y);
+        TransmitterXandY(InputDrumKick, 4, y);
     }
 
     public void SendXandYInputDrumKick4(int y)
     {
-        TransmitterXandY(InputDrumKick, 4, y);
+        TransmitterXandY(InputDrumKick, 5, y);
     }
 
     public void SendXandYInputDrumKick5(int y)
     {
-        TransmitterXandY(InputDrumKick, 5, y);
+        TransmitterXandY(InputDrumKick, 6, y);
     }
 
     public void SendXandYInputDrumKick6(int y)
     {
-        TransmitterXandY(InputDrumKick, 6, y);
+        TransmitterXandY(InputDrumKick, 7, y);
     }
 
     public void SendXandYInputDrumKick7(int y)
     {
-        TransmitterXandY(InputDrumKick, 7, y);
+        TransmitterXandY(InputDrumKick, 8, y);
     }
 
     public void SendXandYInputDrumKick8(int y)
     {
-        TransmitterXandY(InputDrumKick, 8, y);
+        TransmitterXandY(InputDrumKick, 9, y);
     }
 
     public void SendXandYInputDrumKick9(int y)
     {
-        TransmitterXandY(InputDrumKick, 9, y);
+        TransmitterXandY(InputDrumKick, 10, y);
     }
 
     public void SendXandYInputDrumKick10(int y)
     {
-        TransmitterXandY(InputDrumKick, 10, y);
+        TransmitterXandY(InputDrumKick, 11, y);
     }
 
     public void SendXandYInputDrumKick11(int y)
     {
-        TransmitterXandY(InputDrumKick, 11, y);
+        TransmitterXandY(InputDrumKick, 12, y);
     }
 
     public void SendXandYInputDrumKick12(int y)
     {
-        TransmitterXandY(InputDrumKick, 12, y);
+        TransmitterXandY(InputDrumKick, 13, y);
     }
 
     public void SendXandYInputDrumKick13(int y)
     {
-        TransmitterXandY(InputDrumKick, 13, y);
+        TransmitterXandY(InputDrumKick, 14, y);
     }
 
     public void SendXandYInputDrumKick14(int y)
     {
-        TransmitterXandY(InputDrumKick, 14, y);
+        TransmitterXandY(InputDrumKick, 15, y);
     }
 
     public void SendXandYInputDrumKick15(int y)
     {
-        TransmitterXandY(InputDrumKick, 15, y);
+        TransmitterXandY(InputDrumKick, 16, y);
     }
 
     #endregion
+
 
     #region InputDrumKickTwo
 
     public void SendXandYInputDrumKickTwo0(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 0, y);
+        TransmitterXandY(InputDrumKickTwo, 1, y);
     }
 
     public void SendXandYInputDrumKickTwo1(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 1, y);
+        TransmitterXandY(InputDrumKickTwo, 2, y);
     }
 
     public void SendXandYInputDrumKickTwo2(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 2, y);
+        TransmitterXandY(InputDrumKickTwo, 3, y);
     }
 
     public void SendXandYInputDrumKickTwo3(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 3, y);
+        TransmitterXandY(InputDrumKickTwo, 4, y);
     }
 
     public void SendXandYInputDrumKickTwo4(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 4, y);
+        TransmitterXandY(InputDrumKickTwo, 5, y);
     }
 
     public void SendXandYInputDrumKickTwo5(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 5, y);
+        TransmitterXandY(InputDrumKickTwo, 6, y);
     }
 
     public void SendXandYInputDrumKickTwo6(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 6, y);
+        TransmitterXandY(InputDrumKickTwo, 7, y);
     }
 
     public void SendXandYInputDrumKickTwo7(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 7, y);
+        TransmitterXandY(InputDrumKickTwo, 8, y);
     }
 
     public void SendXandYInputDrumKickTwo8(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 8, y);
+        TransmitterXandY(InputDrumKickTwo, 9, y);
     }
 
     public void SendXandYInputDrumKickTwo9(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 9, y);
+        TransmitterXandY(InputDrumKickTwo, 10, y);
     }
 
     public void SendXandYInputDrumKickTwo10(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 10, y);
+        TransmitterXandY(InputDrumKickTwo, 11, y);
     }
 
     public void SendXandYInputDrumKickTwo11(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 11, y);
+        TransmitterXandY(InputDrumKickTwo, 12, y);
     }
 
     public void SendXandYInputDrumKickTwo12(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 12, y);
+        TransmitterXandY(InputDrumKickTwo, 13, y);
     }
 
     public void SendXandYInputDrumKickTwo13(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 13, y);
+        TransmitterXandY(InputDrumKickTwo, 14, y);
     }
 
     public void SendXandYInputDrumKickTwo14(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 14, y);
+        TransmitterXandY(InputDrumKickTwo, 15, y);
     }
 
     public void SendXandYInputDrumKickTwo15(int y)
     {
-        TransmitterXandY(InputDrumKickTwo, 15, y);
+        TransmitterXandY(InputDrumKickTwo, 16, y);
     }
 
     #endregion

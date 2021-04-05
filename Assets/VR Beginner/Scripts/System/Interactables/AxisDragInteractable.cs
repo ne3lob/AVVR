@@ -150,7 +150,10 @@ public class AxisDragInteractable : XRBaseInteractable
                     MovingRigidbody.MovePosition(MovingRigidbody.position + move);
                 else
                     transform.position = m_EndPoint + move;
+
+                ReturnOnFree = false;
             }
+            
         }
     }
 

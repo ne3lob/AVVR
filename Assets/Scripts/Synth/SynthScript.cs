@@ -43,6 +43,23 @@ namespace Synth
         private const string _drumKickOnOff = "/DrumKick";
         private const string _drumKickTwoOnOff = "/DrumKickTwo";
 
+
+        private const string oscAddresssDrumKlang = "/DialDrumKlang";
+        private const string oscAddresssDrumSecondSeqPitchOne = "/DrumSecondSeqPitchOne";
+        private const string oscAddresssDrumSecondSeqPitchTwo = "/DrumSecondSeqPitchTwo";
+        private const string oscAddresssDrumSecondSeqEnvelope = "/DrumSecondSeqEnvelope";
+
+
+        private const string oscAddressDrumSeqPitchOne = "/DrumSeqPitchOne";
+        private const string oscAddressDrumSeqPitchTwo = "/DrumSeqPitchTwo";
+        private const string oscAddressDrumSeqPitchThree = "/DrumSeqPitchThree";
+
+        private const string oscAddressDrumSeqEnvelopOne = "/DrumSeqEnvelopOne";
+        private const string oscAddressDrumSeqEnvelopTwo = "/DrumSeqEnvelopTwo";
+        private const string oscAddressDrumSeqEnvelopThree = "/DrumSeqEnvelopThree";
+
+        private const string oscAddressDrumSeqOverdrive = "/DrumSeqOverDrive";
+
         //STARTING FLOATS
         private float s_VolumeRatio = 0.0f;
         public float s_PitchRatio = 0.0f;
@@ -61,7 +78,17 @@ namespace Synth
         private float s_ReverbSpace = 0.0f;
         private float s_ReverbReflection = 0.0f;
         private float s_Bpm = 0.0f;
-
+        private float s_DrumKlang = 0.0f;
+        private float s_SecondSeqPitchOne = 0.0f;
+        private float s_DrumSecondSeqPitchTwo = 0.0f;
+        private float s_DrumSecondSeqEnvelope = 0.0f;
+        private float s_DrumSeqPitchOne = 0.0f;
+        private float s_DrumSeqPitchTwo = 0.0f;
+        private float s_DrumSeqPitchThree = 0.0f;
+        private float s_DrumSeqEnvelopOne = 0.0f;
+        private float s_DrumSeqEnvelopTwo = 0.0f;
+        private float s_DrumSeqEnvelopThree = 0.0f;
+        private float s_DrumSeqOverdrive = 0.0f;
 
         //bools Volume Envelope
         private bool changedVolume;
@@ -97,6 +124,9 @@ namespace Synth
 
         private bool changedDragKickTwo;
         private bool sendOneTimeKickTwo;
+        
+        private bool changedDragSecondSeqOn;
+        private bool sendOneTimeDrugSecondSeq;
 
         #region OSCMessagesSec
 
@@ -127,7 +157,18 @@ namespace Synth
         private OSCMessage _messageButtonRandom;
         private OSCMessage _messageSeqDrumOn;
         private OSCMessage _messageKickTwo;
-
+        private OSCMessage _messagesDrumKlang;
+        private OSCMessage _messagesDrumSecondSeqPitchOne;
+        private OSCMessage _messagesDrumSecondSeqPitchTwo;
+        private OSCMessage _messagesDrumSecondSeqEnvelope;
+        private OSCMessage _messagesDrumSeqPitchOne;
+        private OSCMessage _messagesDrumSeqPitchTwo;
+        private OSCMessage _messagesDrumSeqPitchThree;
+        private OSCMessage _messagesDrumSeqEnvelopOne;
+        private OSCMessage _messagesDrumSeqEnvelopTwo;
+        private OSCMessage _messagesDrumSeqEnvelopThree;
+        private OSCMessage _messagesDrumSeqOverdrive;
+        private OSCMessage _messageSecondSeqDrumOn;
         #endregion
 
 
@@ -154,6 +195,99 @@ namespace Synth
             messageName.AddValue(OSCValue.Float(ratioScaleInt));
             transmitter.Send(messageName);
         }
+
+        public void DialDrumSeqPitchOne(DialInteractable dial)
+        {
+            float ratioDrumSeqPitchOne = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_DrumSeqPitchOne = ratioDrumSeqPitchOne;
+
+            DialTypeChangedFloat(out _messagesDrumSeqPitchOne, oscAddressDrumSeqPitchOne, s_DrumSeqPitchOne);
+        }
+
+        public void DialDrumSeqPitchTwo(DialInteractable dial)
+        {
+            float ratioDrumSeqPitchTwo = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_DrumSeqPitchTwo = ratioDrumSeqPitchTwo;
+
+            DialTypeChangedFloat(out _messagesDrumSeqPitchTwo, oscAddressDrumSeqPitchTwo, s_DrumSeqPitchTwo);
+        }
+
+        public void DialDrumSeqEnvelopOne(DialInteractable dial)
+        {
+            float ratioDrumSeqEnvelopOne = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_DrumSeqEnvelopOne = ratioDrumSeqEnvelopOne;
+
+            DialTypeChangedFloat(out _messagesDrumSeqEnvelopOne, oscAddressDrumSeqEnvelopOne, s_DrumSeqEnvelopOne);
+        }
+
+        public void DialDrumSeqEnvelopTwo(DialInteractable dial)
+        {
+            float ratioDrumSeqEnvelopTwo = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_DrumSeqEnvelopTwo = ratioDrumSeqEnvelopTwo;
+
+            DialTypeChangedFloat(out _messagesDrumSeqEnvelopTwo, oscAddressDrumSeqEnvelopTwo, s_DrumSeqEnvelopTwo);
+        }
+
+        public void DialDrumSeqEnvelopThree(DialInteractable dial)
+        {
+            float ratioDrumSeqEnvelopThree = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_DrumSeqEnvelopThree = ratioDrumSeqEnvelopThree;
+
+            DialTypeChangedFloat(out _messagesDrumSeqEnvelopThree, oscAddressDrumSeqEnvelopThree,
+                s_DrumSeqEnvelopThree);
+        }
+
+        public void DialDrumSeqOverdrive(DialInteractable dial)
+        {
+            float ratioDrumSeqOverdrive = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_DrumSeqOverdrive = ratioDrumSeqOverdrive;
+
+            DialTypeChangedFloat(out _messagesDrumSeqOverdrive, oscAddressDrumSeqOverdrive, s_DrumSeqOverdrive);
+        }
+
+        public void DialDrumSeqPitchThree(DialInteractable dial)
+        {
+            float ratioDrumSeqPitchThree = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_DrumSeqPitchThree = ratioDrumSeqPitchThree;
+
+            DialTypeChangedFloat(out _messagesDrumSeqPitchThree, oscAddressDrumSeqPitchThree, s_DrumSeqPitchThree);
+        }
+
+        public void DialDrumKlang(DialInteractable dial)
+        {
+            float ratioDrumKlang = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_DrumKlang = ratioDrumKlang;
+
+            DialTypeChangedFloat(out _messagesDrumKlang, oscAddresssDrumKlang, s_DrumKlang);
+        }
+
+        public void DialDrumSecondSeqPitchOne(DialInteractable dial)
+        {
+            float ratioDrumSecondSeqPitchOne = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_SecondSeqPitchOne = ratioDrumSecondSeqPitchOne;
+
+            DialTypeChangedFloat(out _messagesDrumSecondSeqPitchOne, oscAddresssDrumSecondSeqPitchOne,
+                s_SecondSeqPitchOne);
+        }
+
+        public void DialDrumSecondSeqPitchTwo(DialInteractable dial)
+        {
+            float ratioDrumSecondSeqPitchTwo = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_DrumSecondSeqPitchTwo = ratioDrumSecondSeqPitchTwo;
+
+            DialTypeChangedFloat(out _messagesDrumSecondSeqPitchTwo, oscAddresssDrumSecondSeqPitchTwo,
+                s_DrumSecondSeqPitchTwo);
+        }
+
+        public void DialDrumSecondSeqEnvelope(DialInteractable dial)
+        {
+            float ratioDrumSecondSeqEnvelope = dial.CurrentAngle / dial.RotationAngleMaximum;
+            s_DrumSecondSeqEnvelope = ratioDrumSecondSeqEnvelope;
+
+            DialTypeChangedFloat(out _messagesDrumSecondSeqEnvelope, oscAddresssDrumSecondSeqEnvelope,
+                s_DrumSecondSeqEnvelope);
+        }
+
 
         public void SynthVolumeChanged(DialInteractable dial)
         {
@@ -297,7 +431,7 @@ namespace Synth
 
         public void SequencerOnOff(Single dragSeq)
         {
-            if (dragSeq >= 0.05f)
+            if (dragSeq >= 0.015f)
             {
                 changedSeq = true;
                 if (!sendOneTimeSeq)
@@ -307,7 +441,7 @@ namespace Synth
                 }
             }
 
-            if (dragSeq < 0.05f)
+            if (dragSeq < 0.025f)
             {
                 changedSeq = false;
                 if (sendOneTimeSeq)
@@ -321,7 +455,7 @@ namespace Synth
 
         public void DrumSeqOn(Single dragSeq)
         {
-            if (dragSeq >= 0.05f)
+            if (dragSeq >= 0.025f)
             {
                 changedDragSeqOn = true;
                 if (!sendOneTimeDrugSeq)
@@ -331,7 +465,7 @@ namespace Synth
                 }
             }
 
-            if (dragSeq < 0.05f)
+            if (dragSeq < 0.025f)
             {
                 changedDragSeqOn = false;
                 if (sendOneTimeDrugSeq)
@@ -341,30 +475,29 @@ namespace Synth
                 }
             }
         }
-
-        private bool changedDragSecondSeqOn;
-        private bool sendOneTimeDrugSecondSeq;
-        private OSCMessage _messageSecondSeqDrumOn;
+        
 
         public void DrumSecondSeqOn(Single dragSeq)
         {
-            if (dragSeq >= 0.05f)
+            if (dragSeq >= 0.025f)
             {
                 changedDragSecondSeqOn = true;
                 if (!sendOneTimeDrugSecondSeq)
                 {
                     DialTypeChangedInt(out _messageSecondSeqDrumOn, _drumSecondSeqOn, 1);
                     sendOneTimeDrugSecondSeq = true;
+                    Debug.Log(dragSeq);
                 }
             }
 
-            if (dragSeq < 0.05f)
+            if (dragSeq < 0.025f)
             {
                 changedDragSecondSeqOn = false;
                 if (sendOneTimeDrugSecondSeq)
                 {
                     DialTypeChangedInt(out _messageSecondSeqDrumOn, _drumSecondSeqOn, 0);
                     sendOneTimeDrugSecondSeq = false;
+                    Debug.Log(dragSeq);
                 }
             }
         }
@@ -375,7 +508,7 @@ namespace Synth
 
         public void DrumKlang(Single dragSeq)
         {
-            if (dragSeq >= 0.05f)
+            if (dragSeq >= 0.025f)
             {
                 changedDragKlang = true;
                 if (!sendOneTimeKlang)
@@ -385,7 +518,7 @@ namespace Synth
                 }
             }
 
-            if (dragSeq < 0.05f)
+            if (dragSeq < 0.025f)
             {
                 changedDragKlang = false;
                 if (sendOneTimeKlang)
@@ -402,7 +535,7 @@ namespace Synth
 
         public void DrumKick(Single dragSeq)
         {
-            if (dragSeq >= 0.05f)
+            if (dragSeq >= 0.025f)
             {
                 changedDragKick = true;
                 if (!sendOneTimeKick)
@@ -412,7 +545,7 @@ namespace Synth
                 }
             }
 
-            if (dragSeq < 0.05f)
+            if (dragSeq < 0.025f)
             {
                 changedDragKick = false;
                 if (sendOneTimeKick)
@@ -426,7 +559,7 @@ namespace Synth
 
         public void DrumKickTwo(Single dragSeq)
         {
-            if (dragSeq >= 0.05f)
+            if (dragSeq >= 0.025f)
             {
                 changedDragKickTwo = true;
                 if (!sendOneTimeKickTwo)
@@ -436,7 +569,7 @@ namespace Synth
                 }
             }
 
-            if (dragSeq < 0.05f)
+            if (dragSeq < 0.025f)
             {
                 changedDragKickTwo = false;
                 if (sendOneTimeKickTwo)
