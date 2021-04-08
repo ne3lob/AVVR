@@ -39,6 +39,7 @@
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>MemoryCaptures</Path>
+      <Path>Temp</Path>
       <Path>UIElementsSchema</Path>
       <Path>UserSettings</Path>
       <Path>extOSC</Path>
