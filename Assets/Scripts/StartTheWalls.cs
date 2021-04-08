@@ -82,6 +82,11 @@ public class StartTheWalls : MonoBehaviour
 
             colomnReally.transform.position =
                 Vector3.MoveTowards(colomnReally.transform.position, new Vector3(0, -5.65f, 0.08f), step);
+            if (colomnReally.transform.position == new Vector3(0, -2f, 0.08f))
+            {
+                
+                Debug.Log("Rabotaet");
+            }
         }
 
         if (lerpNow)

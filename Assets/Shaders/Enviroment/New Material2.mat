@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material2
-  m_Shader: {fileID: -6465566751694194690, guid: 5fb801c0377da3e489949f7c129baecf,
+  m_Shader: {fileID: -6465566751694194690, guid: 0879eb2a8599e4b4bbb01eb440cf4384,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -77,6 +77,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 16e3256d1506710439272fb6a55c0418, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_e10cd1228f1448a88765fe4717186a7c_Texture_1:
+        m_Texture: {fileID: 2800000, guid: fe3e0a556829be24bb87c912d79e872d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -94,7 +98,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Down: -100
+    - Down: 3.09
+    - Up: -14.8
+    - Vector1_1ee5e6ccf7e4454098759607a47b2669: -28.48
     - Vector1_7644a4908d4241659f98a1cee7699c20: 0.91
     - Vector1_b7731094ea6644f0bb6cc90cf1585e9c: -100
     - _AlphaClip: 0

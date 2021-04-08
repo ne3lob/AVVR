@@ -61,8 +61,8 @@ MonoBehaviour:
     max: 20
     enumValues: []
     descendantCount: 0
-  - name: CapasityB
-    path: CapasityB
+  - name: CapacityB
+    path: CapacityB
     tooltip: 30
     sheetType: m_Float
     realType: Single
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_ImportDependencies: []
   m_GraphVersion: 6
   m_ResourceVersion: 1
-  m_saved: 1
+  m_saved: 0
   m_SubgraphDependencies: []
   m_CategoryPath: 
 --- !u!2058629511 &8926484042661614527
@@ -1588,7 +1588,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"x":0.09344960749149323,"y":0.6349508166313171,"z":0.7924528121948242}'
+      m_SerializableObject: '{"x":0.0,"y":0.0,"z":0.0}'
     m_Space: 2147483647
   m_Property:
     name: Color
@@ -1740,8 +1740,6 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661615821}
       inputSlot: {fileID: 8926484042661615757}
-    - outputSlot: {fileID: 8926484042661615821}
-      inputSlot: {fileID: 8926484042661615757}
     position: {x: 3149, y: -2161}
     expandedSlots: []
     expanded: 0
@@ -1801,7 +1799,7 @@ MonoBehaviour:
   m_InputSlots: []
   m_OutputSlots:
   - {fileID: 8926484042661615823}
-  m_ExposedName: CapasityB
+  m_ExposedName: CapacityB
   m_Exposed: 1
   m_Order: 1
   m_Category: 
@@ -1822,8 +1820,6 @@ MonoBehaviour:
   m_Nodes:
   - m_Id: 0
     linkedSlots:
-    - outputSlot: {fileID: 8926484042661615823}
-      inputSlot: {fileID: 8926484042661615758}
     - outputSlot: {fileID: 8926484042661615823}
       inputSlot: {fileID: 8926484042661615758}
     position: {x: 3149.1306, y: -2080.8696}
