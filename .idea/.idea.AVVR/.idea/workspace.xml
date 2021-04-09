@@ -23,8 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Global Volume Profile.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1/Global Volume Profile.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
@@ -33,7 +31,7 @@
       <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material2.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/VFX/MonomeWalls 1.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VFX/MonomeWalls 1.vfx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/Data/UniversalRenderPipelineAssetMobile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/Data/UniversalRenderPipelineAssetMobile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +178,10 @@
       <workItem from="1617098833328" duration="14070000" />
       <workItem from="1617180974552" duration="6585000" />
       <workItem from="1617190381594" duration="7372000" />
-      <workItem from="1617876889051" duration="7650000" />
+      <workItem from="1617876889051" duration="7655000" />
+      <workItem from="1617961993915" duration="636000" />
+      <workItem from="1617965398561" duration="1479000" />
+      <workItem from="1617998672045" duration="12531000" />
     </task>
     <servers />
   </component>
