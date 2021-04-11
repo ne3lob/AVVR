@@ -116,24 +116,8 @@ public class StartTheWalls : MonoBehaviour
             //SECOND CIRCLE
             if (courOn)
             {
-                var newProgress = Time.time - lerpStartSecond;
-                firstCurrentStrate = Mathf.Lerp(firstCurrentStrate, firstTargetStrateOne, newProgress / lerpDuration);
-                colomnFallFirstCircleCoroutineNull =
-                    StartCoroutine(ColomnFallFirstCircle(FirstCircleEnvironment, firstCurrentStrate, 5));
-                if (firstCurrentStateTwo >= -23.5f)
-                {
-                    StopCoroutine(colomnFallFirstCircleCoroutineNull);
-                }
-
-
-                secondCurrentStrate =
-                    Mathf.Lerp(secondCurrentStrate, secondTargetStrateOne, newProgress / lerpDuration);
-                colomnFallSecondCircleCoroutineNull =
-                    StartCoroutine(ColomnFallFirstCircle(SecondCircleEnvironment, secondCurrentStrate, 10));
-                if (firstCurrentStateTwo >= 12.5)
-                {
-                    StopCoroutine(colomnFallSecondCircleCoroutineNull);
-                }
+                CircleFirstOn(FirstCircleEnvironment, 1500f);
+                CircleSecondOn(SecondCircleEnvironment, 5000f);
             }
         }
 
@@ -158,6 +142,10 @@ public class StartTheWalls : MonoBehaviour
             lerpNowSecond = false;
             lerpStartSecond = Time.time;
             courOn = false;
+            firstCurrentStrate = 13f;
+            secondCurrentStrate = -24f;
+            firstCurrentStateTwo = -24f;
+            secondCurrentStrateTwo = 13f;
         }
 
         if (!lerpNowSecond)
@@ -169,31 +157,8 @@ public class StartTheWalls : MonoBehaviour
             //SECOND CIRCLE
             if (!courOn)
             {
-                
-                
-                
-                var newProgressSecond = Time.time - lerpStartSecond;
-
-                firstCurrentStateTwo = Mathf.Lerp(firstCurrentStateTwo, firstTargetStrateTwo,
-                    newProgressSecond / lerpDuration);
-
-                colomnFallFirstCircleCoroutineOne =
-                    StartCoroutine(ColomnFallSecondCircle(FirstCircleEnvironment, firstCurrentStateTwo, 0));
-                if (firstCurrentStateTwo >= 12.5f)
-                {
-                    StopCoroutine(colomnFallFirstCircleCoroutineOne);
-                }
-
-
-                secondCurrentStrateTwo =
-                    Mathf.Lerp(secondCurrentStrateTwo, secondTargetStrateTwo, newProgressSecond / lerpDuration);
-                colomnFallSecondCircleCoroutineOne =
-                    StartCoroutine(ColomnFallSecondCircle(SecondCircleEnvironment, secondCurrentStrateTwo, 0));
-
-                if (secondCurrentStrateTwo >= -23f)
-                {
-                    StopCoroutine(colomnFallSecondCircleCoroutineOne);
-                }
+                CircleFirstOff(FirstCircleEnvironment, 1000f);
+                CircleSecondOff(SecondCircleEnvironment, 1500f);
             }
         }
 
@@ -207,18 +172,41 @@ public class StartTheWalls : MonoBehaviour
         }
     }
 
-    IEnumerator ColomnFallFirstCircle(Material circle, float valueUp, int delay_)
+
+    void CircleFirstOn(Material circle, float durationOn)
     {
-        yield return new WaitForSeconds(delay_);
-        circle.SetFloat("Up", valueUp);
-        yield return null;
+        var newProgress = Time.time - lerpStartSecond;
+
+        firstCurrentStrate = Mathf.Lerp(firstCurrentStrate, firstTargetStrateOne, newProgress / durationOn);
+        circle.SetFloat("Up", firstCurrentStrate);
     }
 
-    IEnumerator ColomnFallSecondCircle(Material circle, float valueUp, int delay_)
+    void CircleSecondOn(Material circle, float durationOn)
     {
-        yield return new WaitForSeconds(delay_);
-        circle.SetFloat("Up", valueUp);
-        yield return null;
+        var newProgress = Time.time - lerpStartSecond;
+        secondCurrentStrate =
+            Mathf.Lerp(secondCurrentStrate, secondTargetStrateOne, newProgress / durationOn);
+
+
+        circle.SetFloat("Up", secondCurrentStrate);
+    }
+
+    void CircleFirstOff(Material circle, float durationOn)
+    {
+        var newProgress = Time.time - lerpStartSecond;
+
+        firstCurrentStateTwo = Mathf.Lerp(firstCurrentStateTwo, firstTargetStrateTwo,
+            newProgress / durationOn);
+        circle.SetFloat("Up", firstCurrentStateTwo);
+    }
+
+    void CircleSecondOff(Material circle, float durationOn)
+    {
+        var newProgress = Time.time - lerpStartSecond;
+
+        secondCurrentStrateTwo =
+            Mathf.Lerp(secondCurrentStrateTwo, secondTargetStrateTwo, newProgress / lerpDuration);
+        circle.SetFloat("Up", secondCurrentStrateTwo);
     }
 
 
