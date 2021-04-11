@@ -49,10 +49,15 @@ public class StartTheWalls : MonoBehaviour
 
 
     private float firstCurrentStrate = 13f;
-    private float firstTargetStrate = -24f;
+    private float firstCurrentStateTwo = -24f;
+    private float firstTargetStrateOne = -24f;
+    private float firstTargetStrateTwo = 13f;
+
 
     private float secondCurrentStrate = -24f;
-    private float secondTargetStrate = 13f;
+    private float secondCurrentStrateTwo = 13f;
+    private float secondTargetStrateOne = 13f;
+    private float secondTargetStrateTwo = -24f;
 
 
     float currentDiss = 0.93f;
@@ -65,6 +70,12 @@ public class StartTheWalls : MonoBehaviour
     private static readonly int _up = Shader.PropertyToID("Up");
     private const string _wallsShaderProp = "_Blend";
     private const string _wallsRestProp = "_Blend2";
+
+    Coroutine colomnFallFirstCircleCoroutineNull;
+    Coroutine colomnFallSecondCircleCoroutineNull;
+
+    Coroutine colomnFallFirstCircleCoroutineOne;
+    Coroutine colomnFallSecondCircleCoroutineOne;
 
 
     // Start is called before the first frame update
@@ -105,12 +116,24 @@ public class StartTheWalls : MonoBehaviour
             //SECOND CIRCLE
             if (courOn)
             {
-                var newProgress = Time.time - lerpStart;
-                firstCurrentStrate = Mathf.Lerp(firstCurrentStrate, firstTargetStrate, newProgress / lerpDuration);
-                StartCoroutine(ColomnFallFirstSecondCircle(FirstCircleEnvironment, firstCurrentStrate, 5));
+                var newProgress = Time.time - lerpStartSecond;
+                firstCurrentStrate = Mathf.Lerp(firstCurrentStrate, firstTargetStrateOne, newProgress / lerpDuration);
+                colomnFallFirstCircleCoroutineNull =
+                    StartCoroutine(ColomnFallFirstCircle(FirstCircleEnvironment, firstCurrentStrate, 5));
+                if (firstCurrentStateTwo >= -23.5f)
+                {
+                    StopCoroutine(colomnFallFirstCircleCoroutineNull);
+                }
 
-                secondCurrentStrate = Mathf.Lerp(secondCurrentStrate, secondTargetStrate, newProgress / lerpDuration);
-                StartCoroutine(ColomnFallFirstSecondCircle(SecondCircleEnvironment, secondCurrentStrate, 10));
+
+                secondCurrentStrate =
+                    Mathf.Lerp(secondCurrentStrate, secondTargetStrateOne, newProgress / lerpDuration);
+                colomnFallSecondCircleCoroutineNull =
+                    StartCoroutine(ColomnFallFirstCircle(SecondCircleEnvironment, secondCurrentStrate, 10));
+                if (firstCurrentStateTwo >= 12.5)
+                {
+                    StopCoroutine(colomnFallSecondCircleCoroutineNull);
+                }
             }
         }
 
@@ -146,14 +169,31 @@ public class StartTheWalls : MonoBehaviour
             //SECOND CIRCLE
             if (!courOn)
             {
-                //TODO
                 
-                var newProgressSecond = Time.time - lerpStart;
-                firstTargetStrate = Mathf.Lerp(firstTargetStrate, firstCurrentStrate, newProgressSecond / lerpDuration);
-                StartCoroutine(ColomnFallFirstSecondCircle(FirstCircleEnvironment, firstTargetStrate, 5));
-                Debug.Log(firstTargetStrate);
                 
-                // StartCoroutine(ColomnFallFirstSecondCircle(FirstCircleEnvironment, 10f, true, 8));
+                
+                var newProgressSecond = Time.time - lerpStartSecond;
+
+                firstCurrentStateTwo = Mathf.Lerp(firstCurrentStateTwo, firstTargetStrateTwo,
+                    newProgressSecond / lerpDuration);
+
+                colomnFallFirstCircleCoroutineOne =
+                    StartCoroutine(ColomnFallSecondCircle(FirstCircleEnvironment, firstCurrentStateTwo, 0));
+                if (firstCurrentStateTwo >= 12.5f)
+                {
+                    StopCoroutine(colomnFallFirstCircleCoroutineOne);
+                }
+
+
+                secondCurrentStrateTwo =
+                    Mathf.Lerp(secondCurrentStrateTwo, secondTargetStrateTwo, newProgressSecond / lerpDuration);
+                colomnFallSecondCircleCoroutineOne =
+                    StartCoroutine(ColomnFallSecondCircle(SecondCircleEnvironment, secondCurrentStrateTwo, 0));
+
+                if (secondCurrentStrateTwo >= -23f)
+                {
+                    StopCoroutine(colomnFallSecondCircleCoroutineOne);
+                }
             }
         }
 
@@ -167,11 +207,18 @@ public class StartTheWalls : MonoBehaviour
         }
     }
 
-    IEnumerator ColomnFallFirstSecondCircle(Material circle, float valueUp,  int delay_)
+    IEnumerator ColomnFallFirstCircle(Material circle, float valueUp, int delay_)
     {
         yield return new WaitForSeconds(delay_);
         circle.SetFloat("Up", valueUp);
-        
+        yield return null;
+    }
+
+    IEnumerator ColomnFallSecondCircle(Material circle, float valueUp, int delay_)
+    {
+        yield return new WaitForSeconds(delay_);
+        circle.SetFloat("Up", valueUp);
+        yield return null;
     }
 
 
