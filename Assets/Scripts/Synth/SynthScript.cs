@@ -69,13 +69,13 @@ namespace Synth
         private float s_FilterFrequency = 0.0f;
         private float s_FilterResonance = 0.0f;
         private float s_DalayTimeValue = 0.0f;
-        private float s_DelayTimeFeedback = 0.0f;
+        public float s_DelayTimeFeedback = 0.0f;
         private float s_LfoPitchFrequency = 0.0f;
         private float s_LfoPitchLenght = 0.0f;
         private float s_LfoFilterLenght = 0.0f;
         private float s_LfoFilterFrequency = 0.0f;
         private float s_TimeSeqSlider = 0.0f;
-        private float s_ReverbSpace = 0.0f;
+        public float s_ReverbSpace = 0.0f;
         private float s_ReverbReflection = 0.0f;
         private float s_Bpm = 0.0f;
         private float s_DrumKlang = 0.0f;
@@ -124,7 +124,7 @@ namespace Synth
 
         private bool changedDragKickTwo;
         private bool sendOneTimeKickTwo;
-        
+
         private bool changedDragSecondSeqOn;
         private bool sendOneTimeDrugSecondSeq;
 
@@ -169,6 +169,7 @@ namespace Synth
         private OSCMessage _messagesDrumSeqEnvelopThree;
         private OSCMessage _messagesDrumSeqOverdrive;
         private OSCMessage _messageSecondSeqDrumOn;
+
         #endregion
 
 
@@ -475,7 +476,7 @@ namespace Synth
                 }
             }
         }
-        
+
 
         public void DrumSecondSeqOn(Single dragSeq)
         {

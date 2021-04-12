@@ -76,6 +76,7 @@ public class StartTheWalls : MonoBehaviour
 
     Coroutine colomnFallFirstCircleCoroutineOne;
     Coroutine colomnFallSecondCircleCoroutineOne;
+    
 
 
     // Start is called before the first frame update
@@ -91,6 +92,9 @@ public class StartTheWalls : MonoBehaviour
     {
         pitchValue = _synthScript.s_PitchRatio;
         float stepSpeed = speed * Time.deltaTime;
+        
+        
+        
 
 
         if (!one && pitchValue >= 0.1f)

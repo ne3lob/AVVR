@@ -11,6 +11,7 @@
           <e p="AllSkyFree_Menu.cs" t="Include" />
           <e p="AllSkyFree_Readme.txt" t="Include" />
         </e>
+        <e p="BlendAnimation.cs" t="Include" />
         <e p="ButtonRandomParametrs.cs" t="Include" />
         <e p="extOSC" t="Include">
           <e p="Examples" t="Include">
