@@ -34,6 +34,7 @@ public class BlendAnimation : MonoBehaviour
 
     [SerializeField] private GameObject celling;
 
+    float maxZfloatWall_1;
 
     // Start is called before the first frame update
     void Start()
@@ -51,14 +52,18 @@ public class BlendAnimation : MonoBehaviour
         blendValueFirst = Mathf.Lerp(blendValueFirst, spaceValue * 100f, (Time.time - lerpStart) / 4000f);
         skinnedMeshRendererFirst.SetBlendShapeWeight(0, blendValueFirst);
 
-
-        // maxFloat_centerCollider = Mathf.Clamp(spaceValue * 10, 0f, 6f);
-        // MCollider.center = new Vector3(MCollider.center.x, MCollider.center.y, maxFloat_centerCollider);
+        wall1_z.transform.localPosition =
+            new Vector3(wall1_z.transform.localPosition.x, wall1_z.transform.localPosition.y, spaceValue * 10f)
+            ;
 
 
         //Feedback Value
         feedbackValue = _synthScript.s_DelayTimeFeedback;
         blendValueSecond = Mathf.Lerp(blendValueSecond, feedbackValue * 100f, (Time.time - lerpStart) / 4000f);
         skinnedMeshRendererSecond.SetBlendShapeWeight(0, blendValueSecond);
+
+        wall2_z.transform.localPosition =
+            new Vector3(wall2_z.transform.localPosition.x, wall2_z.transform.localPosition.y, -feedbackValue * 10f)
+            ;
     }
 }
