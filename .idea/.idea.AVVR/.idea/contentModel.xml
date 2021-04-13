@@ -11,8 +11,6 @@
           <e p="AllSkyFree_Menu.cs" t="Include" />
           <e p="AllSkyFree_Readme.txt" t="Include" />
         </e>
-        <e p="BlendAnimation.cs" t="Include" />
-        <e p="ButtonRandomParametrs.cs" t="Include" />
         <e p="extOSC" t="Include">
           <e p="Examples" t="Include">
             <e p="01) Getting Started" t="Include">
@@ -317,6 +315,8 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="BestQuality.cs" t="Include" />
+          <e p="BlendAnimation.cs" t="Include" />
+          <e p="ButtonRandomParametrs.cs" t="Include" />
           <e p="CableComponent.cs" t="Include" />
           <e p="CableParticle.cs" t="Include" />
           <e p="HandButton.cs" t="Include" />
@@ -328,9 +328,9 @@
             <e p="SyntHTable.cs" t="Include" />
             <e p="WavesScript.cs" t="Include" />
           </e>
+          <e p="TabblesOffOffBottom.cs" t="Include" />
           <e p="TabblesScript.cs" t="Include" />
         </e>
-        <e p="TabblesOffOffBottom.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
