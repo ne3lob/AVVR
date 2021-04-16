@@ -23,9 +23,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/3D/BLENDER.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/BLENDER.mp4.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/untitled.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/untitled.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands 1.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands 1.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands 2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Hands 2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/cubeReciever.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/cubeReciever.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/cubeReciever2.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/cubeReciever2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/cubeReciever3.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/cubeReciever3.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Table.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Table.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BlendAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BlendAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +69,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F359EEA-0212-45E1-B68A-A82D76EF7896/62/287b1130/CommonUsages.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TabblesScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F359EEA-0212-45E1-B68A-A82D76EF7896/71/78e89342/InputDevices.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/cubeReciever.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/cubeReciever2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Interaction/Interactables/XRBaseInteractable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Interaction/Interactables/XRSimpleInteractable.cs" root0="SKIP_HIGHLIGHTING" />
@@ -75,11 +99,14 @@
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/ButtonInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/VR Beginner/Scripts/System/Interactables/AxisDragInteractable.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TabblesScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Synth/SynthScript.cs" />
       <option value="$PROJECT_DIR$/Assets/UpdateMesh.cs" />
       <option value="$PROJECT_DIR$/Assets/BlendAnimation.cs" />
+      <option value="$PROJECT_DIR$/Assets/cubeReciever.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BlendAnimation.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
+      <option value="$PROJECT_DIR$/Assets/cubeReciever2.cs" />
+      <option value="$PROJECT_DIR$/Assets/cubeReciever3.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />
@@ -184,7 +211,9 @@
       <workItem from="1618148201639" duration="13352000" />
       <workItem from="1618238185264" duration="16051000" />
       <workItem from="1618318915984" duration="6450000" />
-      <workItem from="1618339158232" duration="6773000" />
+      <workItem from="1618339158232" duration="7380000" />
+      <workItem from="1618393205364" duration="7490000" />
+      <workItem from="1618421174186" duration="3702000" />
     </task>
     <servers />
   </component>

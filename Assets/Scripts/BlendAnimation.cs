@@ -55,6 +55,7 @@ public class BlendAnimation : MonoBehaviour
         wall1_z.transform.localPosition =
             new Vector3(wall1_z.transform.localPosition.x, wall1_z.transform.localPosition.y, spaceValue * 10f)
             ;
+        
 
 
         //Feedback Value

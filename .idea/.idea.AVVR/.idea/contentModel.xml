@@ -11,6 +11,9 @@
           <e p="AllSkyFree_Menu.cs" t="Include" />
           <e p="AllSkyFree_Readme.txt" t="Include" />
         </e>
+        <e p="cubeReciever.cs" t="Include" />
+        <e p="cubeReciever2.cs" t="Include" />
+        <e p="cubeReciever3.cs" t="Include" />
         <e p="extOSC" t="Include">
           <e p="Examples" t="Include">
             <e p="01) Getting Started" t="Include">
@@ -322,6 +325,7 @@
           <e p="HandButton.cs" t="Include" />
           <e p="InstanceObject.cs" t="Include" />
           <e p="LineMesh.cs" t="Include" />
+          <e p="NewBehaviourScript.cs" t="Include" />
           <e p="StartTheWalls.cs" t="Include" />
           <e p="Synth" t="Include">
             <e p="SynthScript.cs" t="Include" />

@@ -71,12 +71,11 @@ public class StartTheWalls : MonoBehaviour
     private const string _wallsShaderProp = "_Blend";
     private const string _wallsRestProp = "_Blend2";
 
-    Coroutine colomnFallFirstCircleCoroutineNull;
-    Coroutine colomnFallSecondCircleCoroutineNull;
+    [SerializeField] private GameObject BlueBoxOne;
 
-    Coroutine colomnFallFirstCircleCoroutineOne;
-    Coroutine colomnFallSecondCircleCoroutineOne;
-    
+    [SerializeField] private GameObject BlueBoxTwo;
+
+    [SerializeField] private GameObject BlueBoxThree;
 
 
     // Start is called before the first frame update
@@ -92,9 +91,6 @@ public class StartTheWalls : MonoBehaviour
     {
         pitchValue = _synthScript.s_PitchRatio;
         float stepSpeed = speed * Time.deltaTime;
-        
-        
-        
 
 
         if (!one && pitchValue >= 0.1f)
@@ -122,6 +118,9 @@ public class StartTheWalls : MonoBehaviour
             {
                 CircleFirstOn(FirstCircleEnvironment, 1500f);
                 CircleSecondOn(SecondCircleEnvironment, 5000f);
+                BlueBoxOne.SetActive(true);
+                BlueBoxTwo.SetActive(true);
+                BlueBoxThree.SetActive(true);
             }
         }
 
@@ -163,6 +162,9 @@ public class StartTheWalls : MonoBehaviour
             {
                 CircleFirstOff(FirstCircleEnvironment, 1000f);
                 CircleSecondOff(SecondCircleEnvironment, 1500f);
+                BlueBoxOne.SetActive(false);
+                BlueBoxTwo.SetActive(false);
+                BlueBoxThree.SetActive(false);
             }
         }
 
