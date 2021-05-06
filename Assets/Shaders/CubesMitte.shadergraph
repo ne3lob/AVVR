@@ -276,7 +276,7 @@
     },
     "m_Name": "Visible",
     "m_DefaultReferenceName": "Vector1_04960aad28f242c3bfa59db7444aab22",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "Visible",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,

@@ -59,9 +59,15 @@ public class StartTheWalls : MonoBehaviour
 
     private float structureOff = 0.2f;
     private float structureOn = 1.3f;
+    private float structureOffTwo = 0.2f;
+    private float structureOnTwo = 1.3f;
+
 
     private float lightOn = 20;
+    private float lightOnTwo = 20;
+
     private float lightOff = 0;
+    private float lightOffTwo = 0;
 
 
     float currentDiss = 0.93f;
@@ -150,11 +156,18 @@ public class StartTheWalls : MonoBehaviour
             lerpStartSecond = Time.time;
             courOn = false;
             firstCurrentStrate = 13f;
-            firstCurrentStrate = -24f;
-            structureOn = 1.3f;
+            firstCurrentStateTwo = -24f;
+
             structureOff = 0.2f;
+            structureOn = 1.3f;
+
+            structureOffTwo = 0.2f;
+            structureOnTwo = 1.3f;
+
             lightOff = 0f;
+            lightOffTwo = 0f;
             lightOn = 20f;
+            lightOnTwo = 20f;
         }
 
         if (!lerpNowSecond)
@@ -221,15 +234,15 @@ public class StartTheWalls : MonoBehaviour
     {
         var newProgressStruct = Time.time - lerpStartSecond;
 
-        structureOn = Mathf.Lerp(structureOn, structureOff, newProgressStruct / durationStruct);
+        structureOnTwo = Mathf.Lerp(structureOnTwo, structureOffTwo, newProgressStruct / durationStruct);
 
-        cubeMat.SetFloat("Visible", structureOn);
-        bubblesMat.SetFloat("Visible", structureOn);
+        cubeMat.SetFloat("Visible", structureOnTwo);
+        bubblesMat.SetFloat("Visible", structureOnTwo);
 
         foreach (var light in LightStructur)
         {
-            lightOn = Mathf.Lerp(lightOn, lightOff, newProgressStruct / durationStruct);
-            light.range = lightOn;
+            lightOnTwo = Mathf.Lerp(lightOnTwo, lightOffTwo, newProgressStruct / durationStruct);
+            light.range = lightOnTwo;
         }
     }
 
