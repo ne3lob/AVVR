@@ -99,7 +99,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Down: 3.09
-    - Up: -24
+    - Up: -23.999954
     - Vector1_1ee5e6ccf7e4454098759607a47b2669: -28.48
     - Vector1_7644a4908d4241659f98a1cee7699c20: 0.91
     - Vector1_b7731094ea6644f0bb6cc90cf1585e9c: -100

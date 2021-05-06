@@ -20,6 +20,9 @@ public class StartTheWalls : MonoBehaviour
     [Header("MaterialsCircles")] public Material FirstCircleEnvironment;
     public Material SecondCircleEnvironment;
 
+
+    public Material cubeM;
+    public Material bubblesM;
     private Material newMatWall;
     private Material newMatBlackWall;
     private Material newMatCelling;
@@ -54,10 +57,11 @@ public class StartTheWalls : MonoBehaviour
     private float firstTargetStrateTwo = 13f;
 
 
-    private float secondCurrentStrate = -24f;
-    private float secondCurrentStrateTwo = 13f;
-    private float secondTargetStrateOne = 13f;
-    private float secondTargetStrateTwo = -24f;
+    private float structureOff = 0.2f;
+    private float structureOn = 1.3f;
+
+    private float lightOn = 20;
+    private float lightOff = 0;
 
 
     float currentDiss = 0.93f;
@@ -71,19 +75,22 @@ public class StartTheWalls : MonoBehaviour
     private const string _wallsShaderProp = "_Blend";
     private const string _wallsRestProp = "_Blend2";
 
-    [SerializeField] private GameObject BlueBoxOne;
-
-    [SerializeField] private GameObject BlueBoxTwo;
-
-    [SerializeField] private GameObject BlueBoxThree;
-
+    [SerializeField] private GameObject Structur;
+    [SerializeField] private Light[] LightStructur;
 
     // Start is called before the first frame update
     void Start()
     {
         _synthScript = synthObj.GetComponent<SynthScript>();
         FirstCircleEnvironment.SetFloat("Up", 13f);
-        SecondCircleEnvironment.SetFloat("Up", -24f);
+
+        cubeM.SetFloat("Visible", 0.2f);
+        bubblesM.SetFloat("Visible", 0.2f);
+
+        foreach (var light in LightStructur)
+        {
+            light.range = 0f;
+        }
     }
 
     // Update is called once per frame
@@ -117,10 +124,7 @@ public class StartTheWalls : MonoBehaviour
             if (courOn)
             {
                 CircleFirstOn(FirstCircleEnvironment, 1500f);
-                CircleSecondOn(SecondCircleEnvironment, 5000f);
-                BlueBoxOne.SetActive(true);
-                BlueBoxTwo.SetActive(true);
-                BlueBoxThree.SetActive(true);
+                VisibleStructur(cubeM, bubblesM, 40f);
             }
         }
 
@@ -146,9 +150,11 @@ public class StartTheWalls : MonoBehaviour
             lerpStartSecond = Time.time;
             courOn = false;
             firstCurrentStrate = 13f;
-            secondCurrentStrate = -24f;
-            firstCurrentStateTwo = -24f;
-            secondCurrentStrateTwo = 13f;
+            firstCurrentStrate = -24f;
+            structureOn = 1.3f;
+            structureOff = 0.2f;
+            lightOff = 0f;
+            lightOn = 20f;
         }
 
         if (!lerpNowSecond)
@@ -161,10 +167,7 @@ public class StartTheWalls : MonoBehaviour
             if (!courOn)
             {
                 CircleFirstOff(FirstCircleEnvironment, 1000f);
-                CircleSecondOff(SecondCircleEnvironment, 1500f);
-                BlueBoxOne.SetActive(false);
-                BlueBoxTwo.SetActive(false);
-                BlueBoxThree.SetActive(false);
+                NoVisibleStructur(cubeM, bubblesM, 40f);
             }
         }
 
@@ -187,32 +190,47 @@ public class StartTheWalls : MonoBehaviour
         circle.SetFloat("Up", firstCurrentStrate);
     }
 
-    void CircleSecondOn(Material circle, float durationOn)
-    {
-        var newProgress = Time.time - lerpStartSecond;
-        secondCurrentStrate =
-            Mathf.Lerp(secondCurrentStrate, secondTargetStrateOne, newProgress / durationOn);
-
-
-        circle.SetFloat("Up", secondCurrentStrate);
-    }
 
     void CircleFirstOff(Material circle, float durationOn)
     {
-        var newProgress = Time.time - lerpStartSecond;
+        var newProgressTwo = Time.time - lerpStartSecond;
 
         firstCurrentStateTwo = Mathf.Lerp(firstCurrentStateTwo, firstTargetStrateTwo,
-            newProgress / durationOn);
+            newProgressTwo / durationOn);
         circle.SetFloat("Up", firstCurrentStateTwo);
     }
 
-    void CircleSecondOff(Material circle, float durationOn)
-    {
-        var newProgress = Time.time - lerpStartSecond;
 
-        secondCurrentStrateTwo =
-            Mathf.Lerp(secondCurrentStrateTwo, secondTargetStrateTwo, newProgress / lerpDuration);
-        circle.SetFloat("Up", secondCurrentStrateTwo);
+    void VisibleStructur(Material cubeMat, Material bubblesMat, float durationStruct)
+    {
+        var newProgressStruct = Time.time - lerpStartSecond;
+
+        structureOff = Mathf.Lerp(structureOff, structureOn, newProgressStruct / durationStruct);
+
+        cubeMat.SetFloat("Visible", structureOff);
+        bubblesMat.SetFloat("Visible", structureOff);
+
+        foreach (var light in LightStructur)
+        {
+            lightOff = Mathf.Lerp(lightOff, lightOn, newProgressStruct / durationStruct);
+            light.range = lightOff;
+        }
+    }
+
+    void NoVisibleStructur(Material cubeMat, Material bubblesMat, float durationStruct)
+    {
+        var newProgressStruct = Time.time - lerpStartSecond;
+
+        structureOn = Mathf.Lerp(structureOn, structureOff, newProgressStruct / durationStruct);
+
+        cubeMat.SetFloat("Visible", structureOn);
+        bubblesMat.SetFloat("Visible", structureOn);
+
+        foreach (var light in LightStructur)
+        {
+            lightOn = Mathf.Lerp(lightOn, lightOff, newProgressStruct / durationStruct);
+            light.range = lightOn;
+        }
     }
 
 

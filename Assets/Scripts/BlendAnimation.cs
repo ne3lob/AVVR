@@ -9,12 +9,10 @@ public class BlendAnimation : MonoBehaviour
     #region Blendshapes
 
     [SerializeField] private GameObject FirstCircle;
-    [SerializeField] private GameObject SecondCircle;
 
 
     SkinnedMeshRenderer skinnedMeshRendererFirst;
 
-    SkinnedMeshRenderer skinnedMeshRendererSecond;
 
     [SerializeField] private GameObject synthObj;
     private SynthScript _synthScript;
@@ -41,7 +39,6 @@ public class BlendAnimation : MonoBehaviour
     {
         _synthScript = synthObj.GetComponent<SynthScript>();
         skinnedMeshRendererFirst = FirstCircle.GetComponent<SkinnedMeshRenderer>();
-        skinnedMeshRendererSecond = SecondCircle.GetComponent<SkinnedMeshRenderer>();
     }
 
     // Update is called once per frame
@@ -55,13 +52,11 @@ public class BlendAnimation : MonoBehaviour
         wall1_z.transform.localPosition =
             new Vector3(wall1_z.transform.localPosition.x, wall1_z.transform.localPosition.y, spaceValue * 10f)
             ;
-        
 
-
-        //Feedback Value
-        feedbackValue = _synthScript.s_DelayTimeFeedback;
-        blendValueSecond = Mathf.Lerp(blendValueSecond, feedbackValue * 100f, (Time.time - lerpStart) / 4000f);
-        skinnedMeshRendererSecond.SetBlendShapeWeight(0, blendValueSecond);
+        // //Feedback Value
+        // feedbackValue = _synthScript.s_DelayTimeFeedback;
+        // blendValueSecond = Mathf.Lerp(blendValueSecond, feedbackValue * 100f, (Time.time - lerpStart) / 4000f);
+        // skinnedMeshRendererSecond.SetBlendShapeWeight(0, blendValueSecond);
 
         wall2_z.transform.localPosition =
             new Vector3(wall2_z.transform.localPosition.x, wall2_z.transform.localPosition.y, -feedbackValue * 10f)
