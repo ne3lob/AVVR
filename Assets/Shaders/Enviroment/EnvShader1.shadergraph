@@ -1470,7 +1470,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Smoothness",
     "m_StageCapability": 2,
-    "m_Value": 0.5,
+    "m_Value": 0.0,
     "m_DefaultValue": 0.5,
     "m_Labels": []
 }
@@ -1561,9 +1561,9 @@
     "m_ShaderOutputName": "BaseColor",
     "m_StageCapability": 2,
     "m_Value": {
-        "x": 0.7547169923782349,
-        "y": 0.7547169923782349,
-        "z": 0.7547169923782349
+        "x": 0.9056603908538818,
+        "y": 0.9056603908538818,
+        "z": 0.9056603908538818
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -1655,7 +1655,7 @@
     "m_Hidden": false,
     "m_ShaderOutputName": "Metallic",
     "m_StageCapability": 2,
-    "m_Value": 0.0,
+    "m_Value": 66.94999694824219,
     "m_DefaultValue": 0.0,
     "m_Labels": []
 }

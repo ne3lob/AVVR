@@ -782,8 +782,8 @@
     "m_Value": 0.20000000298023225,
     "m_FloatType": 1,
     "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
+        "x": 0.20000000298023225,
+        "y": 0.5
     }
 }
 
@@ -1148,7 +1148,7 @@
     },
     "m_Name": "Panner",
     "m_DefaultReferenceName": "Vector1_386C6BEE",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "Panner",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
@@ -1157,8 +1157,8 @@
     "m_Value": 0.5,
     "m_FloatType": 1,
     "m_RangeValues": {
-        "x": -0.5,
-        "y": 1.5
+        "x": -0.20000000298023225,
+        "y": 1.2999999523162842
     }
 }
 
@@ -1576,8 +1576,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1838.9998779296875,
-            "y": 984.0,
+            "x": -1535.0001220703125,
+            "y": 620.0,
             "width": 208.0,
             "height": 302.0
         }
@@ -1759,8 +1759,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1232.9998779296875,
-            "y": 777.9999389648438,
+            "x": -875.0001220703125,
+            "y": 620.0,
             "width": 208.0,
             "height": 302.0
         }
@@ -2289,8 +2289,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1508.9998779296875,
-            "y": 1054.0,
+            "x": -1197.0001220703125,
+            "y": 620.0,
             "width": 208.0,
             "height": 326.0
         }
@@ -2545,10 +2545,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2508.0,
-            "y": 991.9999389648438,
-            "width": 119.99999237060547,
-            "height": 148.99998474121095
+            "x": -2234.0,
+            "y": 620.0,
+            "width": 120.0,
+            "height": 149.00001525878907
         }
     },
     "m_Slots": [
@@ -2636,10 +2636,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2113.0,
-            "y": 991.9999389648438,
-            "width": 207.99998474121095,
-            "height": 390.9999694824219
+            "x": -1818.0001220703125,
+            "y": 620.0,
+            "width": 208.0,
+            "height": 391.0000305175781
         }
     },
     "m_Slots": [
@@ -3189,10 +3189,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2343.0,
-            "y": 1013.9999389648438,
-            "width": 207.99998474121095,
-            "height": 301.9999694824219
+            "x": -2052.000244140625,
+            "y": 620.0,
+            "width": 208.0,
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -3298,10 +3298,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2483.0,
-            "y": 1186.9998779296875,
-            "width": 110.99999237060547,
-            "height": 33.999996185302737
+            "x": -2234.0,
+            "y": 790.0,
+            "width": 111.00000762939453,
+            "height": 34.000003814697269
         }
     },
     "m_Slots": [
@@ -3332,8 +3332,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -756.0,
-            "y": 753.9999389648438,
+            "x": -558.0000610351563,
+            "y": 620.0,
             "width": 208.0,
             "height": 326.0
         }
@@ -3484,10 +3484,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2759.0,
-            "y": 991.9999389648438,
-            "width": 207.99998474121095,
-            "height": 313.9999694824219
+            "x": -2471.000244140625,
+            "y": 632.0,
+            "width": 208.0,
+            "height": 314.0
         }
     },
     "m_Slots": [

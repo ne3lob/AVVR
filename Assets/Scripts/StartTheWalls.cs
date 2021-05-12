@@ -91,7 +91,7 @@ public class StartTheWalls : MonoBehaviour
         FirstCircleEnvironment.SetFloat("Up", 13f);
 
         cubeM.SetFloat("Visible", 0.2f);
-        bubblesM.SetFloat("Visible", 0.2f);
+        //bubblesM.SetFloat("Visible", 0.2f);
 
         foreach (var light in LightStructur)
         {
