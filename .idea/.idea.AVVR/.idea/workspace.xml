@@ -23,44 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Materials/New Render Texture.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Materials/New Render Texture.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/NewRound.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/NewRound.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/NewRound00.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/NewRound00.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Round 1.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Round 1.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Round.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Round.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Round22.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Round22.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Tdmovieout.0-1.m4v" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/Tdmovieout.0-1.m4v.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/nessss_Trim.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/3D/nessss_Trim.mp4.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Circle.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Circle.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Circle.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Circle.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/RoundWithPlayerCollider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ShaderTest.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ShaderTest.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/New Material.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3D/New Render Texture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/New Render Texture.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/ColumnDown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/ColumnDown.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Table.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Table.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/VideoPlayer.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/VideoPlayer.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Shaders/Bubbels_USE 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Bubbels_USE 1.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Shaders/CubesMitte_USE.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/CubesMitte_USE.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Materials/sawnew.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/sawnew.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +39,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4F359EEA-0212-45E1-B68A-A82D76EF7896/71/78e89342/InputDevices.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Locomotion/SnapTurn/SnapTurnProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/cubeReciever2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/XR/XRRig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bubbles/ShaderMoveBubbleDrumFirst.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/cubeReciever.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Interaction/XRInteractionManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.interaction.toolkit@0.9.4-preview/Runtime/Interaction/Controllers/XRController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -130,6 +94,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Bubbles/ShaderMoveBubbleKickTwo.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
       <option value="$PROJECT_DIR$/Assets/RoundWithPlayerCollider.cs" />
+      <option value="$PROJECT_DIR$/Assets/ChangingVideoClips.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ChangingVideoClips.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />
@@ -249,6 +215,7 @@
       <workItem from="1621005693197" duration="964000" />
       <workItem from="1621007801527" duration="1027000" />
       <workItem from="1621260396744" duration="5522000" />
+      <workItem from="1621285394992" duration="3956000" />
     </task>
     <servers />
   </component>
