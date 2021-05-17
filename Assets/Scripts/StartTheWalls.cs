@@ -84,6 +84,8 @@ public class StartTheWalls : MonoBehaviour
     [SerializeField] private GameObject Structur;
     [SerializeField] private Light[] LightStructur;
 
+    [SerializeField] public GameObject ReflectorCircle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -91,12 +93,16 @@ public class StartTheWalls : MonoBehaviour
         FirstCircleEnvironment.SetFloat("Up", 13f);
 
         cubeM.SetFloat("Visible", 0.2f);
+        bubblesM.SetFloat("Visible", 0.2f);
+
         //bubblesM.SetFloat("Visible", 0.2f);
 
         foreach (var light in LightStructur)
         {
             light.range = 0f;
         }
+
+        ReflectorCircle.SetActive(false);
     }
 
     // Update is called once per frame
@@ -131,6 +137,7 @@ public class StartTheWalls : MonoBehaviour
             {
                 CircleFirstOn(FirstCircleEnvironment, 1500f);
                 VisibleStructur(cubeM, bubblesM, 40f);
+                ReflectorCircle.SetActive(true);
             }
         }
 
@@ -181,6 +188,7 @@ public class StartTheWalls : MonoBehaviour
             {
                 CircleFirstOff(FirstCircleEnvironment, 1000f);
                 NoVisibleStructur(cubeM, bubblesM, 40f);
+                ReflectorCircle.SetActive(false);
             }
         }
 

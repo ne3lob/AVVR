@@ -23,22 +23,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf239ead-c85e-41b9-9a19-08e3d68ed391" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bubbles.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bubbles/ShaderMoveBubbleKick.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bubbles/ShaderMoveBubbleKick.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bubbles/ShaderMoveBubbleKlang.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Bubbles/ShaderMoveBubbleKlang.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Materials/New Render Texture.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Materials/New Render Texture.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/NewRound.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/NewRound.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/NewRound00.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/NewRound00.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Round 1.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Round 1.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Round.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Round.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Round22.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Round22.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Tdmovieout.0-1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/Tdmovieout.0-1.m4v.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/nessss_Trim.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/3D/nessss_Trim.mp4.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Circle.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Circle.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Circle.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/Circle.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/RoundWithPlayerCollider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ShaderTest.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/ShaderTest.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AVVR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/New Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3D/New Render Texture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3D/New Render Texture.renderTexture" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/ColumnDown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/ColumnDown.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Table.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Table.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/VideoPlayer.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/VideoPlayer.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PrOt_27.01 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Shaders/Bubbels_USE 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Bubbels_USE 1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/BubblesShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/BubblesShader.shadergraph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Shaders/CubesMitte_USE.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/CubesMitte_USE.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enviroment/EnvShader1.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Enviroment/EnvShader1.shadergraph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/Enviroment/New Material1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/ButtonRandom.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/ButtonRandom.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/OutlineShader.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/VR Beginner/VFX/Outline/OutlineShader.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Materials/sawnew.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Materials/sawnew.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +121,6 @@
       <option value="$PROJECT_DIR$/Assets/cubeReciever2.cs" />
       <option value="$PROJECT_DIR$/Assets/cubeReciever3.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BlendAnimation.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
       <option value="$PROJECT_DIR$/Assets/OneShaderMoveBubble.cs" />
       <option value="$PROJECT_DIR$/Assets/ShaderBubblesMovement.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bubbles/ShaderMoveBubbleKlang.cs" />
@@ -107,6 +128,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Bubbles/ShaderMoveBubbleDrumSecond.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bubbles/ShaderMoveBubbleKick.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Bubbles/ShaderMoveBubbleKickTwo.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/StartTheWalls.cs" />
+      <option value="$PROJECT_DIR$/Assets/RoundWithPlayerCollider.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1o26BSfEn7Z4i89e2YtnKQCevDS" />
@@ -223,6 +246,9 @@
       <workItem from="1620507410659" duration="4277000" />
       <workItem from="1620651510593" duration="16286000" />
       <workItem from="1620733811700" duration="10342000" />
+      <workItem from="1621005693197" duration="964000" />
+      <workItem from="1621007801527" duration="1027000" />
+      <workItem from="1621260396744" duration="5522000" />
     </task>
     <servers />
   </component>
