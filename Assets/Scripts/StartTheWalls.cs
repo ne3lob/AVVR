@@ -45,6 +45,7 @@ public class StartTheWalls : MonoBehaviour
 
     private SynthScript _synthScript;
     private float pitchValue;
+    private float volumeValue;
 
 
     private bool one;
@@ -109,6 +110,7 @@ public class StartTheWalls : MonoBehaviour
     void Update()
     {
         pitchValue = _synthScript.s_PitchRatio;
+        volumeValue = _synthScript.s_VolumeRatio;
         float stepSpeed = speed * Time.deltaTime;
 
 
@@ -188,7 +190,6 @@ public class StartTheWalls : MonoBehaviour
             {
                 CircleFirstOff(FirstCircleEnvironment, 1000f);
                 NoVisibleStructur(cubeM, bubblesM, 40f);
-                ReflectorCircle.SetActive(false);
             }
         }
 
@@ -199,6 +200,14 @@ public class StartTheWalls : MonoBehaviour
             ChangeToNormalStationLerp(wallsObj, _wallsShaderProp);
             ChangeToNormalStationLerp(blackWallsObj, _wallsRestProp);
             ChangeToNormalStationLerp(bottomCellingObj, _wallsShaderProp);
+        }
+
+        if (volumeValue > 0.6f)
+            ReflectorCircle.SetActive(true);
+
+        if (volumeValue < 0.6f)
+        {
+            ReflectorCircle.SetActive(false);
         }
     }
 

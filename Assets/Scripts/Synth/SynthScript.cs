@@ -61,7 +61,7 @@ namespace Synth
         private const string oscAddressDrumSeqOverdrive = "/DrumSeqOverDrive";
 
         //STARTING FLOATS
-        private float s_VolumeRatio = 0.0f;
+        public float s_VolumeRatio = 0.0f;
         public float s_PitchRatio = 0.0f;
         private float s_DrumVolume = 0.0f;
         private float s_RatioDistortion = 0.0f;
